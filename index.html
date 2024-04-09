@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+  <title>Sapphire Games</title>
+  <link rel="icon" type="image/x-icon" href="/imgs/favicon.ico">
+  <style>
+    body {
+      background-color: #0B0B0B;
+      color: #fff;
+      font-family: "Lexend", sans-serif;
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
+
+    h1,
+    h2 {
+      color: white;
+      width: 100%;
+    }
+
+    h1 {
+      font-size: 10vh;
+      font-weight: 900;
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    h1 img {
+      margin-left: 20px;
+    }
+
+    h2 {
+      font-size: 20px;
+    }
+    
+    .gradient-text {
+      font-size: 20px;
+      background-image: linear-gradient(to right, #87CEEB, #1E90FF);
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+
+    .navbar {
+      overflow: hidden;
+      box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2); 
+      background-color: #0B0B0B;
+      margin-bottom: 75px;
+      margin-left: 13vh;
+    }
+
+    .navbar a {
+      display: block;
+      float: left;
+      font-family: "Lexend";
+      color: #fff;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+      transition: color 0.5s; /* Adjusted transition duration for color */
+    }
+
+    .navbar a:hover {
+      color: #cc5850;
+    }
+
+    .navbar img {
+      display: block;
+      float: left;
+      margin-right: 0px;
+      margin-left: 0px;
+    }
+
+    .navbar img:hover {
+      background-color: initial;
+      color: initial;
+    }
+
+    .navbar-right {
+      float: right;
+    }
+    
+
+    .button-5 {
+      background-clip: padding-box;
+      background-color: #cc5850;
+      border: 1px solid transparent;
+      border-radius: 8px;
+      box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+      box-sizing: border-box;
+      color: #fff;
+      cursor: pointer;
+      display: inline-flex;
+      font-family: "Lexend", system-ui, Arial,sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+      justify-content: center;
+      line-height: 1.25;
+      margin: 0;
+      min-height: 3rem;
+      padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+      position: relative;
+      text-decoration: none;
+      transition: all 250ms;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+      vertical-align: baseline;
+    }
+
+    .button-5:hover,
+    .button-5:focus {
+      background-color: #9c413b;
+      box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+    }
+
+    .button-5:hover {
+      transform: translateY(-1px);
+    }
+
+    .button-5:active {
+      background-color: #9c413b;
+      box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+      transform: translateY(0);
+    }
+
+
+    .featured-games {
+      background-color: #444;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .game {
+      display: inline-block;
+      margin: 10px;
+      position: relative;
+    }
+
+    .game img {
+      width: 25vh;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .game:hover .game-name {
+      display: block;
+    }
+
+    .game-name {
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: rgba(0, 0, 0, 0.7);
+      color: white;
+      padding: 5px 10px;
+      border-radius: 5px;
+      display: none;
+    }
+
+    .footer {
+      background-color: #333;
+      color: #fff;
+      padding: 30px;
+      text-align: center;
+      width: 75%;
+      left: 50%;
+      border-radius: 10px;
+      transform: translateX(-50%);
+      position: relative;
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+      bottom: 0;
+    }
+
+    .footer-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .footer-info {
+      text-align: right;
+    }
+
+    .logo img {
+      width: 50px;
+      height: auto;
+    }
+
+    .copyright {
+      text-align: left;
+      background-image: linear-gradient(90deg, white, gray);
+      background-clip: text;
+      color: transparent
+    }
+
+    p {
+      font-size: 30px;
+      color: #cc5850;
+      width: 75%;
+      font-weight: 700;
+      font-size: 30px;
+      margin-bottom: 10px;
+      width: 60%;
+
+    }
+
+    .second-paragraph {
+      color: gray;
+      font-size: 25px;
+      font-weight: 500;
+      width: 50%;
+      margin-bottom: 20px;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="navbar">
+    <a href="index.html">
+      <img src="icons/rubyarcade.png" alt="Ruby Games Logo" width="125vh" height="27vh">
+    </a>
+    <div class="navbar-right">
+      <a href="index.html">Home</a>
+      <a href="/pages/game.html">Games</a>
+      <a href="/pages/apps.html">Apps</a>
+      <a href="/pages/proxies.html">Proxy</a>
+    </div>
+  </div>
+
+
+<center>
+  <p>The best gaming website for school.</p>
+
+  <div class="game-info">
+    <p class="second-paragraph">Ruby arcade is a game network that features a wide variety of engaging and immersive games suitable for all ages.</p>
+  </div>
+
+    <button class="button-5" onclick="window.location.href='/pages/game.html'"><span class="text">Start playing</span></button>
+
+   </button>
+    </center>
+
+  <center>
+    <h2>Featured Games</h2>
+    <div class="game">
+      <a href="/games/run.html">
+        <img src="/imgs/run.png" alt="run">
+        <span class="game-name">Run</span>
+      </a>
+    </div>
+    <div class="game">
+      <a href="/games/slowroads.html">
+        <img src="/imgs/slowroads.jpg" alt="slowroads.io">
+        <span class="game-name">Slowroads.io</span>
+      </a>
+    </div>
+    <div class="game">
+      <a href="/games/minecraft.html">
+        <img src="/imgs/minecraft.png" alt="Minecraft">
+        <span class="game-name">Minecraft</span>
+      </a>
+    </div>
+  </center>
+
+
+
+  <script>
+    function openGame() {
+      var win = window.open()
+      var url = "index.html"
+      var iframe = win.document.createElement('iframe')
+      iframe.style.position = "fixed";
+      iframe.style.top = "0";
+      iframe.style.left = "0";
+      iframe.style.width = "100vw";
+      iframe.style.height = "100vh";
+      iframe.style.border = "none"
+      iframe.src = url
+      win.document.body.appendChild(iframe)
+    }
+  </script>
+
+  <section class="footer">
+    <div class="footer-content">
+      <div class="logo">
+        <img src="/icons/ruby.png" alt="Ruby Games" width="50">
+      </div>
+        <div class="copyright"
+          <p>&copy; 2024 Sapphire Games. All rights reserved.</p
+        </div>
+    </div>
+          
+  </section>
+
+
+</body>
+
+</html>
