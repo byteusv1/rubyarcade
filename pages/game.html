@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Games</title>
   <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
-  <link rel="icon" type="image/x-icon" href="/imgs/favicon.ico">
+  <link rel="icon" type="image/x-icon" href="/icons/favicon.ico">
   <style>
     body {
       background-color: #0B0B0B;
@@ -187,28 +187,6 @@
       opacity: 0.7;
     }
 
-    .volume-slider {
-      position: absolute;
-      bottom: 20px;
-      left: 20px;
-      width: 100px;
-      height: 20px;
-      background: url('/imgs/volume-slider.png') no-repeat;
-      background-size: contain;
-      cursor: pointer;
-    }
-
-    .mute-button {
-      position: absolute;
-      bottom: 20px;
-      left: 130px;
-      width: 40px;
-      height: 40px;
-      background: url('/imgs/mute.png') no-repeat;
-      background-size: contain;
-      cursor: pointer;
-    }
-
     .gameBar {
       display: flex;
       align-items: center;
@@ -236,13 +214,14 @@
       <a href="/index.html">Home</a>
       <a href="game.html">Games</a>
       <a href="apps.html">Apps</a>
+      <a href="utilities.html">Utilities</a>
       <a href="/pages/proxies.html">Proxy</a>
     </div>
   </div>
 
   <center>
     <h1>Games</h1>
-    <input type="text" id="searchInput" onkeyup="searchGames()" placeholder="Search for games...">
+    <input type="text" id="searchInput" onkeyup="searchGames()" placeholder="⌕ Search for games...">
   </center>
 
   <div id="gamesList" style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center;">

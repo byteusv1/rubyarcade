@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Utilities</title>
+  <link rel="icon" type="image/x-icon" href="/icons/favicon.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: #0B0B0B;
+      color: #fff;
+      font-family: "Lexend", sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar {
+      overflow: hidden;
+      box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2); 
+      background-color: #0B0B0B;
+      margin-bottom: 75px;
+      margin-left: 13vh;
+    }
+
+    .navbar a {
+      display: block;
+      float: left;
+      font-family: "Lexend";
+      color: #fff;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+      transition: color 0.5s;
+    } 
+
+    .navbar a:hover {
+      color: #cc5850;
+    }
+
+    .navbar img {
+      display: block;
+      float: left;
+      margin-right: 0px;
+      margin-left: 0px;
+    }
+
+    .navbar img:hover {
+      background-color: initial;
+      color: initial;
+    }
+
+    .navbar-right {
+      float: right;
+    }
+    .btn {
+    padding: 8px 16px;
+    background-color: #272626;
+    border-color: white;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: bold;
+    outline: 1px solid rgb(255, 255, 255);
+    transition: background-color 0.3s;
+   font-family: "Lexend", sans-serif;
+   width: 90px;
+   margin: 4px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   max-height: 150px;
+   max-width: 100px;
+    text-align: center;
+   text-decoration: none;
+   overflow: hidden; 
+}
+
+.btn img {
+  max-width: 100%;
+  outline: 1px solid white;
+  border-radius: 8px;
+  max-height: 100px;
+  max-width: 100px;
+  margin-bottom: 5px;
+}
+
+.btn span {
+  max-width: 150px;
+  max-height: 150px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-size-adjust: scale;
+}
+
+.btn:hover {
+  background-color: white;
+  color: black;
+}
+
+#gameLoaderSection {
+      display: none;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      height: 500px;
+    }
+
+    #gameLoaderContainer {
+      width: 55%;
+      height: 100vh;
+      overflow: none;
+      border-radius: 10px;
+    }
+
+    #gameFrame {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    .gameBar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 55%;
+      height: 20px;
+      padding: 10px;
+      background-color: #333;
+      border-radius: 5px;
+      color: white;
+      margin-top: 10px;
+    }
+
+    .gameBarTitle {
+      font-size: 18px;
+    }
+
+    .gameBarButton {
+      cursor: pointer;
+      transition: opacity 0.3s;
+    }
+
+    .gameBarButton:hover {
+      opacity: 0.7;
+    }
+
+    .gameBarTitle {
+      font-size: 18px;
+    }
+
+    .gameBarButton {
+      cursor: pointer;
+      transition: opacity 0.3s;
+    }
+
+    .gameBarButton:hover {
+      opacity: 0.7;
+    }
+
+    .gameBar {
+      display: flex;
+      align-items: center;
+    }
+
+
+    .button-group {
+      display: flex;
+      gap: 10px;
+    }
+
+
+    .gameBarButton {
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="navbar">
+    <a href="/index.html">
+      <img src="/icons/ruby.png" alt="Sapphire Games Logo" width="25">
+    </a>
+    <div class="navbar-right">
+      <a href="/index.html">Home</a>
+      <a href="game.html">Games</a>
+      <a href="apps.html">Apps</a>
+      <a href="utilities.html">Utilities</a>
+      <a href="/pages/proxies.html">Proxy</a>
+    </div>
+  </div>
+
+  <center>
+    <h1> 🛠 Utilities </h1>
+    <hr style="width: 50%;">
+  </center>
+
+  <div id="gamesList" style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center;">
+
+    <div class="btn" onclick="loadGame('/apps/iphone15/index.html')">
+      <img src="/imgs/apple.png">
+      <span>Iphone 15</span> 
+    </div>
+    <div class="btn" onclick="loadGame('/apps/iphone14/index.html')">
+        <img src="/imgs/apple.png">
+        <span>Iphone 14</span> 
+      </div>
+      <div class="btn" onclick="loadGame('/apps/iphone13/index.html')">
+        <img src="/imgs/apple.png">
+        <span>Iphone 13</span> 
+      </div>
+      <div class="btn" onclick="loadGame('/apps/iphone12/index.html')">
+        <img src="/imgs/apple.png">
+        <span>Iphone 12</span> 
+      </div>
+      <div class="btn" onclick="loadGame('/apps/iphone12/index.html')">
+        <img src="/imgs/apple.png">
+        <span>Iphone 11</span> 
+      </div>
+      <div class="btn" onclick="loadGame('/apps/iphone8/index.html')">
+        <img src="/imgs/apple.png">
+        <span>Iphone 8</span> 
+      </div>
+      <div class="btn" onclick="loadGame('/apps/ipadair/index.html')">
+        <img src="/imgs/apple.png">
+        <span>Ipad air</span> 
+      </div>
+      <div class="btn" onclick="loadGame('/apps/ipadpro/index.html')">
+        <img src="/imgs/apple.png">
+        <span>Ipad pro</span> 
+      </div>
+      <div class="btn" onclick="loadGame('/apps/pixel7/index.html')">
+        <img src="/imgs/android.png">
+        <span>Pixel 7</span> 
+      </div>
+      <div class="btn" onclick="loadGame('/apps/pixel6/index.html')">
+        <img src="/imgs/android.png">
+        <span>Pixel 6</span> 
+      </div>
+      <div class="btn" onclick="loadGame('/apps/galaxytabs7/index.html')">
+        <img src="/imgs/android.png">
+        <span>Galaxy tab s7</span> 
+      </div>
+      
+    </div>
+
+  </div>
+
+
+
+  <section id="gameLoaderSection" style="display: none;">
+    <div id="gameLoaderContainer">
+      <iframe id="gameFrame" src="" frameborder="0"></iframe>
+    </div>
+    <div class="gameBar">
+      <div class="gameBarButton" onclick="removeGameLoader()">
+        <img src="/icons/remove.png" width="20px" alt="Remove Game Loader">
+      </div>
+      <img src="/icons/ruby.png" width="20px">
+      <div class="button-group">
+        <div class="gameBarButton" onclick="refreshGame()">
+          <img src="/icons/refresh.png" width="20px" alt="Refresh">
+        </div>
+        <div class="gameBarButton" onclick="toggleFullscreen()">
+          <img src="/icons/fullscreen.png" width="20px" alt="Fullscreen">
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+<script>    
+
+function loadGame(url) {
+      var gameFrame = document.getElementById('gameFrame');
+      gameFrame.src = url;
+
+      // Show the game loader section
+      var gameLoaderSection = document.getElementById('gameLoaderSection');
+      gameLoaderSection.style.display = 'flex';
+
+      // Scroll to game loader section
+      gameLoaderSection.scrollIntoView({behavior: 'smooth'});
+    }
+
+    // Function to toggle fullscreen mode
+    function toggleFullscreen() {
+      var gameFrame = document.getElementById('gameFrame');
+      if (!document.fullscreenElement) {
+        gameFrame.requestFullscreen();
+      } else {
+        if (document.exitFullscreen) {
+          document.exitFullscreen();
+        }
+      }
+    }
+    function removeGameLoader() {
+      var gameLoaderSection = document.getElementById('gameLoaderSection');
+      gameLoaderSection.style.display = 'none';
+    }
+  
+  </script>
+</body>
+
+</html>
