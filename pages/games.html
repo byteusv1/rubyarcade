@@ -264,7 +264,7 @@
         <img src="/imgs/slowroads.jpg" />
         <span>Slowroads</span>
       </div>
-      <div class="btn" onclick="loadGame('/games/worldhardestgame/index.html')">
+      <div class="btn" onclick="loadGame('/games/worldshardestgame/index.html')">
         <img src="/imgs/worldhardestgame.jpg" />
         <span>World hardest game</span>
       </div>
@@ -366,10 +366,7 @@
         <img src="/imgs/fnf.png" />
         <span>Friday night funkin'</span>
       </div>
-      <div
-        class="btn"
-        onclick="loadGame('/games/adventurecapitalist/index.html')"
-      >
+      <div class="btn" onclick="loadGame('/games/adventurecapitalist/index.html')">
         <img src="/imgs/adventurecapitalist.png" />
         <span>Adventure capitalist</span>
       </div>
@@ -542,6 +539,10 @@
         <img src="/imgs/townscaper.png" />
         <span>Townscaper</span>
       </div>
+
+
+
+
       <div class="btn" onclick="loadGame('/games/placeholder/index.html')">
         <img src="/imgs/placeholder.png" />
         <span>More games soon!</span>
@@ -593,6 +594,15 @@
           }
         }
       }
+
+      function refreshGame() {
+    var gameFrame = document.getElementById("gameFrame");
+    var currentSrc = gameFrame.src;
+    gameFrame.src = "";
+    setTimeout(function() {
+        gameFrame.src = currentSrc;
+    }, 100); 
+}
 
       // Function to load game page in the iframe
       function loadGame(url) {
