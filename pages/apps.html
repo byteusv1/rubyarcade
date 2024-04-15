@@ -66,53 +66,51 @@
     }
 
     .btn {
-    padding: 8px 16px;
-    background-color: #cc5850;
-    border-color: white;
-    color: white;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 12px;
-    width: 100px;
-    height: 120px;
-    font-weight: bold;
-    outline: 1px solid rgb(255, 255, 255);
-    transition: background-color 0.3s;
-   font-family: "Lexend", sans-serif;
-   margin: 4px;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   max-height: 120px;
-   max-width: 100px;
-    text-align: center;
-   text-decoration: none;
-   overflow: hidden; 
-}
+        padding: 8px 16px;
+        background-color: #000000;
+        border-color: white;
+        color: white;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 10.6px;
+        width: 90px;
+        height: 120px;
+        font-weight: bold;
+        transition: background-color 0.3s;
+        font-family: "Lexend", sans-serif;
+        margin: 4px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-height: 120px;
+        max-width: 100px;
+        text-align: center;
+        text-decoration: none;
+        overflow: hidden;
+      }
 
-.btn img {
-  max-width: 100%;
-  outline: 1px solid white;
-  border-radius: 8px;
-  max-height: 100px;
-  width: 100px;
-  height: 100px;
-  max-width: 100px;
-  margin-bottom: 5px;
-}
+      .btn img {
+        max-width: 100%;
+        border-radius: px;
+        max-height: 100px;
+        width: 100px;
+        height: 100px;
+        max-width: 100px;
+        margin-bottom: 5px;
+      }
 
-.btn span {
-  max-width: 150px;
-  max-height: 150px;
-  overflow: hidden;
-  white-space: nowrap;
-  text-size-adjust: scale;
-}
+      .btn span {
+        max-width: 150px;
+        max-height: 150px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-size-adjust: scale;
+      }
 
-.btn:hover {
-  background-color: white;
-  color: black;
-}
+      .btn:hover {
+        background-color: white;
+        color: black;
+      }
 
 
     #gameLoaderSection {
@@ -198,7 +196,7 @@
 <body>
   <div class="navbar">
     <a href="index.html">
-      <img src="/icons/rubyarcade.png" alt="Ruby Games Logo" width="125vh" height="27vh">
+      <img src="/media/icons/rubyarcade.png" alt="Ruby Games Logo" width="125vh" height="27vh">
     </a>
     <div class="navbar-right">
       <a href="/index.html">Home</a>
@@ -214,10 +212,32 @@
   </center>
 
   <div id="gamesList" style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center;">
-   <div class="btn" onclick="loadGame('/games/placeholder/index.html')">
-      <img src="/imgs/placeholder.png">
-      <span>Placeholder</span> 
+   <div class="btn" onclick="loadGame('/apps/discord/index.html')">
+      <img src="/media/apps/discord.png">
+      <span>Discord</span> 
     </div>
+      <div id="gamesList" style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center;">
+   <div class="btn" onclick="loadGame('/apps/github/index.html')">
+      <img src="/media/apps/github.png">
+      <span>Github</span> 
+    </div>
+    <div class="btn" onclick="loadGame('/apps/youtube/index.html')">
+      <img src="/media/apps/youtube.png">
+      <span>Youtube</span> 
+    </div>
+    <div class="btn" onclick="loadGame('/apps/geforcenow/index.html')">
+      <img src="/media/apps/geforcenow.png">
+      <span>Geforce NOW</span> 
+    </div>
+    <div class="btn" onclick="loadGame('/apps/google/index.html')">
+      <img src="/media/apps/google.png">
+      <span>Google</span> 
+    </div>
+    <div class="btn" onclick="loadGame('/apps/tiktok/index.html')">
+      <img src="/media/apps/tiktok.png">
+      <span>TikTok</span> 
+    </div>
+
 
     
     </div>
@@ -232,15 +252,15 @@
     </div>
     <div class="gameBar">
       <div class="gameBarButton" onclick="removeGameLoader()">
-        <img src="/icons/remove.png" width="20px" alt="Remove Game Loader">
+        <img src="/media/icons/remove.png" width="20px" alt="Remove Game Loader">
       </div>
-      <img src="/icons/ruby.png" width="20px">
+      <img src="/media/icons/ruby.png" width="20px">
       <div class="button-group">
         <div class="gameBarButton" onclick="refreshGame()">
-          <img src="/icons/refresh.png" width="20px" alt="Refresh">
+          <img src="/media/icons/refresh.png" width="20px" alt="Refresh">
         </div>
         <div class="gameBarButton" onclick="toggleFullscreen()">
-          <img src="/icons/fullscreen.png" width="20px" alt="Fullscreen">
+          <img src="/media/icons/fullscreen.png" width="20px" alt="Fullscreen">
         </div>
 
 
@@ -294,6 +314,15 @@
       var gameLoaderSection = document.getElementById('gameLoaderSection');
       gameLoaderSection.style.display = 'none';
     }
+
+    function refreshGame() {
+    var gameFrame = document.getElementById("gameFrame");
+    var currentSrc = gameFrame.src;
+    gameFrame.src = "";
+    setTimeout(function() {
+        gameFrame.src = currentSrc;
+    }, 100); 
+}
   </script>
 
 </body>
