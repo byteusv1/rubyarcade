@@ -11,5 +11,9 @@ The official link for Ruby Arcade is https://rubyarcade.netlify.app/
 3. Deploy the website.
 4. Your done!
 
+## Note
+im still learning html so like half the website is chatgpt lol
+
+
 ## Made by TwoMuchRed
 
