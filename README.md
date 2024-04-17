@@ -1,4 +1,4 @@
-#<div style="margin-top: 10px;">
+# <div style="margin-top: 10px;">
     <img src="/media/icons/ruby.png" alt="Ruby Arcade Logo" width="50">
 </div> Ruby Arcade
 
