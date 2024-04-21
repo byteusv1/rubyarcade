@@ -136,12 +136,12 @@
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
-        height: 500px;
+        height: 600px;
       }
 
       #gameLoaderContainer {
-        width: 55%;
-        height: 100vh;
+        width: 80%;
+        height: 100%;
         overflow: none;
         border-radius: 10px;
       }
@@ -156,13 +156,13 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        width: 55%;
+        width: 79%;
         height: 20px;
         padding: 10px;
         background-color: #333;
-        border-radius: 5px;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
         color: white;
-        margin-top: 10px;
       }
 
       .gameBarTitle {
@@ -414,6 +414,10 @@
       <div class="btn" onclick="loadGame('/games/static/ovo/index.html')">
         <img src="/media/gameimgs/ovo.png" />
         <span>OvO</span>
+      </div>
+      <div class="btn" onclick="loadGame('/games/static/retrobowl/index.html')">
+        <img src="/media/gameimgs/retrobowl.png" />
+        <span>Retro Bowl</span>
       </div>
       <div class="btn" onclick="loadGame('/games/static/monkeymart/index.html')">
         <img src="/media/gameimgs/monkeymart.png" />
@@ -1025,6 +1029,9 @@
         var gameLoaderSection = document.getElementById("gameLoaderSection");
         gameLoaderSection.style.display = "none";
       }
+      var isMuted = false;
+
+
     </script>
   </body>
 </html>
