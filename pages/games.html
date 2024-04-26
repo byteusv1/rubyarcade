@@ -20,108 +20,112 @@
         height: 100%;
       }
 
-      .navbar {
-        overflow: hidden;
-        box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2);
-        background-color: #1e1e1e;
-        margin-bottom: 75px;
-        position: fixed;
-        width: 100%;
-        z-index: 9999;
-        top: -0px;
-      }
-
       h1 {
         margin-top: 10vh;
       }
-      .navbar a {
-        display: block;
-        float: left;
-        font-family: "Lexend";
-        color: #fff;
-        text-align: center;
-        padding: 14px 20px;
-        text-decoration: none;
-        transition: color 0.5s;
-      }
 
-      .navbar a:hover {
-        color: #cc5850;
-      }
+      .navbar {
+  overflow: hidden;
+  box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2);
+  background-color: #373737;
+  margin-bottom: 75px;
+  position: fixed;
+  width: calc(100% - 40px); 
+  z-index: 9999;
+  top: 0; 
+  left: 20px; 
+  right: 20px; 
+  border-radius: 10px;
+}
 
-      .navbar img {
-        display: block;
-        float: left;
-        margin-right: 0px;
-        margin-left: 0px;
-      }
+.navbar a {
+  display: block;
+  float: left;
+  font-family: "Lexend";
+  color: #fff;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  transition: color 0.5s;
+}
 
-      .navbar img:hover {
-        background-color: initial;
-        color: initial;
-      }
+.navbar a:hover {
+  color: #cc5850;
+}
 
-      .navbar-right {
-        float: right;
-      }
+.navbar img {
+  display: block;
+  float: left;
+  margin-right: 0px;
+  margin-left: 0px;
+}
 
-      .btn {
-        padding: 8px 16px;
-        background-color: #000000;
-        border-color: white;
-        color: white;
-        border-radius: 8px;
-        cursor: pointer;
-        font-size: 8.53px;
-        width: 90px;
-        height: 120px;
-        font-weight: bold;
-        transition: background-color 0.3s;
-        font-family: "Lexend", sans-serif;
-        margin: 4px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        max-height: 120px;
-        max-width: 100px;
-        text-align: center;
-        text-decoration: none;
-        overflow: hidden;
-      }
+.navbar img:hover {
+  background-color: initial;
+  color: initial;
+}
 
-      .btn img {
-        max-width: 100%;
-        border-radius: px;
-        max-height: 100px;
-        width: 100px;
-        height: 100px;
-        max-width: 100px;
-        margin-bottom: 5px;
-      }
+.navbar-right {
+  float: right;
+}
 
-      .btn span {
-        max-width: 150px;
-        max-height: 150px;
-        overflow: hidden;
-        white-space: nowrap;
-        text-size-adjust: scale;
-      }
 
-      .btn:hover {
-        background-color: white;
-        color: black;
-      }
+
+.btn {
+  background-color: #000000;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  width: 150px;
+  height: 150px;
+  font-weight: bold;
+
+  font-family: "Lexend", sans-serif;
+  margin: 8px;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn img {
+  max-width: 100%;
+  height: auto;
+  width: 100%;
+  transition: transform 0.1s; /* Shorter transition duration for smoother movement */
+}
+
+.btn span {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 14px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  width: 75%;
+  transform: translateX(-50%);
+}
+
+.btn:hover {
+  color: black;
+}
+
+
+
 
       #searchInput {
         padding: 10px;
         font-size: 16px;
         border: 2px solid #fff;
-        border-radius: 5px;
+        border-radius: 10px;
         background-color: transparent;
         color: #fff;
-        width: 300px;
+        width: 75%;
+        text-align: left;
         transition: border-color 0.3s;
-        margin-bottom: 5vh;
+        margin-bottom: 5px;
       }
 
       #searchInput:hover,
@@ -165,9 +169,7 @@
         color: white;
       }
 
-      .gameBarTitle {
-        font-size: 18px;
-      }
+
 
       .gameBarButton {
         cursor: pointer;
@@ -204,6 +206,8 @@
       .gameBarButton {
         cursor: pointer;
       }
+
+
     </style>
   </head>
 
@@ -231,18 +235,16 @@
         type="text"
         id="searchInput"
         onkeyup="searchGames()"
-        placeholder="⌕ Search for games..."/>
+        placeholder="⌕ Search..."/>
+        <h1>All games</h1>
     </center>
 
-    <div
-      id="gamesList"
-      style="
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-      "
->
+
+
+    <div id="gamesList" style=" display: flex; flex-wrap: wrap; justify-content: center; align-items: center;">
+
+
+
     <div class="btn" onclick="loadGame('/games/nowgg/roblox/index.html')">
       <img src="/media/gameimgs/roblox.png" />
       <span>Roblox</span>
@@ -1725,6 +1727,50 @@
         gameLoaderSection.style.display = "none";
       }
       var isMuted = false;
+      
+
+
+
+
+      const buttons = document.querySelectorAll('.btn');
+
+buttons.forEach(button => {
+  button.addEventListener('mousemove', e => {
+    const rect = button.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+    const centerX = rect.width / 2;
+    const centerY = rect.height / 2;
+    const deltaX = (x - centerX) / centerX;
+    const deltaY = (y - centerY) / centerY;
+    const offsetX = deltaX * 10; // Adjust the scale factor as needed
+    const offsetY = deltaY * 10; // Adjust the scale factor as needed
+    const scale = 1.2;
+    const img = button.querySelector('img');
+    img.style.transform = `translate(${offsetX}px, ${offsetY}px) scale(${scale})`;
+  });
+
+  button.addEventListener('mouseleave', () => {
+    const img = button.querySelector('img');
+    img.style.transform = 'translate(0, 0) scale(1)';
+  });
+});
+
+const btn = document.querySelector('.btn');
+
+btn.addEventListener('mousemove', e => {
+  const rect = btn.getBoundingClientRect();
+  const x = e.clientX - rect.left;
+  const y = e.clientY - rect.top;
+  btn.style.backgroundImage = `radial-gradient(circle at ${x}px ${y}px, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.8) 100%)`;
+});
+
+btn.addEventListener('mouseleave', () => {
+  btn.style.backgroundImage = '';
+});
+
+
+
 
 
     </script>
