@@ -45,15 +45,49 @@
 
       h2 {
         font-size: 20px;
+        text-align: center;
       }
 
-      .gradient-text {
-        font-size: 20px;
-        background-image: linear-gradient(to right, #87ceeb, #1e90ff);
-        -webkit-background-clip: text;
-        background-clip: border-box;
-        color: transparent;
-      }
+      .btn {
+  background-color: #000000;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  height: 20vh;
+  width: 20vh;
+  font-weight: bold;
+  font-family: "Lexend", sans-serif;
+  margin: 8px;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn img {
+  max-width: 100%;
+  height: auto;
+  width: 100%;
+  transition: transform 0.1s; /* Shorter transition duration for smoother movement */
+}
+
+.btn span {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 14px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  width: 75%;
+  transform: translateX(-50%);
+}
+
+.btn:hover {
+  color: black;
+}
+
 
       .navbar {
   overflow: hidden;
@@ -65,6 +99,7 @@
   z-index: 9999;
   top: 0; 
   left: 20px; 
+  height: 7vh;
   right: 20px; 
   border-radius: 10px;
 }
@@ -72,32 +107,47 @@
 .navbar a {
   display: block;
   float: left;
-  font-family: "Lexend";
   color: #fff;
   text-align: center;
   padding: 14px 20px;
-  text-decoration: none;
-  transition: color 0.5s;
 }
 
-.navbar a:hover {
-  color: #cc5850;
-}
 
 .navbar img {
   display: block;
-  float: left;
-  margin-right: 0px;
-  margin-left: 0px;
+  transition: background-color 0.3s ease-in, color 0.1s ease-in;
+  border-radius: 8px;
+  padding: 10px;
+  background-color: #1e1e1e;
 }
 
 .navbar img:hover {
-  background-color: initial;
-  color: initial;
+  background-color: #cc5850;
+  color: #cc5850;
+
 }
+
 
 .navbar-right {
   float: right;
+}
+
+
+.logo {
+  background-color: transparent !important; 
+}
+
+.navbar button {
+  background-color: transparent;
+  border: none;
+  margin-top: 3px;
+  display: inline-block;
+  align-items: center;
+}
+
+
+.navbar button:hover {
+  cursor: pointer;
 }
 
       .button-5 {
@@ -115,7 +165,7 @@
         position: relative;
         text-decoration: none;
         transition: all 250ms;
-        margin-bottom: 30vh;
+        margin-bottom: 20vh;
         bottom: 0;
         right: 0;
       }
@@ -136,67 +186,7 @@
         transform: translateY(0);
       }
 
-      .featured-games {
-        background-color: #444;
-        padding: 20px;
-        text-align: center;
-      }
 
-      .game {
-        display: inline-block;
-        margin-left: 30px;
-        position: relative;
-      }
-
-      .game img {
-        width: 25vh;
-        height: auto;
-        border-radius: 10px;
-        margin-bottom: 10px;
-      }
-
-      .game:hover .game-name {
-        display: block;
-      }
-
-      .game-name {
-        position: absolute;
-        bottom: 10px;
-        left: 50%;
-        transform: translateX(-50%);
-        background-color: rgba(0, 0, 0, 0.7);
-        color: white;
-        padding: 5px 10px;
-        border-radius: 5px;
-        display: none;
-      }
-
-      .footer {
-        background-color: #333;
-        color: #fff;
-        width: 100%;
-        bottom: 0;
-        left: 0;
-        padding: 10px 10vh;
-      }
-
-      .footer-content {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-      }
-
-      .logo img {
-        width: 40px;
-      }
-
-      .copyright p {
-        margin: 0;
-        font-size: 15px;
-        color: #fff;
-        font-weight: 500;
-        text-align: right;
-      }
 
       p {
         font-size: 30px;
@@ -238,10 +228,6 @@
           font-size: 6vh;
         }
 
-        .footer {
-          width: 90%;
-        }
-
         .button-5 {
           margin-left: 5vh;
         }
@@ -267,78 +253,229 @@
         }
       }
 
+      #ABC {
+        background-color: rgb(40, 40, 40);
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        border-radius: 8px;
+          }
+
+
+      .footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  width: 50px;
+}
+
+.resources ul {
+    list-style: none; /* Remove bullet icons */
+    padding: 0; /* Remove default padding */
+  }
+
+  .resources ul li {
+    margin-bottom: 5px; /* Add some spacing between links */
+  }
+
+  .copyright {
+    font-size: 14px; /* Adjust the font size as needed */
+  }
 
     </style>
   </head>
 
   <body>
     <div class="navbar">
-      <a href="/index.html">
+      <button onclick="window.location.href='/index.html'">
         <img
           src="/media/icons/rubyarcade.png"
           alt="Ruby Games Logo"
+          class="logo"
           width="125vh"
           height="27vh"
         />
-      </a>
+      </button>
+      
       <div class="navbar-right">
-        <a href="/index.html">Home</a>
-        <a href="/pages/games.html">Games</a>
-        <a href="/pages/apps.html">Apps</a>
-        <a href="/pages/utilities.html">Utilities</a>
+        <button onclick="window.location.href='/index.html'">
+          <img src="/media/icons/home.png" width="27hh" />
+        </button>
+        <button onclick="window.location.href='/pages/games.html'">
+          <img src="/media/icons/games.png" width="27hh" />
+        </button>
+        <button onclick="window.location.href='/pages/apps.html'">
+          <img src="/media/icons/apps.png" width="27hh" />
+        </button>
+        <button onclick="window.location.href='/pages/utilities.html'">
+          <img src="/media/icons/utilities.png" width="27hh" />
+        </button>
       </div>
     </div>
+    
+    
+    
 
     <div class="text-container">
       <div class="text-content">
         <p class="first-paragraph">The best gaming website for school.</p>
         <p class="second-paragraph">
           Ruby arcade is a game network that features a wide variety of engaging
-          and immersive games suitable for all ages. Thanks for choosing ruby arcade
-          since there are more better websites than mine.
+          and immersive games suitable for all ages.
         </p>
       </div>
       <img src="/media/icons/ruby.png" alt="Ruby Image" class="ruby-image" />
     </div>
+  
     <button class="button-5" onclick="window.location.href='/pages/games.html'">
       <span class="text">Start playing</span>
     </button>
 
-    <center>
-      <h2>Featured Games</h2>
-      <div class="game">
-        <a href="/games/flash/run/index.html">
-          <img src="/media/gameimgs/run.png" alt="run" />
-          <span class="game-name">Run</span>
-        </a>
-      </div>
-      <div class="game">
-        <a href="/games/static/slowroads/index.html">
-          <img src="/media/gameimgs/slowroads.jpg" alt="slowroads.io" />
-          <span class="game-name">Slowroads.io</span>
-        </a>
-      </div>
-      <div class="game">
-        <a href="/games/static/mc/index.html">
-          <img src="/media/gameimgs/minecraft.png" alt="Minecraft" />
-          <span class="game-name">Minecraft</span>
-        </a>
-      </div>
-    </center>
 
-    <footer class="footer">
-      <div class="footer-content">
-        <div class="logo">
-          <img src="/media/icons/ruby.png" alt="Ruby Games" width="50" />
+
+
+      <section id="ABC">
+
+        <h2>ㅤ </h2>
+      <h2>Featured Games</h2>
+
+      <div id="gamesList" style=" display: flex; flex-wrap: wrap; justify-content: center; align-items: center;">
+        
+        <div class="btn" onclick="window.location.href = '/games/nowgg/roblox/index.html'">
+          <img src="/media/gameimgs/roblox.png" />
+          <span>Roblox</span>
         </div>
-        <div class="copyright">
-          <p>&copy; 2024 Ruby Arcade. All rights reserved.</p>
-          <div id="sfcgn1jxcedgm9ways6xyjyx7syeng7zshj"></div>
-          <script type="text/javascript" src="https://counter7.optistats.ovh/private/counter.js?c=gn1jxcedgm9ways6xyjyx7syeng7zshj&down=async" async></script>
-          <br>
-          <a href="pages/partners.html">Partners</a>
-        </div>
+        
+        <div class="btn" onclick="window.location.href = '/games/flash/run3/index.html'">
+        <img src="/media/gameimgs/run3.png" />
+        <span>Run 3</span>
+    </div>
+
+    <div class="btn" onclick="window.location.href = '/games/static/slowroads/index.html'">
+      <img src="/media/gameimgs/slowroads.jpg" />
+      <span>Slowroads</span>
+  </div>
+  <div class="btn" onclick="window.location.href = '/games/static/minecraft/index.html'">
+    <img src="/media/gameimgs/minecraft.png" />
+    <span>Eaglercraft</span>
+</div>
+<div class="btn" onclick="window.location.href = '/games/static/retrobowl/index.html'">
+  <img src="/media/gameimgs/retrobowl.png" />
+  <span>Retro bowl</span>
+
+</div>
+<h2>ㅤ </h2>
+</section>
+
+<section id="ABC">
+
+  <h2>ㅤ </h2>
+<h2>Featured Apps</h2>
+
+<div id="gamesList" style=" display: flex; flex-wrap: wrap; justify-content: center; align-items: center;">
+  
+  <div class="btn" onclick="window.location.href = '/apps/discord/index.html'">
+    <img src="/media/apps/discord.png" />
+    <span>Discord</span>
+  </div>
+  
+  <div class="btn" onclick="window.location.href = '/apps/Tiktok/index.html'">
+  <img src="/media/apps/Tiktok.png" />
+  <span>Tiktok</span>
+</div>
+
+<div class="btn" onclick="window.location.href = '/apps/soundboard/index.html'">
+<img src="/media/apps/soundboard.png" />
+<span>Soundboard</span>
+</div>
+<div class="btn" onclick="window.location.href = '/apps/mathway/index.html'">
+<img src="/media/apps/mathway.png" />
+<span>Mathway</span>
+</div>
+<div class="btn" onclick="window.location.href = '/apps/google/index.html'">
+<img src="/media/apps/google.png" />
+<span>Google</span>
+
+</div>
+<h2>ㅤ </h2>
+</section>
+
       </div>
-    </footer>
+      
+      <center><div id="sfcgn1jxcedgm9ways6xyjyx7syeng7zshj"></div> <script type="text/javascript" src="https://counter7.optistats.ovh/private/counter.js?c=gn1jxcedgm9ways6xyjyx7syeng7zshj&down=async" async></script> <br></center>
+      
+      <footer class="footer">
+        <div class="footer-content">
+          <div class="logo">
+            <img src="/media/icons/ruby.png" alt="Logo" width="50" />
+          </div>
+          <div class="resources">
+            <h3>Resources</h3>
+            <ul>
+              <li><a href="/pages/credits.html">Credits</a></li>
+              <li><a href="/pages/partners.html">Partners</a></li>
+            </ul>
+          </div>
+      </footer>
+      
+      
+
+
+<script>
+
+const buttons = document.querySelectorAll('.btn');
+
+buttons.forEach(button => {
+  button.addEventListener('mousemove', e => {
+    const rect = button.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+    const centerX = rect.width / 2;
+    const centerY = rect.height / 2;
+    const deltaX = (x - centerX) / centerX;
+    const deltaY = (y - centerY) / centerY;
+    const offsetX = deltaX * 10; // Adjust the scale factor as needed
+    const offsetY = deltaY * 10; // Adjust the scale factor as needed
+    const scale = 1.2;
+    const img = button.querySelector('img');
+    img.style.transform = `translate(${offsetX}px, ${offsetY}px) scale(${scale})`;
+  });
+
+  button.addEventListener('mouseleave', () => {
+    const img = button.querySelector('img');
+    img.style.transform = 'translate(0, 0) scale(1)';
+  });
+});
+
+const btn = document.querySelector('.btn');
+
+btn.addEventListener('mousemove', e => {
+  const rect = btn.getBoundingClientRect();
+  const x = e.clientX - rect.left;
+  const y = e.clientY - rect.top;
+  btn.style.backgroundImage = `radial-gradient(circle at ${x}px ${y}px, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.8) 100%)`;
+});
+
+btn.addEventListener('mouseleave', () => {
+  btn.style.backgroundImage = '';
+});
+
+
+
+</script>
+
+
+
   </body>
 </html>

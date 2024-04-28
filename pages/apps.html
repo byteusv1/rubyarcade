@@ -32,6 +32,7 @@
   z-index: 9999;
   top: 0; 
   left: 20px; 
+  height: 7vh;
   right: 20px; 
   border-radius: 10px;
 }
@@ -39,32 +40,47 @@
 .navbar a {
   display: block;
   float: left;
-  font-family: "Lexend";
   color: #fff;
   text-align: center;
   padding: 14px 20px;
-  text-decoration: none;
-  transition: color 0.5s;
 }
 
-.navbar a:hover {
-  color: #cc5850;
-}
 
 .navbar img {
   display: block;
-  float: left;
-  margin-right: 0px;
-  margin-left: 0px;
+  transition: background-color 0.3s ease-in, color 0.1s ease-in;
+  border-radius: 8px;
+  padding: 10px;
+  background-color: #1e1e1e;
 }
 
 .navbar img:hover {
-  background-color: initial;
-  color: initial;
+  background-color: #cc5850;
+  color: #cc5850;
+
 }
+
 
 .navbar-right {
   float: right;
+}
+
+
+.logo {
+  background-color: transparent !important; 
+}
+
+.navbar button {
+  background-color: transparent;
+  border: none;
+  margin-top: 3px;
+  display: inline-block;
+  align-items: center;
+}
+
+
+.navbar button:hover {
+  cursor: pointer;
 }
 
     .btn {
@@ -197,17 +213,32 @@
 
 <body>
   <div class="navbar">
-    <a href="/index.html">
-      <img src="/media/icons/rubyarcade.png" alt="Ruby Games Logo" width="125vh" height="27vh">
-    </a>
+    <button onclick="window.location.href='/index.html'">
+      <img
+        src="/media/icons/rubyarcade.png"
+        alt="Ruby Games Logo"
+        class="logo"
+        width="125vh"
+        height="27vh"
+      />
+    </button>
+    
     <div class="navbar-right">
-      <a href="/index.html">Home</a>
-      <a href="/pages/games.html">Games</a>
-      <a href="/pages/apps.html">Apps</a>
-      <a href="/pages/utilities.html">Utilities</a>
-
+      <button onclick="window.location.href='/index.html'">
+        <img src="/media/icons/home.png" width="27hh" />
+      </button>
+      <button onclick="window.location.href='/pages/games.html'">
+        <img src="/media/icons/games.png" width="27hh" />
+      </button>
+      <button onclick="window.location.href='/pages/apps.html'">
+        <img src="/media/icons/apps.png" width="27hh" />
+      </button>
+      <button onclick="window.location.href='/pages/utilities.html'">
+        <img src="/media/icons/utilities.png" width="27hh" />
+      </button>
     </div>
   </div>
+  
 
   <center>
     <h1>Apps</h1>
