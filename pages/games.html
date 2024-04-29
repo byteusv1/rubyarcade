@@ -130,7 +130,7 @@
   max-width: 100%;
   height: auto;
   width: 100%;
-  transition: transform 0.1s; /* Shorter transition duration for smoother movement */
+  transition: transform 0.1s; 
 }
 
 .btn span {
@@ -173,78 +173,91 @@
       }
 
       #gameLoaderSection {
-        display: none;
-        padding: 20px;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-        height: 600px;
-      }
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(10px); 
+  z-index: 9999; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
-      #gameLoaderContainer {
-        width: 80%;
-        height: 100%;
-        overflow: none;
-        border-radius: 10px;
-      }
+#gameLoaderContainer {
+  width: 80%;
+  height: 90%;
+  overflow: none;
+  border-radius: 10px;
+}
 
-      #gameFrame {
-        width: 100%;
-        height: 100%;
-        border: none;
-      }
+#gameFrame {
+  width: 100%;
+  height: 100%;
+  background-color: #373737;
+  border-top: 2px solid white;
+  border-left: 2px solid white;
+  border-right: 2px solid white;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
 
-      .gameBar {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 79%;
-        height: 20px;
-        padding: 10px;
-        background-color: #333;
-        border-bottom-left-radius: 5px;
-        border-bottom-right-radius: 5px;
-        color: white;
-      }
+.gameBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 79%;
+  height: 20px;
+  padding: 10px;
+  background-color: #333;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  color: white;
+}
+
+.gameBarButton {
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+.gameBarButton:hover {
+  opacity: 0.7;
+}
+
+.gameBarTitle {
+  font-size: 18px;
+}
+
+.gameBarButton {
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+.gameBarButton:hover {
+  opacity: 0.7;
+}
+
+.gameBar {
+  display: flex;
+  align-items: center;
+}
+
+.button-group {
+  display: flex;
+  gap: 10px;
+}
+
+.gameBarButton {
+  cursor: pointer;
+}
+
+.no-scroll {
+    overflow: hidden;
+}
 
 
-
-      .gameBarButton {
-        cursor: pointer;
-        transition: opacity 0.3s;
-      }
-
-      .gameBarButton:hover {
-        opacity: 0.7;
-      }
-
-      .gameBarTitle {
-        font-size: 18px;
-      }
-
-      .gameBarButton {
-        cursor: pointer;
-        transition: opacity 0.3s;
-      }
-
-      .gameBarButton:hover {
-        opacity: 0.7;
-      }
-
-      .gameBar {
-        display: flex;
-        align-items: center;
-      }
-
-      .button-group {
-        display: flex;
-        gap: 10px;
-      }
-
-      .gameBarButton {
-        cursor: pointer;
-      }
 
 
     </style>
@@ -1759,6 +1772,10 @@
 
         // Scroll to game loader section
         gameLoaderSection.scrollIntoView({ behavior: "smooth" });
+
+
+         // Add a class to the body to prevent scrolling
+    document.body.classList.add('no-scroll');
       }
 
       // Function to toggle fullscreen mode
@@ -1775,14 +1792,18 @@
       function removeGameLoader() {
         var gameLoaderSection = document.getElementById("gameLoaderSection");
         gameLoaderSection.style.display = "none";
-      }
-      var isMuted = false;
-      
+        var isMuted = true;
+        gameFrame.src = ""; 
+
+
+    document.body.classList.remove('no-scroll');
+}
 
 
 
 
-      const buttons = document.querySelectorAll('.btn');
+// cool hover effect
+const buttons = document.querySelectorAll('.btn');
 
 buttons.forEach(button => {
   button.addEventListener('mousemove', e => {
@@ -1818,10 +1839,6 @@ btn.addEventListener('mousemove', e => {
 btn.addEventListener('mouseleave', () => {
   btn.style.backgroundImage = '';
 });
-
-
-
-
 
     </script>
   </body>
