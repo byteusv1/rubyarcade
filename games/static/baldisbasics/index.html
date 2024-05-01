@@ -1,6 +1,19 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
+
+
+    <style>
+
+      body {
+        overflow: -moz-scrollbars-horizontal;
+        overflow-y: hidden;
+        overflow-x: auto;
+      }
+
+
+
+    </style>
   <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-R1ZCLH6XCR"></script>
 <script>
@@ -22,13 +35,15 @@
     </script>
   </head>
   <body>
-    <div class="webgl-content">
-      <div id="unityContainer" style="width: 960px; height: 600px"></div>
+    <div class="webgl-content" style="display: table; width: 100%; height: 100%;">
+      <div id="unityContainer" style="width: 100%; height: 100vh"></div>
       <div class="footer">
-        <div class="webgl-logo"></div>
+        <!-- <div class="webgl-logo"></div>
         <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
         <div class="title">Baldis basics</div>
       </div>
     </div>
+
+  -->
   </body>
 </html>
