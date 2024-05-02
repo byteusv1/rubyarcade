@@ -95,53 +95,45 @@
   cursor: pointer;
 }
 
-    .btn {
-        padding: 8px 16px;
+.btn {
         background-color: #000000;
-        border-color: white;
         color: white;
         border-radius: 8px;
         cursor: pointer;
-        font-size: 10.6px;
-        width: 90px;
-        height: 120px;
+        font-size: 14px;
+        width: 150px;
+        height: 150px;
         font-weight: bold;
-        transition: background-color 0.3s;
         font-family: "Lexend", sans-serif;
-        margin: 4px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        max-height: 120px;
-        max-width: 100px;
-        text-align: center;
-        text-decoration: none;
+        margin: 8px;
+        position: relative;
         overflow: hidden;
       }
 
       .btn img {
         max-width: 100%;
-        border-radius: px;
-        max-height: 100px;
-        width: 100px;
-        height: 100px;
-        max-width: 100px;
-        margin-bottom: 5px;
+        height: auto;
+        width: 100%;
+        transition: transform 0.1s;
       }
 
       .btn span {
-        max-width: 150px;
-        max-height: 150px;
-        overflow: hidden;
-        white-space: nowrap;
-        text-size-adjust: scale;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        font-size: 14px;
+        padding: 10px;
+        text-align: center;
+        border-radius: 10px;
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        width: 75%;
+        transform: translateX(-50%);
       }
 
       .btn:hover {
-        background-color: white;
         color: black;
       }
-
 
     #gameLoaderSection {
       display: none;
@@ -388,6 +380,45 @@
         gameFrame.src = currentSrc;
     }, 100); 
 }
+
+
+
+const buttons = document.querySelectorAll(".btn");
+
+buttons.forEach((button) => {
+  button.addEventListener("mousemove", (e) => {
+    const rect = button.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+    const centerX = rect.width / 2;
+    const centerY = rect.height / 2;
+    const deltaX = (x - centerX) / centerX;
+    const deltaY = (y - centerY) / centerY;
+    const offsetX = deltaX * 10; // Adjust the scale factor as needed
+    const offsetY = deltaY * 10; // Adjust the scale factor as needed
+    const scale = 1.2;
+    const img = button.querySelector("img");
+    img.style.transform = `translate(${offsetX}px, ${offsetY}px) scale(${scale})`;
+  });
+
+  button.addEventListener("mouseleave", () => {
+    const img = button.querySelector("img");
+    img.style.transform = "translate(0, 0) scale(1)";
+  });
+});
+
+const btn = document.querySelector(".btn");
+
+btn.addEventListener("mousemove", (e) => {
+  const rect = btn.getBoundingClientRect();
+  const x = e.clientX - rect.left;
+  const y = e.clientY - rect.top;
+  btn.style.backgroundImage = `radial-gradient(circle at ${x}px ${y}px, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.8) 100%)`;
+});
+
+btn.addEventListener("mouseleave", () => {
+  btn.style.backgroundImage = "";
+});
   </script>
 
 </body>
