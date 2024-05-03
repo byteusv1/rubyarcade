@@ -80,6 +80,7 @@
   z-index: 9999;
   top: 0; 
   left: 20px; 
+  margin-top: 10px;
   height: 55px;
   right: 20px; 
   border-radius: 10px;
@@ -137,14 +138,17 @@
         color: white;
         border-radius: 8px;
         cursor: pointer;
+        border: 2px solid transparent;
         font-size: 14px;
         width: 150px;
         height: 150px;
         font-weight: bold;
         font-family: "Lexend", sans-serif;
-        margin: 8px;
+        margin: 20px;
         position: relative;
         overflow: hidden;
+        transition: all 50ms;
+        
       }
 
       .btn img {
@@ -166,10 +170,19 @@
         left: 50%;
         width: 75%;
         transform: translateX(-50%);
-      }
+        opacity: 0; 
+        box-sizing: border-box;
+        transition: opacity 0.3s; 
+        }
 
+        .btn:hover span {
+        opacity: 1;
+
+        }
       .btn:hover {
         color: black;
+        border: 2px solid #cc5850;
+
       }
 
       #searchInput {
@@ -275,7 +288,19 @@
         overflow: hidden;
       }
 
+      ::-webkit-scrollbar {
+        width: 6px;
+        border-radius: 5px;
+        height: 100vh;
+        background-color: black;
+      }
 
+      ::-webkit-scrollbar-thumb {
+        background: #b03232;
+        border-radius: 5px;
+        height: 2px;
+
+      }
 
     </style>
   </head>
@@ -2428,10 +2453,7 @@
     </section>
 
     <center>
-      <h5>
-        I got MOST of these games from
-        <a href="https://seraph.reveriestudios.online">seraph</a>
-      </h5>
+    
       <h6>
         Games on this site are for entertainment purposes only. All rights
         belong to their respective owners.

@@ -11,6 +11,11 @@
 </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="Ruby Games" />
+    <meta property="og:description" content="Ruby arcade is a game network that features a wide variety of engaging and immersive games suitable for all ages." />
+    <meta property="og:image" content="media/icons/metapicure.png" />
+    <title>Ruby Games</title>
+    
     <link
       href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
       rel="stylesheet"
@@ -67,8 +72,8 @@
   border-radius: 8px;
   cursor: pointer;
   font-size: 14px;
-  height: 20vh;
-  width: 20vh;
+  height: 30vh;
+  width: 30vh;
   font-weight: bold;
   font-family: "Lexend", sans-serif;
   margin: 8px;
@@ -112,6 +117,7 @@
   z-index: 9999;
   top: 0; 
   left: 20px; 
+  margin-top: 10px;
   height: 55px;
   right: 20px; 
   border-radius: 10px;
@@ -280,6 +286,7 @@
       .footer {
   background-color: #333;
   color: #fff;
+  text-decoration: none;
   padding: 20px 0;
 }
 
@@ -289,23 +296,52 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  text-decoration: none;
 }
 
 .logo img {
-  width: 50px;
+  margin-left: 20px;
 }
 
 .resources ul {
     list-style: none; 
     padding: 0; 
+    text-decoration: none;
   }
 
   .resources ul li {
     margin-bottom: 5px;
+    text-decoration: none;
   }
 
   .copyright {
     font-size: 14px;  
+  }
+
+
+  ::-webkit-scrollbar {
+        width: 6px;
+        border-radius: 5px;
+        height: 100vh;
+        background-color: black;
+      }
+
+      ::-webkit-scrollbar-thumb {
+        background: #b03232;
+        border-radius: 5px;
+        height: 2px;
+
+      }
+
+
+      ul li a {
+    color: rgb(255, 255, 255); /* Change text color to black */
+    text-decoration: none; /* Remove underline */
+    transition: all 350ms;
+  }
+
+  ul li a:hover {
+    color: #cc5850;
   }
 
     </style>
@@ -433,7 +469,7 @@
       <footer class="footer">
         <div class="footer-content">
           <div class="logo">
-            <img src="/media/icons/ruby.png" alt="Logo" width="50" />
+            <img src="/media/icons/rubyarcade.png" alt="Logo" width="255vh" height="60vh" />
           </div>
           <div class="resources">
             <h3>Resources</h3>

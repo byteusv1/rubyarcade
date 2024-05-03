@@ -1,38 +1,38 @@
 <!DOCTYPE html>
-  
 <html lang="en">
 
 <head>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-TG3F4YGJW1"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Utilities</title>
+  <link rel="icon" type="image/x-icon" href="/media/icons/favicon.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-2XEFG8CYTH"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'G-TG3F4YGJW1');
+  gtag('config', 'G-2XEFG8CYTH');
 </script>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Partners</title>
-  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
-  <link rel="icon" type="image/x-icon" href="/media/icons/favicon.ico">
-  
-  
-
   
   <style>
+
+
+
     body {
       background-color: #1E1E1E;
       color: #fff;
       font-family: "Lexend", sans-serif;
       margin: 0;
       padding: 0;
-      height: 100%;
     }
 
     h1 {
     margin-top: 10vh;
     }
+
 
     .navbar {
   overflow: hidden;
@@ -44,8 +44,8 @@
   z-index: 9999;
   top: 0; 
   left: 20px; 
-  height: 55px;
   margin-top: 10px;
+  height: 55px;
   right: 20px; 
   border-radius: 10px;
 }
@@ -97,51 +97,130 @@
 .navbar button:hover {
   cursor: pointer;
 }
-
+    
 .btn {
-  background-color: #000000;
-  color: white;
-  border-radius: 8px;
-  cursor: pointer;
-  font-size: 14px;
-  width: 150px;
-  height: 150px;
-  font-weight: bold;
-  font-family: "Lexend", sans-serif;
-  margin: 8px;
-  position: relative;
-  overflow: hidden;
-}
+        background-color: #000000;
+        color: white;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 14px;
+        width: 150px;
+        height: 150px;
+        font-weight: bold;
+        font-family: "Lexend", sans-serif;
+        margin: 8px;
+        position: relative;
+        overflow: hidden;
+      }
 
-.btn img {
-  max-width: 100%;
-  height: auto;
-  width: 100%;
-  transition: transform 0.1s;
-}
+      .btn img {
+        max-width: 100%;
+        height: auto;
+        width: 100%;
+        transition: transform 0.1s;
+      }
 
-.btn span {
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  font-size: 14px;
-  padding: 10px;
-  text-align: center;
-  border-radius: 10px;
-  position: absolute;
-  bottom: 10px;
-  left: 50%;
-  width: 75%;
-  transform: translateX(-50%);
-}
+      .btn span {
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        font-size: 14px;
+        padding: 10px;
+        text-align: center;
+        border-radius: 10px;
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        width: 75%;
+        transform: translateX(-50%);
+      }
 
-.btn:hover {
-  color: black;
-}
+      .btn:hover {
+        color: black;
+      }
+
+#gameLoaderSection {
+      display: none;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      height: 500px;
+    }
+
+    #gameLoaderContainer {
+      width: 55%;
+      height: 100vh;
+      overflow: none;
+      border-radius: 10px;
+    }
+
+    #gameFrame {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    .gameBar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 55%;
+      height: 20px;
+      padding: 10px;
+      background-color: #333;
+      border-radius: 5px;
+      color: white;
+      margin-top: 10px;
+    }
+
+    .gameBarTitle {
+      font-size: 18px;
+    }
+
+    .gameBarButton {
+      cursor: pointer;
+      transition: opacity 0.3s;
+    }
+
+    .gameBarButton:hover {
+      opacity: 0.7;
+    }
+
+    .gameBarTitle {
+      font-size: 18px;
+    }
+
+    .gameBarButton {
+      cursor: pointer;
+      transition: opacity 0.3s;
+    }
+
+    .gameBarButton:hover {
+      opacity: 0.7;
+    }
+
+    .gameBar {
+      display: flex;
+      align-items: center;
+    }
 
 
-  ::-webkit-scrollbar {
+    .button-group {
+      display: flex;
+      gap: 10px;
+    }
+
+
+    .gameBarButton {
+      cursor: pointer;
+    }
+
+
+    ::-webkit-scrollbar {
         width: 6px;
         border-radius: 5px;
+        height: 100vh;
         background-color: black;
       }
 
@@ -151,6 +230,9 @@
         height: 2px;
 
       }
+
+
+
 
   </style>
 </head>
@@ -185,71 +267,40 @@
   
 
   <center>
-    <h1>Partners</h1>
+    <h1> Credits</h1>
+    <h5>90% of the games are from <a href="https://seraph.reveriestudios.online">seraph</a></h5>
+    <h5><a href="https://lunarsync.smartfoloo.space/">Lunarsync</a> for the navigation bar inspiration </h5>
+    <h5><a href="https://plexilearcade.xyz/">Plexile arcade</a> for helping me make this website better and the custom slider code</h5>
   </center>
 
- 
 
-  <div id="gamesList" style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center;">
-    <div id="gamesList" style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center;">
-      <a href="https://docs.google.com/forms/d/e/1FAIpQLSe2vRBiB8dCxrAQhOtRDhWsX0vLEvc_hJQOg3wyAitpzIJcPQ/viewform?embedded=true" class="btn" target="_blank">
-        <img src="/media/icons/googleforms.png">
-        <span>Request Partner</span> 
-      </a>
+
+
+  <section id="gameLoaderSection" style="display: none;">
+    <div id="gameLoaderContainer">
+      <iframe id="gameFrame" src="" frameborder="0"></iframe>
     </div>
-      <div id="gamesList" style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center;">
-        <a href="https://sites.google.com/view/bananagameslol/dashboard?authuser=0" class="btn" target="_blank">
-          <img src="/media/partners/bananagames.png">
-          <span>Banana games</span> 
-        </a>
+    <div class="gameBar">
+      <div class="gameBarButton" onclick="removeGameLoader()">
+        <img src="/media/icons/remove.png" width="20px" alt="Remove Game Loader">
       </div>
-      <div id="gamesList" style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center;">
-        <a href="https://szvycentral.pages.dev/" class="btn" target="_blank">
-          <img src="/media/partners/szvy.png">
-          <span>Szvy Central</span> 
-        </a>
-      </div>
-      <div id="gamesList" style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center;">
-        <a href="https://sites.google.com/egusd.net/sp0rtz-games2play/home" class="btn" target="_blank">
-          <img src="/media/partners/sportz.png">
-          <span>Sp0rtz</span> 
-        </a>
-      </div>
-  
-  
-  
-    </div>
-
-  </div>
-
-
-
+      <img src="/media/icons/ruby.png" width="20px">
+      <div class="button-group">
+        <div class="gameBarButton" onclick="refreshGame()">
+          <img src="/media/icons/refresh.png" width="20px" alt="Refresh">
+        </div>
+        <div class="gameBarButton" onclick="toggleFullscreen()">
+          <img src="/media/icons/fullscreen.png" width="20px" alt="Fullscreen">
+        </div>
 
 
       </div>
     </div>
   </section>
 
-  <script>
-    function searchGames() {
-      var input, filter, ul, li, a, i, txtValue;
-      input = document.getElementById('searchInput');
-      filter = input.value.toUpperCase();
-      ul = document.getElementById("gamesList");
-      li = ul.getElementsByTagName('div');
-      for (i = 0; i < li.length; i++) {
-        a = li[i];
-        txtValue = a.textContent || a.innerText;
-        if (txtValue.toUpperCase().indexOf(filter) > -1) {
-          li[i].style.display = "";
-        } else {
-          li[i].style.display = "none";
-        }
-      }
-    }
+<script>    
 
-    // Function to load game page in the iframe
-    function loadGame(url) {
+function loadGame(url) {
       var gameFrame = document.getElementById('gameFrame');
       gameFrame.src = url;
 
@@ -276,7 +327,7 @@
       var gameLoaderSection = document.getElementById('gameLoaderSection');
       gameLoaderSection.style.display = 'none';
     }
-
+    
     function refreshGame() {
     var gameFrame = document.getElementById("gameFrame");
     var currentSrc = gameFrame.src;
@@ -287,12 +338,10 @@
 }
 
 
+const buttons = document.querySelectorAll(".btn");
 
-
-const buttons = document.querySelectorAll('.btn');
-
-buttons.forEach(button => {
-  button.addEventListener('mousemove', e => {
+buttons.forEach((button) => {
+  button.addEventListener("mousemove", (e) => {
     const rect = button.getBoundingClientRect();
     const x = e.clientX - rect.left;
     const y = e.clientY - rect.top;
@@ -303,30 +352,30 @@ buttons.forEach(button => {
     const offsetX = deltaX * 10; // Adjust the scale factor as needed
     const offsetY = deltaY * 10; // Adjust the scale factor as needed
     const scale = 1.2;
-    const img = button.querySelector('img');
+    const img = button.querySelector("img");
     img.style.transform = `translate(${offsetX}px, ${offsetY}px) scale(${scale})`;
   });
 
-  button.addEventListener('mouseleave', () => {
-    const img = button.querySelector('img');
-    img.style.transform = 'translate(0, 0) scale(1)';
+  button.addEventListener("mouseleave", () => {
+    const img = button.querySelector("img");
+    img.style.transform = "translate(0, 0) scale(1)";
   });
 });
 
-const btn = document.querySelector('.btn');
+const btn = document.querySelector(".btn");
 
-btn.addEventListener('mousemove', e => {
+btn.addEventListener("mousemove", (e) => {
   const rect = btn.getBoundingClientRect();
   const x = e.clientX - rect.left;
   const y = e.clientY - rect.top;
   btn.style.backgroundImage = `radial-gradient(circle at ${x}px ${y}px, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.8) 100%)`;
 });
 
-btn.addEventListener('mouseleave', () => {
-  btn.style.backgroundImage = '';
+btn.addEventListener("mouseleave", () => {
+  btn.style.backgroundImage = "";
 });
+  
   </script>
-
 </body>
 
 </html>
