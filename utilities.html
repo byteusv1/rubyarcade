@@ -230,10 +230,6 @@
         height: 2px;
 
       }
-
-
-
-
   </style>
 </head>
 
@@ -253,16 +249,16 @@
       <button onclick="window.location.href='/index.html'">
         <img src="/media/icons/home.png" width="27hh" />
       </button>
-      <button onclick="window.location.href='/pages/games.html'">
+      <button onclick="window.location.href='/games.html'">
         <img src="/media/icons/games.png" width="27hh" />
       </button>
-      <button onclick="window.location.href='/pages/apps.html'">
+      <button onclick="window.location.href='/apps.html'">
         <img src="/media/icons/apps.png" width="27hh" />
       </button>
-      <button onclick="window.location.href='/pages/utilities.html'">
+      <button onclick="window.location.href='/utilities.html'">
         <img src="/media/icons/utilities.png" width="27hh" />
       </button>
-      <button onclick="window.location.href='/pages/search.html'">
+      <button onclick="window.location.href='/search.html'">
         <img src="/media/icons/search.png" width="27hh" />
       </button>
     </div>
@@ -270,12 +266,67 @@
   
 
   <center>
-    <h1> Credits</h1>
-    <h5>90% of the games are from <a href="https://seraph.reveriestudios.online">seraph</a></h5>
-    <h5><a href="https://lunarsync.smartfoloo.space/">Lunarsync</a> for the navigation bar inspiration </h5>
-    <h5><a href="https://plexilearcade.xyz/">Plexile arcade</a> for helping me make this website better and the custom slider code</h5>
+    <h1> 🛠 Utilities </h1>
   </center>
 
+  <div id="gamesList" style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center;">
+
+    <div class="btn" onclick="loadGame('/utilities/iphone15/index.html')">
+      <img src="/media/gameimgs/apple.png">
+      <span>Iphone 15</span> 
+    </div>
+    <div class="btn" onclick="loadGame('/utilities/iphone14/index.html')">
+        <img src="/media/gameimgs/apple.png">
+        <span>Iphone 14</span> 
+      </div>
+      <div class="btn" onclick="loadGame('/utilities/iphone13/index.html')">
+        <img src="/media/gameimgs/apple.png">
+        <span>Iphone 13</span> 
+      </div>
+      <div class="btn" onclick="loadGame('/utilities/iphone12/index.html')">
+        <img src="/media/gameimgs/apple.png">
+        <span>Iphone 12</span> 
+      </div>
+      <div class="btn" onclick="loadGame('/utilities/iphone12/index.html')">
+        <img src="/media/gameimgs/apple.png">
+        <span>Iphone 11</span> 
+      </div>
+      <div class="btn" onclick="loadGame('/utilities/iphone8/index.html')">
+        <img src="/media/gameimgs/apple.png">
+        <span>Iphone 8</span> 
+      </div>
+      <div class="btn" onclick="loadGame('/utilities/ipadair/index.html')">
+        <img src="/media/gameimgs/apple.png">
+        <span>Ipad air</span> 
+      </div>
+      <div class="btn" onclick="loadGame('/utilities/ipadpro/index.html')">
+        <img src="/media/gameimgs/apple.png">
+        <span>Ipad pro</span> 
+      </div>
+      <div class="btn" onclick="loadGame('/utilities/pixel7/index.html')">
+        <img src="/media/gameimgs/android.png">
+        <span>Pixel 7</span> 
+      </div>
+      <div class="btn" onclick="loadGame('/utilities/pixel6/index.html')">
+        <img src="/media/gameimgs/android.png">
+        <span>Pixel 6</span> 
+      </div>
+      <div class="btn" onclick="loadGame('/utilities/galaxytabs7/index.html')">
+        <img src="/media/gameimgs/android.png">
+        <span>Galaxy tab s7</span> 
+      </div>
+      <div class="btn" onclick="loadGame('/utilities/ruffle/index.html')">
+        <img src="/media/gameimgs/ruffle.png">
+        <span>Ruffle</span> 
+      </div>
+      <div class="btn" onclick="loadGame('/utilities/emulatorjs/index.html')">
+        <img src="/media/gameimgs/emulatorjs.png">
+        <span>emulatorjs</span> 
+      </div>
+      
+    </div>
+
+  </div>
 
 
 
@@ -341,44 +392,10 @@ function loadGame(url) {
 }
 
 
-const buttons = document.querySelectorAll(".btn");
 
-buttons.forEach((button) => {
-  button.addEventListener("mousemove", (e) => {
-    const rect = button.getBoundingClientRect();
-    const x = e.clientX - rect.left;
-    const y = e.clientY - rect.top;
-    const centerX = rect.width / 2;
-    const centerY = rect.height / 2;
-    const deltaX = (x - centerX) / centerX;
-    const deltaY = (y - centerY) / centerY;
-    const offsetX = deltaX * 10; // Adjust the scale factor as needed
-    const offsetY = deltaY * 10; // Adjust the scale factor as needed
-    const scale = 1.2;
-    const img = button.querySelector("img");
-    img.style.transform = `translate(${offsetX}px, ${offsetY}px) scale(${scale})`;
-  });
-
-  button.addEventListener("mouseleave", () => {
-    const img = button.querySelector("img");
-    img.style.transform = "translate(0, 0) scale(1)";
-  });
-});
-
-const btn = document.querySelector(".btn");
-
-btn.addEventListener("mousemove", (e) => {
-  const rect = btn.getBoundingClientRect();
-  const x = e.clientX - rect.left;
-  const y = e.clientY - rect.top;
-  btn.style.backgroundImage = `radial-gradient(circle at ${x}px ${y}px, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.8) 100%)`;
-});
-
-btn.addEventListener("mouseleave", () => {
-  btn.style.backgroundImage = "";
-});
-  
   </script>
+
+<script src="js/button.js"></script>
 </body>
 
 </html>
