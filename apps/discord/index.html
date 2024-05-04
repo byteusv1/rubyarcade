@@ -1,32 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <link rel="icon" type="image/x-icon" href="/imgs/favicon.ico">
-  <title>Game</title>
+  <link rel="shortcut icon" href="./assets/images/icon.png" type="image/png" />
+  <title>Ruby Arcade proxy</title>
+  <link
+  href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+  rel="stylesheet"
+/>
+  <script src="/uv/uv.bundle.js" charset="UTF-8"></script>
+  <script src="/uv/uv.config.js"></script>
+
   <style>
-    body {
+    
+    body, html {
       margin: 0;
       padding: 0;
-      overflow: hidden;
-      background-color: #000;
+      height: 100%;
+      font-family: "Lexend";
+      font-weight: 800;
     }
-    
-    iframe {
-      width: 100%;
-      height: calc(100vh + 64px);
+
+
+
+
+    .full-screen-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      background-color: #1e1e1e;
+      flex-direction: column; /* To align items vertically */
+    }
+
+    .search-button {
+      padding: 20px 40px;
+      background-color: #cc5850;
+      color: white;
       border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 24px;
+      font-weight: 800;
     }
+
+
+    .search-button:hover {
+        background-color: #9c413b;
+        box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+        transform: translateY(-1px);
+      }
+
+    .hidden {
+      display: none;
+    }
+
+
+    .centered-text {
+      text-align: center;
+      font-size: 75px;
+      color: white;
+      margin-bottom: 20px;
+    }
+
+
   </style>
+
 </head>
 
 <body>
 
+  <div id="fullScreen" class="full-screen-container">
+    <p class="centered-text">Discord</p>
+    <button id="startButton" class="search-button" onclick="start()">Start Now</button>
+  </div>
 
-  <iframe src="https://rubyarcade.campminnetonka.ws/embed?search=discord.com" width="100% height="100vh"></iframe>
-
+  <script>
+    function start() {
+      var fullScreen = document.getElementById('fullScreen');
+      if (fullScreen) {
+        fullScreen.classList.add('hidden');
+      }
+    }
+  </script>
 
 </body>
 
