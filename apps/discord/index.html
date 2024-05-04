@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <link rel="shortcut icon" href="./assets/images/icon.png" type="image/png" />
+  <link rel="shortcut icon" href="/media/icons/ruby.png" type="image/png" />
   <title>Ruby Arcade proxy</title>
 
   <link rel="stylesheet" href="./css/master.css" />
@@ -13,14 +13,24 @@
   href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
   rel="stylesheet"
 />
-  <style>
-    body, html {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-    }
+  <script>
+    atOptions = {
+      'key': 'fc0ad22bd8c1ea22c8c08df927121e8f',
+      'format': 'iframe',
+      'height': 60,
+      'width': 468,
+      'params': {}
+    };
+  </script>
 
-    h1 {
+<style>
+  body {
+    background-color: #1e1e1e;
+    color: white;
+
+  }
+
+  h1 {
       z-index: 9999;
       color:#fff;
 
@@ -78,27 +88,37 @@
       font-weight: 800;
       margin-bottom: 20px; /* Add margin between the text and the button */
     }
-  </style>
+
+</style>
+
 
 </head>
 
-<body>
 
-  <div id="fullScreenButton">
-    <p class="text-above-button">Discord</p>
-    <input class="pxyinput" type="text" placeholder="⌕ Search" value="example.com" />
-    <button id="startButton" class="search-button" onclick="start()">Start</button>
-  </div>
+    <p id="time"></p>
 
-  <script>
-    function start() {
-      var fullScreenButton = document.getElementById('fullScreenButton');
-      if (fullScreenButton) {
-        fullScreenButton.style.display = 'none';
+
+
+    <div id="fullScreenButton">
+      <p class="text-above-button">Discord</p>
+      <input class="pxyinput" type="text" placeholder="⌕ Search" value="example.com" />
+      <button id="startButton" class="search-button" onclick="start()">Start</button>
+    </div>
+  
+    <script>
+      function start() {
+        var fullScreenButton = document.getElementById('fullScreenButton');
+        if (fullScreenButton) {
+          fullScreenButton.style.display = 'none';
+        }
       }
-    }
-  </script>
+    </script>
 
+  </div>
+  <iframe class="frame"></iframe>
 </body>
+
+<script src="./js/index.js"></script>
+<script src="./js/search.js"></script>
 
 </html>

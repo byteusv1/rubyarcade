@@ -30,8 +30,7 @@ body {
   }
 
 h1 , h2 , h3  {
-    font-family: "Lexend", sans-serif;
-    color: #cc5850;
+    font-family: "Montserrat", sans-serif;
 }
 
 h1 { font-size: 50px; }
@@ -231,6 +230,15 @@ margin: 5px auto;
 
   border: none;
   
-  height: 100vh;
-  width: 100%;
- }
+  height: calc(100vh - 80px);
+  width: calc(100vw - 30px);
+}
+
+.ad {
+  height: 60px;
+  width: 468px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
