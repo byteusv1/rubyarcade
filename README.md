@@ -3,7 +3,7 @@
 Ruby arcade is a game network that features a wide variety of engaging and immersive games suitable for all ages.
 
 ## Start playing
-The official link for Ruby Arcade is https://rubyarcade.netlify.app/
+The official link for Ruby Arcade is https://rubyarcade.lol
 
 ## Self Hosting
 1. Fork this repository.
