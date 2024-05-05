@@ -1,62 +1,65 @@
 .navbar {
     overflow: hidden;
-    box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2);
     background-color: #373737;
-    margin-bottom: 75px;
     position: fixed;
-    width: calc(100% - 40px); 
     z-index: 9999;
-    top: 0; 
-    left: 20px; 
+    top: 0;
+    left: 20px;
     margin-top: 10px;
     height: 55px;
-    right: 20px; 
+    right: 20px;
+    user-select: none;
     border-radius: 10px;
-    }
-    
-    .navbar a {
+
+}
+
+
+
+
+.navbar a {
     display: block;
     float: left;
     color: #fff;
     text-align: center;
-    padding: 14px 20px;
-    }
-    
-    
-    .navbar img {
+    user-select: none;
+}
+
+.navbar button {
+    background-color: transparent;
+    border: none;
+    user-select: none;
+    padding: 0;
+    margin: 5px 3px 3px; 
+    margin-right: 6px;
+
+}
+
+.logo {
+    background-color: transparent !important;
+    transition: all 350ms;
+    user-select: none;
+}
+
+.logo:hover {
+    transform: scale(1.1) perspective(1px);
+}
+
+.navbar button img {
     display: block;
+    user-select: none;
+    height: auto;
     transition: background-color 0.3s ease-in, color 0.1s ease-in;
     border-radius: 8px;
     padding: 8px;
-    margin-top: 5px;
-    margin-right: 3px;
     background-color: #1e1e1e;
-    }
-    
-    .navbar img:hover {
+}
+
+.navbar button:hover img {
     background-color: #cc5850;
     color: #cc5850;
-    
-    }
-    
-    
-    .navbar-right {
-    float: right;
-    }
+    cursor: pointer;
+}
 
-    .logo {
-        background-color: transparent !important; 
-        
-        }
-        
-        .navbar button {
-        background-color: transparent;
-        border: none;
-        display: inline-block;
-        align-items: center;
-        }
-        
-        
-        .navbar button:hover {
-        cursor: pointer;
-        }
+.navbar .navbar-right {
+    float: right;
+}

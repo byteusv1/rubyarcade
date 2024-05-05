@@ -8,9 +8,11 @@ body {
     font-family: "Lexend", sans-serif;
     margin: 0;
     padding: 0;
-    height: 100%;
+    height: 100%
+  
   }
 
+  
   h1,
   h2 {
     color: white;
@@ -21,7 +23,7 @@ body {
     font-size: 10vh;
     font-weight: 900;
     text-align: center;
-    margin-top: 30px;
+
   }
 
   h1 img {
@@ -370,3 +372,15 @@ color: #cc5850;
       .no-scroll {
         overflow: hidden;
       }
+
+      a {
+        color: rgb(255, 175, 175); /* Change text color to black */
+        text-decoration: none; /* Remove underline */
+        transition: all 350ms;
+        }
+        
+        a:hover {
+        color: #cc5850;
+        }
+        
+
