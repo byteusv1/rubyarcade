@@ -2,10 +2,7 @@
 
 <html lang="en">
   <head>
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-TG3F4YGJW1"
-    ></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TG3F4YGJW1"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag() {
@@ -15,293 +12,27 @@
 
       gtag("config", "G-TG3F4YGJW1");
     </script>
+
     <meta charset="UTF-8" />
-    <meta
-      name="description"
-      content="Ruby arcade is a game network that features a wide variety of engaging and immersive games suitable for all ages."
-    />
-    <meta name="keywords" content="Games" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta property="og:image" content="/media/icons/rubyarcade.png" />
+    <meta property="og:title" content="Ruby Games" />
+    <meta property="og:description" content="Ruby arcade is a game network that features a wide variety of engaging and immersive games suitable for all ages." />
+    <meta property="og:image" content="https://rubyarcade.lol/media/icons/metapicture.png" />
+    
     <title>Games</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
-      rel="stylesheet"
-    />
+    
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet"/>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet"/>
     <link rel="icon" type="image/x-icon" href="/media/icons/favicon.ico" />
 
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-2XEFG8CYTH"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-
-      gtag("config", "G-2XEFG8CYTH");
-    </script>
-
-    <style>
-      body {
-        background-color: #1e1e1e;
-        color: #fff;
-        font-family: "Lexend", sans-serif;
-        margin: 0;
-        padding: 0;
-        height: 100%;
-      }
-
-      h1 {
-        margin-top: 10vh;
-        text-align: center;
-      }
-
-      h2 {
-        margin-top: 10vh;
-        text-align: center;
-      }
-
-      .navbar {
-  overflow: hidden;
-  box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2);
-  background-color: #373737;
-  margin-bottom: 75px;
-  position: fixed;
-  width: calc(100% - 40px); 
-  z-index: 9999;
-  top: 0; 
-  left: 20px; 
-  margin-top: 10px;
-  height: 55px;
-  right: 20px; 
-  border-radius: 10px;
-}
-
-.navbar a {
-  display: block;
-  float: left;
-  color: #fff;
-  text-align: center;
-  padding: 14px 20px;
-}
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2XEFG8CYTH"></script>
 
 
-.navbar img {
-  display: block;
-  transition: background-color 0.3s ease-in, color 0.1s ease-in;
-  border-radius: 8px;
-  padding: 8px;
-  margin-top: 5px;
-  margin-right: 3px;
-  background-color: #1e1e1e;
-}
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/navbar.css">
 
-.navbar img:hover {
-  background-color: #cc5850;
-  color: #cc5850;
-
-}
-
-
-.navbar-right {
-  float: right;
-}
-
-
-.logo {
-  background-color: transparent !important; 
-  
-}
-
-.navbar button {
-  background-color: transparent;
-  border: none;
-  display: inline-block;
-  align-items: center;
-}
-
-      .navbar button:hover {
-        cursor: pointer;
-      }
-
-      .btn {
-        background-color: #000000;
-        color: white;
-        border-radius: 8px;
-        cursor: pointer;
-        border: 2px solid transparent;
-        font-size: 14px;
-        width: 150px;
-        height: 150px;
-        font-weight: bold;
-        font-family: "Lexend", sans-serif;
-        margin: 20px;
-        position: relative;
-        overflow: hidden;
-        transition: all 50ms;
-        
-      }
-
-      .btn img {
-        max-width: 100%;
-        height: auto;
-        width: 100%;
-        transition: transform 0.1s;
-      }
-
-      .btn span {
-        background-color: rgba(0, 0, 0, 0.5);
-        color: white;
-        font-size: 14px;
-        padding: 10px;
-        text-align: center;
-        border-radius: 10px;
-        position: absolute;
-        bottom: 10px;
-        left: 50%;
-        width: 75%;
-        transform: translateX(-50%);
-        opacity: 0; 
-        box-sizing: border-box;
-        transition: opacity 0.3s; 
-        }
-
-        .btn:hover span {
-        opacity: 1;
-
-        }
-      .btn:hover {
-        color: black;
-        border: 2px solid #cc5850;
-
-      }
-
-      #searchInput {
-  padding: 10px;
-  font-size: 16px;
-  border-radius: 30px;
-  background-color: transparent;
-  color: #ffffff;
-  font-family: "Inter";
-  width: 50%;
-  font-weight: 600;
-  border: 2px solid #cc5850;
-  text-align: center;
-  transition: border-color 0.3s;
-  margin-bottom: 8vh;
-  outline: none; 
-  caret-color: #ffffff;
-}
-
-      #gameLoaderSection {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        backdrop-filter: blur(10px);
-        z-index: 9999;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      }
-
-      #gameLoaderContainer {
-        width: 80%;
-        height: 90%;
-        overflow: none;
-        border-radius: 5px;
-      }
-
-      #gameFrame {
-        width: 100%;
-        height: 100%;
-        background-color: #373737;
-        border-top: 4px solid #ffffff;
-        border-left: 4px solid #ffffff;
-        border-right: 4px solid #ffffff;
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
-      }
-
-      .gameBar {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 80%;
-        height: 20px;
-        padding: 10px;
-        background-color: #333;
-        border-bottom-left-radius: 5px;
-        border-bottom-right-radius: 5px;
-        color: white;
-      }
-
-      .gameBarButton {
-        cursor: pointer;
-        transition: opacity 0.3s;
-      }
-
-      .gameBarButton:hover {
-        opacity: 0.7;
-      }
-
-      .gameBarTitle {
-        font-size: 18px;
-      }
-
-      .gameBarButton {
-        cursor: pointer;
-        transition: opacity 0.3s;
-      }
-
-      .gameBarButton:hover {
-        opacity: 0.7;
-      }
-
-      .gameBar {
-        display: flex;
-        align-items: center;
-      }
-
-      .button-group {
-        display: flex;
-        gap: 10px;
-      }
-
-      .gameBarButton {
-        cursor: pointer;
-      }
-
-      .no-scroll {
-        overflow: hidden;
-      }
-
-      ::-webkit-scrollbar {
-        width: 6px;
-        border-radius: 5px;
-        height: 100vh;
-        background-color: black;
-      }
-
-      ::-webkit-scrollbar-thumb {
-        background: #b03232;
-        border-radius: 5px;
-        height: 2px;
-
-      }
-
-    </style>
   </head>
 
   <body>
@@ -342,14 +73,14 @@
         type="text"
         id="searchInput"
         onkeyup="searchGames()"
-        placeholder="Search"
+        placeholder="Search 340+ Games"
       />
       
     </center>
 
     <div id="gamesList" style=" display: flex; flex-wrap: wrap; justify-content: center; align-items: center;">
 
-      <div class="btn" onclick="loadGame('/games/nowgg/roblox/index.html')">
+      <div class="btn"nonclick="loadGame('/games/nowgg/roblox/index.html')">
         <img src="/media/games/roblox.png" />
         <span>Roblox</span>
       </div>
