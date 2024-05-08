@@ -7,20 +7,26 @@ function refreshGame() {
   }, 100);
 }
 
-// Function to load game page in the iframe
-function loadGame(url) {
-  var gameFrame = document.getElementById("gameFrame");
-  gameFrame.src = url;
+function loadGame(gameUrl) {
+  console.log("Loading game from URL:", gameUrl);
 
-  // Show the game loader section
-  var gameLoaderSection = document.getElementById("gameLoaderSection");
-  gameLoaderSection.style.display = "flex";
+  // Check if gameUrl is not empty
+  if (gameUrl) {
+      var gameFrame = document.getElementById("gameFrame");
+      gameFrame.src = gameUrl;
 
-  // Scroll to game loader section
-  gameLoaderSection.scrollIntoView({ behavior: "smooth" });
+      // Show the game loader section
+      var gameLoaderSection = document.getElementById("gameLoaderSection");
+      gameLoaderSection.style.display = "flex";
 
-  // Add a class to the body to prevent scrolling
-  document.body.classList.add("no-scroll");
+      // Scroll to game loader section
+      gameLoaderSection.scrollIntoView({ behavior: "smooth" });
+
+      // Add a class to the body to prevent scrolling
+      document.body.classList.add("no-scroll");
+  } else {
+      console.error('Invalid game URL:', gameUrl);
+  }
 }
 
 // Function to toggle fullscreen mode

@@ -1,0 +1,12 @@
+[
+  {
+    "name": "Roblox",
+    "imageUrl": "https://mediayaxis.netlify.app/roblox.png",
+    "playUrl": "https://ruby-arcade-games.onrender.com/games/nowgg/roblox/index.html"
+  },
+  {
+    "name": "Game 2",
+    "imageUrl": "https://mediayaxis.netlify.app/balldodge.png",
+    "playUrl": "https://ruby-arcade-games.onrender.com/games/static/balldodge/index.html"
+  }
+]
