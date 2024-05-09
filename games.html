@@ -85,7 +85,8 @@
 <h2>click <a href=https://ruby-arcade-games.onrender.com/> here </a> for all the games</h2>
     
     <div id="gamesList" style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center;">
-
+        
+        
   </div>
 
     </div>
@@ -157,6 +158,9 @@ function applyHoverEffect(button) {
 
 // Function to insert games into the HTML
 function insertGamesIntoPage(games) {
+    // Sort games alphabetically by name
+    games.sort((a, b) => a.name.localeCompare(b.name));
+    
     var gamesContainer = document.getElementById("gamesList");
     if (gamesContainer) {
         gamesContainer.innerHTML = ""; // Clear the container first
@@ -166,14 +170,15 @@ function insertGamesIntoPage(games) {
         });
 
         // Apply hover effect to each dynamically generated button
-        const buttons = document.querySelectorAll('.btn');
+        const buttons = document.querySelectorAll('.btn-hover');
         buttons.forEach(button => {
             applyHoverEffect(button);
         });
     }
 }
-      // Function to dynamically generate HTML for games
-      function generateGameHTML(game) {
+
+// Function to dynamically generate HTML for games
+function generateGameHTML(game) {
     return `
         <div class="btn btn-hover" onclick="loadGame('${game.playUrl}')" onmouseover="applyHoverEffect(this)" onmouseout="removeHoverEffect(this)">
             <img src="${game.imageUrl}" />
@@ -181,8 +186,6 @@ function insertGamesIntoPage(games) {
         </div>
     `;
 }
-
-
 
 // Load games from JSON file
 fetch('assets/data/games.json')
