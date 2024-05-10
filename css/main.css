@@ -46,8 +46,8 @@ h2 {
   border-radius: 8px;
   border: 2px solid transparent;
   font-size: 14px;
-  width: 150px;
-  height: 150px;
+  width: 17vh;
+  height: 17vh;
   margin: 20px;
   position: relative;
   overflow: hidden;
@@ -125,58 +125,7 @@ h2 {
   transform: translateY(0);
 }
 
-.featured {
-  background: transparent;
-  color: white;
-  border-radius: 8px;
-  cursor: pointer;
-  border: 2px solid transparent;
-  font-size: 14px;
-  width: 27vh;
-  height: 27vh;
-  font-weight: bold;
-  font-family: "Lexend", sans-serif;
-  margin: 20px;
-  backdrop-filter: blur(5px);
-  position: relative;
-  overflow: hidden;
-  transition: all 50ms;
-}
 
-.featured img {
-  max-width: 100%;
-  height: auto;
-  width: 100%;
-  transition: transform 0.1s;
-}
-
-.featured span {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0));
-  padding: 10px;
-  color: white;
-  font-size: 14px;
-  text-align: center;
-  border-radius: 0 0 8px 8px;
-  opacity: 0;
-  transition: opacity 0.3s;
-  box-sizing: border-box;
-}
-
-.featured:hover span {
-  opacity: 1;
-}
-.featured:hover {
-  color: black;
-  border: 2px solid #cc5850;
-}
-
-.featured:hover {
-  color: black;
-}
 
 p {
   font-size: 30px;
@@ -184,7 +133,7 @@ p {
   width: 75%;
   font-weight: 900;
   font-size: 35px;
-  font-family: "Inter";
+  font-family: "Outfit";
   margin-top: 25vh;
   margin-bottom: 3vh;
   margin-left: 10vh;
@@ -194,8 +143,9 @@ p {
 .second-paragraph {
   color: #808080;
   font-size: 25px;
-  font-weight: 600;
-  font-family: "Inter";
+  font-weight: 900;
+  font-weight: bold;
+  font-family: "Outfit";
   width: 50%;
   margin-top: 10px;
   margin-bottom: 20px;
@@ -245,7 +195,7 @@ p {
 
 #ABC {
   background-color: rgb(40, 40, 40);
-  width: 90%;
+  width: 70%;
   margin: 0 auto;
   margin-bottom: 10px;
   border-radius: 8px;
