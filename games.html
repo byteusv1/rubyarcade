@@ -32,9 +32,6 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/navbar.css">
 
-    <style>
-        /* Add any additional styles here */
-    </style>
 
 </head>
 
@@ -85,12 +82,7 @@
 <h2>click <a href=https://ruby-arcade-games.onrender.com/> here </a> for all the games</h2>
     
 
-<div id="btn" style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center;">
-    <a href="https://forms.gle/nwikE72j2wJbAfRn8" class="btn" target="_blank">
-      <img src="/media/icons/googleforms.png">
-      <span>Suggest game</span> 
-    </a>
-  </div>
+
 
     <div id="gamesList" style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center;">
         
@@ -130,7 +122,8 @@
     <script src="assets/games.js"></script>
 
     <script>
-        // Function to apply hover effect to buttons
+
+        // hover
         function applyHoverEffect(button) {
             button.addEventListener('mousemove', e => {
                 const rect = button.getBoundingClientRect();
@@ -140,8 +133,8 @@
                 const centerY = rect.height / 2;
                 const deltaX = (x - centerX) / centerX;
                 const deltaY = (y - centerY) / centerY;
-                const offsetX = deltaX * 10; // Adjust the scale factor as needed
-                const offsetY = deltaY * 10; // Adjust the scale factor as needed
+                const offsetX = deltaX * 10; 
+                const offsetY = deltaY * 10; 
                 const scale = 1.2;
                 const img = button.querySelector('img');
                 img.style.transform = `translate(${offsetX}px, ${offsetY}px) scale(${scale})`;
@@ -155,7 +148,7 @@
             });
         }
         
-        // Function to insert games into the HTML
+        // insert games
         function insertGamesIntoPage(games) {
             // Sort games alphabetically by name
             games.sort((a, b) => a.name.localeCompare(b.name));
@@ -164,24 +157,26 @@
             if (gamesContainer) {
                 gamesContainer.innerHTML = ""; // Clear the container first
                 
-                // Add Google Form button HTML
+                // google form
                 var googleFormHTML = `
-                <a href="https://forms.gle/nwikE72j2wJbAfRn8" target="_blank">
-                    <div id="btn" class="btn btn-hover" onmouseover="applyHoverEffect(this)" onmouseout="removeHoverEffect(this)" style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center;">
-                            <img src="/media/icons/googleforms.png">
-                            <span>Request Games</span> 
-                    </div>
-                </a>
+                
+                <div id="btn" class="btn" onmouseover="applyHoverEffect(this)" onclick="window.open('https://forms.gle/nwikE72j2wJbAfRn8', '_blank')" style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center;">
+    <img src="/media/icons/googleforms.png">
+    <span>Request Games</span> 
+</div>
+
+             
+
                 `;
                 gamesContainer.innerHTML += googleFormHTML;
         
-                // Generate HTML for each game and append to container
+              
                 games.forEach(function(game) {
                     var gameHTML = generateGameHTML(game);
                     gamesContainer.innerHTML += gameHTML;
                 });
         
-                // Apply hover effect to each dynamically generated button
+              
                 const buttons = document.querySelectorAll('.btn-hover');
                 buttons.forEach(button => {
                     applyHoverEffect(button);
@@ -189,7 +184,7 @@
             }
         }
         
-        // Function to dynamically generate HTML for games
+        
         function generateGameHTML(game) {
             return `
                 <div class="btn btn-hover" onclick="loadGame('${game.playUrl}')" onmouseover="applyHoverEffect(this)" onmouseout="removeHoverEffect(this)">

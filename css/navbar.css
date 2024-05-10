@@ -10,11 +10,7 @@
     right: 20px;
     user-select: none;
     border-radius: 10px;
-
 }
-
-
-
 
 .navbar a {
     display: block;
@@ -31,7 +27,6 @@
     padding: 0;
     margin: 5px 3px 3px; 
     margin-right: 6px;
-
 }
 
 .logo {
@@ -40,15 +35,12 @@
     user-select: none;
 }
 
-
-
 .navbar button img {
     display: block;
     height: auto;
     transition: background-color 0.3s ease-in, color 0.1s ease-in;
     border-radius: 8px;
     padding: 8px;
-
     background-color: #1e1e1e;
 }
 
@@ -60,4 +52,25 @@
 
 .navbar .navbar-right {
     float: right;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .navbar {
+        left: 10px;
+        right: 10px;
+        height: auto;
+        align-items: center;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+    
+
+
+    .navbar button {
+        margin-right: 3px;
+        align-items: center;
+    }
+
+
 }
