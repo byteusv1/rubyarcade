@@ -137,7 +137,6 @@ h2 {
   font-weight: bold;
   font-family: "Lexend", sans-serif;
   margin: 20px;
-
   backdrop-filter: blur(5px);
   position: relative;
   overflow: hidden;
