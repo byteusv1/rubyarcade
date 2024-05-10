@@ -299,8 +299,81 @@
     "imageUrl": "https://mediayaxis.netlify.app/stealingthe.png",
     "playUrl": "https://ruby-arcade-games.onrender.com/games/flash/infiltratingtheairship/index.html"
   },
-
-
+  {
+    "name": "Fleeing the complex",
+    "imageUrl": "https://mediayaxis.netlify.app/fleeingthecomplex.png",
+    "playUrl": "https://ruby-arcade-games.onrender.com/games/flash/fleeingthecomplex/index.html"
+  },
+  {
+    "name": "Achievement unlocked",
+    "imageUrl": "https://mediayaxis.netlify.app/achvunlocked.png",
+    "playUrl": "https://ruby-arcade-games.onrender.com/games/flash/achievementunlocked/index.html"
+  },
+  {
+    "name": "Achievement unlocked 2",
+    "imageUrl": "https://mediayaxis.netlify.app/achvunlocked2.png",
+    "playUrl": "https://ruby-arcade-games.onrender.com/games/flash/achievementunlocked2/index.html"
+  },
+  {
+    "name": "Achievement unlocked 3",
+    "imageUrl": "https://mediayaxis.netlify.app/achvunlocked3.png",
+    "playUrl": "https://ruby-arcade-games.onrender.com/games/flash/achievementunlocked3/index.html"
+  },
+  {
+    "name": "Achievement unlocked 3",
+    "imageUrl": "https://mediayaxis.netlify.app/achvunlocked3.png",
+    "playUrl": "https://ruby-arcade-games.onrender.com/games/flash/achievementunlocked3/index.html"
+  },
+  {
+    "name": "Cluster Rush",
+    "imageUrl": "https://mediayaxis.netlify.app/clusterrush.png",
+    "playUrl": "https://ruby-arcade-games.onrender.com/games/static/clusterrush/index.html"
+  },
+  {
+    "name": "1 on 1 soccer",
+    "imageUrl": "https://mediayaxis.netlify.app/1on1soccer.png",
+    "playUrl": "https://ruby-arcade-games.onrender.com/games/flash/1on1soccer/index.html"
+  },
+  {
+    "name": "Vex",
+    "imageUrl": "https://mediayaxis.netlify.app/vex.png",
+    "playUrl": "https://ruby-arcade-games.onrender.com/games/flash/vex/index.html"
+  },
+  {
+    "name": "Vex 2",
+    "imageUrl": "https://mediayaxis.netlify.app/vex2.png",
+    "playUrl": "https://ruby-arcade-games.onrender.com/games/flash/vex2/index.html"
+  },
+  {
+    "name": "Vex 3",
+    "imageUrl": "https://mediayaxis.netlify.app/vex3.png",
+    "playUrl": "https://ruby-arcade-games.onrender.com/games/static/vex3/index.html"
+  },
+  {
+    "name": "Vex 4",
+    "imageUrl": "https://mediayaxis.netlify.app/vex4.png",
+    "playUrl": "https://ruby-arcade-games.onrender.com/games/static/vex4/index.html"
+  },
+  {
+    "name": "Vex 5",
+    "imageUrl": "https://mediayaxis.netlify.app/vex5.png",
+    "playUrl": "https://ruby-arcade-games.onrender.com/games/static/vex5/index.html"
+  },
+  {
+    "name": "Vex 6",
+    "imageUrl": "https://mediayaxis.netlify.app/vex6.png",
+    "playUrl": "https://ruby-arcade-games.onrender.com/games/static/vex6/index.html"
+  },
+  {
+    "name": "Vex 7",
+    "imageUrl": "https://mediayaxis.netlify.app/vex7.png",
+    "playUrl": "https://ruby-arcade-games.onrender.com/games/static/vex7/index.html"
+  },
+  {
+    "name": "osu! mania",
+    "imageUrl": "https://mediayaxis.netlify.app/osu.png",
+    "playUrl": "https://ruby-arcade-games.onrender.com/games/static/osumania/index.html"
+  },
 
 
 
