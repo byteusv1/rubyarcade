@@ -1,10 +1,5 @@
 [
   {
-    "name": "! Suggest a game",
-    "imageUrl": "/media/icons/googleforms.png",
-    "playUrl": "https://forms.gle/nwikE72j2wJbAfRn8"
-  },
-  {
     "name": "Roblox",
     "imageUrl": "https://mediayaxis.netlify.app/roblox.png",
     "playUrl": "https://ruby-arcade-games.onrender.com/games/nowgg/roblox/index.html"
@@ -296,7 +291,7 @@
   },
   {
     "name": "Stealing the diamond",
-    "imageUrl": "https://mediayaxis.netlify.app/stealingthe.png",
+    "imageUrl": "https://mediayaxis.netlify.app/stealingthediamond.png",
     "playUrl": "https://ruby-arcade-games.onrender.com/games/flash/infiltratingtheairship/index.html"
   },
   {
@@ -371,7 +366,7 @@
   },
   {
     "name": "osu! mania",
-    "imageUrl": "https://mediayaxis.netlify.app/osu.png",
+    "imageUrl": "https://mediayaxis.netlify.app/mania.jpg",
     "playUrl": "https://ruby-arcade-games.onrender.com/games/static/osumania/index.html"
   },
 

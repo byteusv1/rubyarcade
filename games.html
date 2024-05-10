@@ -80,10 +80,13 @@
             placeholder="Search 340+ Games"
         />
     </center>
+ 
 
-<h1> Games are being fixed</h1>
 <h2>click <a href=https://ruby-arcade-games.onrender.com/> here </a> for all the games</h2>
     
+
+
+
     <div id="gamesList" style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center;">
         
         
@@ -164,6 +167,19 @@ function insertGamesIntoPage(games) {
     var gamesContainer = document.getElementById("gamesList");
     if (gamesContainer) {
         gamesContainer.innerHTML = ""; // Clear the container first
+        
+        // Add Google Form button HTML
+        var googleFormHTML = `
+            <div id="btn" style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center;">
+                <a href="https://forms.gle/nwikE72j2wJbAfRn8" class="btn" target="_blank">
+                    <img src="/media/icons/googleforms.png">
+                    <span>Google Form</span> 
+                </a>
+            </div>
+        `;
+        gamesContainer.innerHTML += googleFormHTML;
+
+        // Generate HTML for each game and append to container
         games.forEach(function(game) {
             var gameHTML = generateGameHTML(game);
             gamesContainer.innerHTML += gameHTML;
@@ -176,6 +192,12 @@ function insertGamesIntoPage(games) {
         });
     }
 }
+
+
+
+
+
+
 
 // Function to dynamically generate HTML for games
 function generateGameHTML(game) {
