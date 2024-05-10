@@ -85,7 +85,12 @@
 <h2>click <a href=https://ruby-arcade-games.onrender.com/> here </a> for all the games</h2>
     
 
-
+<div id="btn" style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center;">
+    <a href="https://forms.gle/nwikE72j2wJbAfRn8" class="btn" target="_blank">
+      <img src="/media/icons/googleforms.png">
+      <span>Suggest game</span> 
+    </a>
+  </div>
 
     <div id="gamesList" style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center;">
         
@@ -125,100 +130,86 @@
     <script src="assets/games.js"></script>
 
     <script>
-
-function applyHoverEffect(button) {
-    button.addEventListener('mousemove', e => {
-        const rect = button.getBoundingClientRect();
-        const x = e.clientX - rect.left;
-        const y = e.clientY - rect.top;
-        const centerX = rect.width / 2;
-        const centerY = rect.height / 2;
-        const deltaX = (x - centerX) / centerX;
-        const deltaY = (y - centerY) / centerY;
-        const offsetX = deltaX * 10; // Adjust the scale factor as needed
-        const offsetY = deltaY * 10; // Adjust the scale factor as needed
-        const scale = 1.2;
-        const img = button.querySelector('img');
-        img.style.transform = `translate(${offsetX}px, ${offsetY}px) scale(${scale})`;
-    });
-
-    button.addEventListener('mouseleave', () => {
-        const img = button.querySelector('img');
-        img.style.transform = 'translate(0, 0) scale(1)';
-    });
-
-    button.addEventListener('mousemove', e => {
-        const rect = button.getBoundingClientRect();
-        const x = e.clientX - rect.left;
-        const y = e.clientY - rect.top;
-        button.style.backgroundImage = `radial-gradient(circle at ${x}px ${y}px, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.8) 100%)`;
-    });
-
-    button.addEventListener('mouseleave', () => {
-        button.style.backgroundImage = '';
-    });
-}
-
-// Function to insert games into the HTML
-function insertGamesIntoPage(games) {
-    // Sort games alphabetically by name
-    games.sort((a, b) => a.name.localeCompare(b.name));
-    
-    var gamesContainer = document.getElementById("gamesList");
-    if (gamesContainer) {
-        gamesContainer.innerHTML = ""; // Clear the container first
+        // Function to apply hover effect to buttons
+        function applyHoverEffect(button) {
+            button.addEventListener('mousemove', e => {
+                const rect = button.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                const centerX = rect.width / 2;
+                const centerY = rect.height / 2;
+                const deltaX = (x - centerX) / centerX;
+                const deltaY = (y - centerY) / centerY;
+                const offsetX = deltaX * 10; // Adjust the scale factor as needed
+                const offsetY = deltaY * 10; // Adjust the scale factor as needed
+                const scale = 1.2;
+                const img = button.querySelector('img');
+                img.style.transform = `translate(${offsetX}px, ${offsetY}px) scale(${scale})`;
+                button.style.backgroundImage = `radial-gradient(circle at ${x}px ${y}px, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.8) 100%)`;
+            });
         
-        // Add Google Form button HTML
-        var googleFormHTML = `
-            <div id="btn" style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center;">
-                <a href="https://forms.gle/nwikE72j2wJbAfRn8" class="btn" target="_blank">
-                    <img src="/media/icons/googleforms.png">
-                    <span>Google Form</span> 
+            button.addEventListener('mouseleave', () => {
+                const img = button.querySelector('img');
+                img.style.transform = 'translate(0, 0) scale(1)';
+                button.style.backgroundImage = '';
+            });
+        }
+        
+        // Function to insert games into the HTML
+        function insertGamesIntoPage(games) {
+            // Sort games alphabetically by name
+            games.sort((a, b) => a.name.localeCompare(b.name));
+            
+            var gamesContainer = document.getElementById("gamesList");
+            if (gamesContainer) {
+                gamesContainer.innerHTML = ""; // Clear the container first
+                
+                // Add Google Form button HTML
+                var googleFormHTML = `
+                <a href="https://forms.gle/nwikE72j2wJbAfRn8" target="_blank">
+                    <div id="btn" class="btn btn-hover" onmouseover="applyHoverEffect(this)" onmouseout="removeHoverEffect(this)" style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center;">
+                            <img src="/media/icons/googleforms.png">
+                            <span>Request Games</span> 
+                    </div>
                 </a>
-            </div>
-        `;
-        gamesContainer.innerHTML += googleFormHTML;
-
-        // Generate HTML for each game and append to container
-        games.forEach(function(game) {
-            var gameHTML = generateGameHTML(game);
-            gamesContainer.innerHTML += gameHTML;
-        });
-
-        // Apply hover effect to each dynamically generated button
-        const buttons = document.querySelectorAll('.btn-hover');
-        buttons.forEach(button => {
-            applyHoverEffect(button);
-        });
-    }
-}
-
-
-
-
-
-
-
-// Function to dynamically generate HTML for games
-function generateGameHTML(game) {
-    return `
-        <div class="btn btn-hover" onclick="loadGame('${game.playUrl}')" onmouseover="applyHoverEffect(this)" onmouseout="removeHoverEffect(this)">
-            <img src="${game.imageUrl}" />
-            <span>${game.name}</span>
-        </div>
-    `;
-}
-
-// Load games from JSON file
-fetch('assets/data/games.json')
-    .then(response => response.json())
-    .then(data => {
-        // Insert games into the page
-        insertGamesIntoPage(data);
-    })
-    .catch(error => {
-        console.error('Error loading the JSON file:', error);
-    });
-  </script>
+                `;
+                gamesContainer.innerHTML += googleFormHTML;
+        
+                // Generate HTML for each game and append to container
+                games.forEach(function(game) {
+                    var gameHTML = generateGameHTML(game);
+                    gamesContainer.innerHTML += gameHTML;
+                });
+        
+                // Apply hover effect to each dynamically generated button
+                const buttons = document.querySelectorAll('.btn-hover');
+                buttons.forEach(button => {
+                    applyHoverEffect(button);
+                });
+            }
+        }
+        
+        // Function to dynamically generate HTML for games
+        function generateGameHTML(game) {
+            return `
+                <div class="btn btn-hover" onclick="loadGame('${game.playUrl}')" onmouseover="applyHoverEffect(this)" onmouseout="removeHoverEffect(this)">
+                    <img src="${game.imageUrl}" />
+                    <span>${game.name}</span>
+                </div>
+            `;
+        }
+        
+        // Load games from JSON file
+        fetch('assets/data/games.json')
+            .then(response => response.json())
+            .then(data => {
+                // Insert games into the page
+                insertGamesIntoPage(data);
+            })
+            .catch(error => {
+                console.error('Error loading the JSON file:', error);
+            });
+        </script>
+        
 </body>
 </html>
