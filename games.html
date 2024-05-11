@@ -40,7 +40,7 @@
         <span class="logo-span">
             <button class="logo" onclick="window.location.href='index.html'">
                 <img
-                    src="/media/icons/rubyarcade.png"
+                    src="media/icons/rubyarcade.png"
                     alt="Ruby Games Logo"
                     class="logo"
                     width="125vh"
@@ -71,12 +71,17 @@
 
     <center>
         <h1>Games</h1>
-        <input
-            type="text"
-            id="searchInput"
-            onkeyup="searchGames()"
-            placeholder="Search 340+ Games"
-        />
+
+        <div class="input-container">
+            <img src="media/icons/search.png" alt="Image" class="input-image">
+            <input class="text" id="searchInput" onkeyup="searchGames()" placeholder="Search 340+ Games"/>
+          </div>
+       <!-- <div id="input-container">
+            <img src="media/icons/search.png"
+        
+            <input class="text" id="searchgames" onkeyup="searchGames()" placeholder="Search 340+ Games"/>
+-->
+        </div>
     </center>
  
 
