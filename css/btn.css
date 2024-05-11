@@ -1,80 +1,111 @@
-.btn {
-    background: transparent;
-    color: white;
-    border-radius: 8px;
-    cursor: pointer;
-    border: 2px solid transparent;
-    font-size: 14px;
-    width: 27vh;
-    height: 27vh;
-    font-weight: bold;
-    font-family: "Lexend", sans-serif;
-    margin: 20px;
-    backdrop-filter: blur(5px);
-    position: relative;
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lexend:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lexend:wght@100..900&family=Outfit:wght@100..900&family=Teachers:ital,wght@0,400..800;1,400..800&display=swap");
+
+.navbar {
     overflow: hidden;
-    transition: all 50ms;
-    
-  }
-
-  .btn img {
-    max-width: 100%;
-    height: auto;
-    width: 100%;
-    transition: transform 0.1s;
-  }
-
-  .btn span {
-    position: absolute;
-    bottom: 0;
+    background-color: #191919;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    right: 0;
     left: 0;
     width: 100%;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0));
-    padding: 10px;
-    color: white;
-    font-size: 14px;
+    height: 6vh;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    user-select: none;
+
+}
+
+.navbar a {
+    display: block;
+    float: left;
+    color: #fff;
     text-align: center;
-    border-radius: 0 0 8px 8px;
-    opacity: 0;
-    transition: opacity 0.3s;
-    box-sizing: border-box;
+    user-select: none;
 }
 
-    .btn:hover span {
-    opacity: 1;
-
-    }
-  .btn:hover {
-    color: black;
-    border: 2px solid #cc5850;
-
-  }
-
-
-
-.btn:hover {
-color: black;
-}
-
-
-
-@media screen and (max-width: 768px) {
-  .btn {
-    background: transparent;
-    color: white;
-    border-radius: 8px;
+.nav-item {
+    background-color: transparent;
+    border: none;
+    user-select: none;
     cursor: pointer;
-    border: 2px solid transparent;
-    font-size: 14px;
-    width: 10vh;
-    height: 10vh;
-    font-weight: bold;
-    font-family: "Lexend", sans-serif;
-    margin: 20px;
-    backdrop-filter: blur(5px);
-    position: relative;
-    overflow: hidden;
-    transition: all 50ms;
+    margin-right: 20px; 
+    padding: 0;
+    margin-top: 5vh;
+}
+
+.nav-item span {
+    background-color: transparent;
+    border: none;
+    user-select: none;
+    background: transparent;
+    cursor: pointer;
+    cursor: pointer;
+    margin-right: 20px;
+    padding-top: 5vh;
+}
+
+.logo {
+    background-color: transparent !important;
+    margin-left: 11vh;
+    margin-top: 0.7vh;
+    border: none;
+    cursor: pointer;
+    user-select: none;
+}
+
+.nav-button {
+    color: #fff;
+    font-family: "Teachers";
+    background-color: transparent;
+    border: none;
+    font-weight: 600;
+    font-size: 15px;
+    transition: all 250ms;
+    margin-top: 2vh;
+}
+.nav-button:hover {
+    color: #cc5850;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
     
-  }
+}
+
+
+.nav-span {
+  
+    background-color: transparent;
+    border: none;
+}
+
+
+.navbar .navbar-right {
+    float: right;
+}
+
+.navbar .navbar-margin {
+    margin-right: 20vh;
+}
+
+
+@media only screen and (max-width: 1006px) {
+    .navbar {
+        left: 10px;
+        right: 10px;
+        margin-left: 0;
+        margin-right: 0;
+        height: auto;
+        align-items: center;
+        overflow-x: auto;
+        white-space: nowrap;
+        display: flex; 
+        justify-content: flex-start; 
+    }
+
+    .logo {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
 }
