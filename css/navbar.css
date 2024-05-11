@@ -48,7 +48,7 @@
 
 .logo {
     background-color: transparent !important;
-    margin-left: 20vh;
+    margin-left: 11vh;
     margin-top: 0.7vh;
     border: none;
     cursor: pointer;
@@ -90,22 +90,22 @@
 }
 
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1006px) {
     .navbar {
         left: 10px;
         right: 10px;
+        margin-left: 0;
+        margin-right: 0;
         height: auto;
         align-items: center;
         overflow-x: auto;
         white-space: nowrap;
-    }
-    
-
-
-    .navbar button {
-        margin-right: 3px;
-        align-items: center;
+        display: flex; 
+        justify-content: flex-start; 
     }
 
-
+    .logo {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
 }

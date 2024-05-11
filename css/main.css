@@ -172,15 +172,6 @@ p1 {
   width: 35%;
 }
 
-.ruby-image {
-  position: absolute;
-  top: -200px;
-  right: 0;
-  width: 40vh;
-  margin-right: 13vh;
-  margin-top: 100vh;
-  margin-top: 40vh;
-}
 
 @media only screen and (max-width: 950px) {
   h1 {
@@ -233,9 +224,8 @@ p1 {
   text-decoration: none;
 }
 
-.logo img {
-  margin-left: 3vh;
-
+.footerlogo img {
+  margin-left: 23vh;
   margin-top: 2vh;
 }
 
@@ -248,6 +238,7 @@ p1 {
 
 ::-webkit-scrollbar {
   width: 6px;
+  height: 6px;
   border-radius: 5px;
   background-color: black;
 }
