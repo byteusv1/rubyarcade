@@ -1,15 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lexend:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lexend:wght@100..900&family=Outfit:wght@100..900&family=Teachers:ital,wght@0,400..800;1,400..800&display=swap");
+
 .navbar {
     overflow: hidden;
-    background-color: #373737;
+    background-color: #191919;
     position: fixed;
     z-index: 9999;
     top: 0;
-    left: 20px;
-    margin-top: 10px;
-    height: 55px;
-    right: 20px;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 6vh;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
     user-select: none;
-    border-radius: 10px;
+
 }
 
 .navbar a {
@@ -20,38 +25,68 @@
     user-select: none;
 }
 
-.navbar button {
+.nav-item {
     background-color: transparent;
     border: none;
     user-select: none;
+    cursor: pointer;
+    margin-right: 20px; 
     padding: 0;
-    margin: 5px 3px 3px; 
-    margin-right: 6px;
+    margin-top: 5vh;
+}
+
+.nav-item span {
+    background-color: transparent;
+    border: none;
+    user-select: none;
+    background: transparent;
+    cursor: pointer;
+    cursor: pointer;
+    margin-right: 20px;
+    padding-top: 5vh; /* Use padding-top instead of margin-top */
 }
 
 .logo {
     background-color: transparent !important;
-    transition: all 350ms;
+    margin-left: 20vh;
+    margin-top: 0.7vh;
+    border: none;
+    cursor: pointer;
     user-select: none;
 }
 
-.navbar button img {
-    display: block;
-    height: auto;
-    transition: background-color 0.3s ease-in, color 0.1s ease-in;
-    border-radius: 8px;
-    padding: 8px;
-    background-color: #1e1e1e;
+.nav-button {
+    color: #fff;
+    font-family: "Teachers";
+    background-color: transparent;
+    border: none;
+    font-weight: 600;
+    font-size: 15px;
+    transition: all 250ms;
+    margin-top: 2vh;
 }
-
-.navbar button:hover img {
-    background-color: #cc5850;
+.nav-button:hover {
     color: #cc5850;
     cursor: pointer;
+    background-color: transparent;
+    border: none;
+    
 }
+
+
+.nav-span {
+  
+    background-color: transparent;
+    border: none;
+}
+
 
 .navbar .navbar-right {
     float: right;
+}
+
+.navbar .navbar-margin {
+    margin-right: 20vh;
 }
 
 
