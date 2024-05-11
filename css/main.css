@@ -25,17 +25,15 @@ h1 {
 
 h3 {
   color: white;
-  font-size: 20px;
+  font-size: 2vh;
   font-weight: 900;
-  margin-left: 25vh;
-
+  margin-left: 7vw;
 }
 
 h4 {
   color: white;
   font-size: 20px;
   font-weight: 500;
-
 }
 
 h1 img {
@@ -66,7 +64,6 @@ h2 {
 .btn img {
   max-width: 100%;
   height: auto;
-  
   width: 100%;
   transition: transform 0.1s;
 }
@@ -135,19 +132,16 @@ h2 {
   transform: translateY(0);
 }
 
-
-
 p {
   font-size: 30px;
   color: #d8d8d8;
-  width: 50%;
+  width: 70%;
   font-weight: 900;
   font-size: 70px;
   font-family: "Outfit";
   text-align: center;
   margin-top: 25vh;
   margin-bottom: 1vh;
-
 }
 
 p1 {
@@ -161,7 +155,6 @@ p1 {
   width: 50%;
 }
 
-
 .second-paragraph {
   color: #808080;
   font-size: 2vh;
@@ -171,7 +164,6 @@ p1 {
   margin-top: 10px;
   width: 35%;
 }
-
 
 @media only screen and (max-width: 950px) {
   h1 {
@@ -203,37 +195,61 @@ p1 {
   }
 }
 
-#featuredgames {
-  text-align: left;
-  margin-left: 20vh;
-}
+
 
 .footer {
   background-color: #333;
   color: #fff;
   text-decoration: none;
   padding: 20px 0;
+  width: 100%;
 }
 
 .footer-content {
-  max-width: 100%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  text-decoration: none;
+  flex-wrap: wrap;
 }
 
-.footerlogo img {
-  margin-left: 23vh;
+.ruby img {
   margin-top: 2vh;
+  margin-left: 20vw;
 }
 
 .resources ul {
   list-style: none;
   padding: 0;
-  margin-right: 27vh;
-  text-decoration: none;
+  margin: 0;
+}
+
+.resources li {
+  margin-bottom: 10px;
+}
+
+  
+
+
+@media screen and (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .resources {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .ruby img {
+    margin-top: 2vh;
+    margin-left: 2vw;
+  }
+
+  .resources ul {
+    margin-right: 0;
+  }
 }
 
 ::-webkit-scrollbar {
@@ -258,29 +274,50 @@ ul li a:hover {
   color: #cc5850;
 }
 
-#searchInput {
-  padding: 10px;
-  font-size: 16px;
-  border-radius: 8px;
-  background-color: transparent;
-  color: #ffffff;
-  font-family: "Inter";
-  width: 50%;
-  font-weight: 600;
-  border: 2px solid #cc5850;
-  text-align: center;
-  transition: border-color 0.3s;
-  transition: all 350ms;
-  margin-bottom: 8vh;
-  outline: none;
-  caret-color: #ffffff;
+.input-container {
+  position: relative;
+  width: 350px;
+  user-select: none;
+  margin-top: 5px;
 }
 
-#searchInput:hover {
-  width: 55%;
-  font-weight: 700;
-  font-size: 16px;
+.input-container img.input-image {
+  position: absolute;
+  top: 50%;
+  left: 22%;
+  user-select: none;
+  float: left;
+  transform: translateY(-50%);
+  width: 2vh;
+  user-select: none;
+  -webkit-user-drag: none;
+  width: 2vh;
 }
+
+  #searchInput {
+    background: none;
+    font-family: "Inter";
+    padding: 0px 17px;
+    padding: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+    user-select: none;
+    transition: all 350ms;
+    font-weight: 500;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    color: #FFF;
+    border-radius: 25px;
+    margin-right: 3px;
+    outline: none;
+    width: 50%; 
+    padding-left: 30px; 
+  }
+  #searchInput:focus {
+    border-radius: 8px;
+    animation: fadeInAnimation ease-in-out 0.3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
 
 #gameLoaderSection {
   position: fixed;
@@ -368,8 +405,8 @@ ul li a:hover {
 }
 
 a {
-  color: rgb(255, 175, 175); 
-  text-decoration: none; 
+  color: rgb(255, 175, 175);
+  text-decoration: none;
   transition: all 350ms;
 }
 
