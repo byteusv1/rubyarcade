@@ -24,11 +24,18 @@ h1 {
 }
 
 h3 {
-  font-size: 25px;
-  font-weight: 900;
-  text-align: center;
   color: white;
-  width: 100%;
+  font-size: 20px;
+  font-weight: 900;
+  margin-left: 25vh;
+
+}
+
+h4 {
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+
 }
 
 h1 img {
@@ -50,6 +57,7 @@ h2 {
   background: transparent;
   height: 17vh;
   margin: 20px;
+  cursor: pointer;
   position: relative;
   overflow: hidden;
   transition: all 50ms;
@@ -204,12 +212,9 @@ p1 {
   }
 }
 
-#ABC {
-  background-color: rgb(40, 40, 40);
-  width: 70%;
-  margin: 0 auto;
-  margin-bottom: 10px;
-  border-radius: 8px;
+#featuredgames {
+  text-align: left;
+  margin-left: 20vh;
 }
 
 .footer {
@@ -220,7 +225,7 @@ p1 {
 }
 
 .footer-content {
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -229,12 +234,15 @@ p1 {
 }
 
 .logo img {
-  margin-left: 20px;
+  margin-left: 3vh;
+
+  margin-top: 2vh;
 }
 
 .resources ul {
   list-style: none;
   padding: 0;
+  margin-right: 27vh;
   text-decoration: none;
 }
 
