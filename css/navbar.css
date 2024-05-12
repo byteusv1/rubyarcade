@@ -57,7 +57,7 @@
 
 .nav-button {
     color: #fff;
-    font-family: "Teachers";
+    font-family: "Inter";
     background-color: transparent;
     border: none;
     font-weight: 600;
@@ -90,22 +90,31 @@
 }
 
 
-@media only screen and (max-width: 1006px) {
+@media only screen and (max-width: 815px) {
     .navbar {
-        left: 10px;
-        right: 10px;
         margin-left: 0;
         margin-right: 0;
-        height: auto;
         align-items: center;
-        overflow-x: auto;
         white-space: nowrap;
         display: flex; 
         justify-content: flex-start; 
+    }
+
+    .nav-button {
+        margin-bottom: 1vh;
     }
 
     .logo {
         margin-left: 10px;
         margin-right: 10px;
     }
+}
+
+
+@media only screen and (max-width: 470px) {
+
+    .navbar {
+    overflow-x: auto;
+}
+
 }

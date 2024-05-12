@@ -25,12 +25,6 @@ buttons.forEach(button => {
 
 const btn = document.querySelector('.btn');
 
-btn.addEventListener('mousemove', e => {
-  const rect = btn.getBoundingClientRect();
-  const x = e.clientX - rect.left;
-  const y = e.clientY - rect.top;
-  btn.style.backgroundImage = `radial-gradient(circle at ${x}px ${y}px, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.8) 100%)`;
-});
 
 btn.addEventListener('mouseleave', () => {
   btn.style.backgroundImage = '';

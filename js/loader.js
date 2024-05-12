@@ -40,11 +40,13 @@ function toggleFullscreen() {
     }
   }
 }
+
 function removeGameLoader() {
   var gameLoaderSection = document.getElementById("gameLoaderSection");
   gameLoaderSection.style.display = "none";
   var isMuted = true;
-  gameFrame.src = "";
+  gameFrame.src = "media/icons/loading.gif";
 
   document.body.classList.remove("no-scroll");
 }
+
