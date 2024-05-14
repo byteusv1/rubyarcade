@@ -1,392 +1,471 @@
 [
+
   {
     "name": "Roblox",
     "imageUrl": "https://rubyarcademedia.onrender.com/roblox.png",
-    "playUrl": "https://rubyarcadegames.onrender.com/games/nowgg/roblox/index.html"
+    "playUrl": "https://rubyarcadegames.onrender.com/games/nowgg/roblox/index.html",
+    "genres": ["#"]
   },
   {
     "name": "RL sideswipe",
     "imageUrl": "https://rubyarcademedia.onrender.com/sideswipe.png",
-    "playUrl": "https://rubyarcadegames.onrender.com/games/nowgg/sideswipe/index.html"
+    "playUrl": "https://rubyarcadegames.onrender.com/games/nowgg/sideswipe/index.html",
+    "genres": ["Sports", "Racing"]
   },
   {
     "name": "Fortnite",
     "imageUrl": "https://rubyarcademedia.onrender.com/fortnite.png",
-    "playUrl": "https://rubyarcadegames.onrender.com/games/kazwire/fortnite/index.html"
+    "playUrl": "https://rubyarcadegames.onrender.com/games/kazwire/fortnite/index.html",
+    "genres": ["#"]
   },
   {
     "name": "Geometry dash",
     "imageUrl": "https://rubyarcademedia.onrender.com/geometrydash.png",
-    "playUrl": "https://rubyarcadegames.onrender.com/games/nowgg/geometrydash/index.html"
+    "playUrl": "https://rubyarcadegames.onrender.com/games/nowgg/geometrydash/index.html",
+    "genres": ["#"]
   },
   {
-    "name": "Poppy playtime", 
+    "name": "Poppy playtime",
     "imageUrl": "https://rubyarcademedia.onrender.com/poppyplaytime.png",
-    "playUrl": "https://rubyarcadegames.onrender.com/games/nowgg/poppyplaytime/index.html"
+    "playUrl": "https://rubyarcadegames.onrender.com/games/nowgg/poppyplaytime/index.html",
+    "genres": ["Horror"]
   },
   {
     "name": "Rise up",
     "imageUrl": "https://rubyarcademedia.onrender.com/balldodge.png",
-    "playUrl": "https://rubyarcadegames.onrender.com/games/static/balldodge/index.html"
+    "playUrl": "https://rubyarcadegames.onrender.com/games/static/balldodge/index.html",
+    "genres": ["#"]
   },
   {
     "name": "Drift Boss",
     "imageUrl": "https://rubyarcademedia.onrender.com/driftboss.png",
-    "playUrl": "https://rubyarcadegames.onrender.com/games/static/driftboss/index.html"
+    "playUrl": "https://rubyarcadegames.onrender.com/games/static/driftboss/index.html",
+    "genres": ["#"]
   },
   {
     "name": "Eaglercraft",
     "imageUrl": "https://rubyarcademedia.onrender.com/eaglercraft.png",
-    "playUrl": "https://rubyarcadegames.onrender.com/games/static/eaglercraft/index.html"
+    "playUrl": "https://rubyarcadegames.onrender.com/games/static/eaglercraft/index.html",
+    "genres": ["#"]
   },
   {
     "name": "Rocket league",
     "imageUrl": "https://rubyarcademedia.onrender.com/rocketsoccer.png",
-    "playUrl": "https://rubyarcadegames.onrender.com/games/static/rocketsoccer/index.html"
+    "playUrl": "https://rubyarcadegames.onrender.com/games/static/rocketsoccer/index.html",
+    "genres": ["#"]
   },
   {
     "name": "Subway surfers",
     "imageUrl": "https://rubyarcademedia.onrender.com/subwaysurfers.png",
-    "playUrl": "https://rubyarcadegames.onrender.com/games/static/subwaysurfersbali/index.html"
+    "playUrl": "https://rubyarcadegames.onrender.com/games/static/subwaysurfersbali/index.html",
+    "genres": ["#"]
   },
   {
     "name": "Slope",
     "imageUrl": "https://rubyarcademedia.onrender.com/slope.jpg",
-    "playUrl": "https://rubyarcadegames.onrender.com/games/static/slope/index.html"
+    "playUrl": "https://rubyarcadegames.onrender.com/games/static/slope/index.html",
+    "genres": ["#"]
   },
   {
     "name": "Alien invaders.io",
     "imageUrl": "https://rubyarcademedia.onrender.com/alieninvadersio.png",
-    "playUrl": "https://rubyarcadegames.onrender.com/games/static/alieninvadersio/index.html"
+    "playUrl": "https://rubyarcadegames.onrender.com/games/static/alieninvadersio/index.html",
+    "genres": ["#"]
   },
   {
     "name": "Slowroads.io",
     "imageUrl": "https://rubyarcademedia.onrender.com/slowroads.jpg",
-    "playUrl": "https://rubyarcadegames.onrender.com/games/static/slowroads/index.html"
+    "playUrl": "https://rubyarcadegames.onrender.com/games/static/slowroads/index.html",
+    "genres": ["#"]
   },
   {
     "name": "World's hardest game",
     "imageUrl": "https://rubyarcademedia.onrender.com/worldshardestgame.png",
-    "playUrl": "https://rubyarcadegames.onrender.com/games/flash/worldshardestgame/index.html"
+    "playUrl": "https://rubyarcadegames.onrender.com/games/flash/worldshardestgame/index.html",
+    "genres": ["#"]
   },
   {
     "name": "Cookie clicker",
     "imageUrl": "https://rubyarcademedia.onrender.com/cookieclicker.png",
-    "playUrl": "https://rubyarcadegames.onrender.com/games/static/cookieclicker/index.html"
+    "playUrl": "https://rubyarcadegames.onrender.com/games/static/cookieclicker/index.html",
+    "genres": ["Idle"]
   },
   {
     "name": "Aquapark",
     "imageUrl": "https://rubyarcademedia.onrender.com/aquapark.png",
-    "playUrl": "https://rubyarcadegames.onrender.com/games/static/aquapark/index.html"
+    "playUrl": "https://rubyarcadegames.onrender.com/games/static/aquapark/index.html",
+    "genres": ["#"]
   },
   {
     "name": "Fnaf",
     "imageUrl": "https://rubyarcademedia.onrender.com/fnaf.png",
-    "playUrl": "https://rubyarcadegames.onrender.com/games/static/fnaf/index.html"
+    "playUrl": "https://rubyarcadegames.onrender.com/games/static/fnaf/index.html",
+    "genres": ["Horror"]
   },
   {
     "name": "Fnaf 2",
     "imageUrl": "https://rubyarcademedia.onrender.com/fnaf2.png",
-    "playUrl": "https://rubyarcadegames.onrender.com/games/static/fnaf-2/index.html"
+    "playUrl": "https://rubyarcadegames.onrender.com/games/static/fnaf-2/index.html",
+    "genres": ["Horror"]
   },
   {
     "name": "Fnaf 3",
     "imageUrl": "https://rubyarcademedia.onrender.com/fnaf3.png",
-    "playUrl": "https://rubyarcadegames.onrender.com/games/static/fnaf-3/index.html"
+    "playUrl": "https://rubyarcadegames.onrender.com/games/static/fnaf-3/index.html",
+    "genres": ["Horror"]
   },
   {
     "name": "Fnaf 4",
     "imageUrl": "https://rubyarcademedia.onrender.com/fnaf4.png",
-    "playUrl": "https://rubyarcadegames.onrender.com/games/static/fnaf-4/index.html"
+    "playUrl": "https://rubyarcadegames.onrender.com/games/static/fnaf-4/index.html",
+    "genres": ["Horror"]
   },
   {
     "name": "Riddle school",
     "imageUrl": "https://rubyarcademedia.onrender.com/riddleschool.png",
-    "playUrl": "https://rubyarcadegames.onrender.com/games/flash/riddleschool/index.html"
+    "playUrl": "https://rubyarcadegames.onrender.com/games/flash/riddleschool/index.html",
+    "genres": ["#"]
   },
   {
     "name": "Riddle school 2",
     "imageUrl": "https://rubyarcademedia.onrender.com/riddleschool2.png",
-    "playUrl": "https://rubyarcadegames.onrender.com/games/flash/riddleschool/riddleschool2/index.html"
+    "playUrl": "https://rubyarcadegames.onrender.com/games/flash/riddleschool/riddleschool2/index.html",
+    "genres": ["#"]
   },
   {
     "name": "Riddle school 3",
     "imageUrl": "https://rubyarcademedia.onrender.com/riddleschool3.png",
-    "playUrl": "https://rubyarcadegames.onrender.com/games/flash/riddleschool/riddleschool3/index.html"
+    "playUrl": "https://rubyarcadegames.onrender.com/games/flash/riddleschool/riddleschool3/index.html",
+    "genres": ["#"]
   },
   {
     "name": "Riddle school 4",
     "imageUrl": "https://rubyarcademedia.onrender.com/riddleschool4.png",
-    "playUrl": "https://rubyarcadegames.onrender.com/games/flash/riddleschool/riddleschool4/index.html"
+    "playUrl": "https://rubyarcadegames.onrender.com/games/flash/riddleschool/riddleschool4/index.html",
+    "genres": ["#"]
   },
   {
     "name": "Riddle school 5",
     "imageUrl": "https://rubyarcademedia.onrender.com/riddleschool5.png",
-    "playUrl": "https://rubyarcadegames.onrender.com/games/flash/riddleschool/riddleschool5/index.html"
+    "playUrl": "https://rubyarcadegames.onrender.com/games/flash/riddleschool/riddleschool5/index.html",
+    "genres": ["#"]
   },
   {
     "name": "Riddle transfer",
     "imageUrl": "https://rubyarcademedia.onrender.com/riddleschooltransfer.png",
-    "playUrl": "https://rubyarcadegames.onrender.com/games/flash/riddleschool/riddletransfer/index.html"
+    "playUrl": "https://rubyarcadegames.onrender.com/games/flash/riddleschool/riddletransfer/index.html",
+    "genres": ["#"]
   },
   {
     "name": "Riddle transfer 2",
     "imageUrl": "https://rubyarcademedia.onrender.com/riddleschooltransfer2.png",
-    "playUrl": "https://rubyarcadegames.onrender.com/games/flash/riddleschool/riddletransfer/index.html"
+    "playUrl": "https://rubyarcadegames.onrender.com/games/flash/riddleschool/riddletransfer/index.html",
+    "genres": ["#"]
   },
   {
     "name": "Run",
     "imageUrl": "https://rubyarcademedia.onrender.com/run.png",
-    "playUrl": "https://rubyarcadegames.onrender.com/games/flash/riddleschool/riddletransfer/index.html"
+    "playUrl": "https://rubyarcadegames.onrender.com/games/flash/riddleschool/riddletransfer/index.html",
+    "genres": ["#"]
   },
   {
     "name": "Run 2",
     "imageUrl": "https://rubyarcademedia.onrender.com/run2.png",
-    "playUrl": "https://rubyarcadegames.onrender.com/games/flash/run2/index.html"
+    "playUrl": "https://rubyarcadegames.onrender.com/games/flash/run2/index.html",
+    "genres": ["#"]
   },
   {
     "name": "Run 3",
     "imageUrl": "https://rubyarcademedia.onrender.com/run3.png",
-    "playUrl": "https://rubyarcadegames.onrender.com/games/flash/run3/index.html"
+    "playUrl": "https://rubyarcadegames.onrender.com/games/flash/run3/index.html",
+    "genres": ["#"]
   },
   {
     "name": "Temple run 2",
     "imageUrl": "https://rubyarcademedia.onrender.com/templerun.png",
-    "playUrl": "https://rubyarcadegames.onrender.com/games/static/templerun2/index.html"
+    "playUrl": "https://rubyarcadegames.onrender.com/games/static/templerun2/index.html",
+    "genres": ["#"]
   },
   {
     "name": "Crossy Road",
     "imageUrl": "https://rubyarcademedia.onrender.com/crossy.jpg",
-    "playUrl": "https://rubyarcadegames.onrender.com/games/static/crossy/index.html"
+    "playUrl": "https://rubyarcadegames.onrender.com/games/static/crossy/index.html",
+    "genres": ["#"]
   },
   {
     "name": "Backrooms",
     "imageUrl": "https://rubyarcademedia.onrender.com/backrooms.png",
-    "playUrl": "https://rubyarcadegames.onrender.com/games/static/backrooms/index.html"
+    "playUrl": "https://rubyarcadegames.onrender.com/games/static/backrooms/index.html",
+    "genres": ["#"]
   },
   {
     "name": "Bitlife",
     "imageUrl": "https://rubyarcademedia.onrender.com/bitlife.jpg",
-    "playUrl": "https://rubyarcadegames.onrender.com/games/static/bitlife/index.html"
+    "playUrl": "https://rubyarcadegames.onrender.com/games/static/bitlife/index.html",
+    "genres": ["#"]
   },
   {
     "name": "Baldi's basics",
     "imageUrl": "https://rubyarcademedia.onrender.com/baldi.png",
-    "playUrl": "https://rubyarcadegames.onrender.com/games/static/baldisbasics/index.html"
+    "playUrl": "https://rubyarcadegames.onrender.com/games/static/baldisbasics/index.html",
+    "genres": ["#"]
   },
   {
     "name": "Baldi's basics field trip",
     "imageUrl": "https://rubyarcademedia.onrender.com/baldicamping.png",
-    "playUrl": "https://rubyarcadegames.onrender.com/games/static/baldisbasics/index.html"
+    "playUrl": "https://rubyarcadegames.onrender.com/games/static/baldisbasics/index.html",
+    "genres": ["#"]
   },
   {
     "name": "Friday Night Funkin'",
     "imageUrl": "https://rubyarcademedia.onrender.com/fnf.png",
-    "playUrl": "https://rubyarcadegames.onrender.com/games/static/fnf/index.html"
+    "playUrl": "https://rubyarcadegames.onrender.com/games/static/fnf/index.html",
+    "genres": ["#"]
   },
   {
     "name": "Adventure capitalist",
     "imageUrl": "https://rubyarcademedia.onrender.com/adventurecapitalist.png",
-    "playUrl": "https://rubyarcadegames.onrender.com/games/static/adventurecapitalist/index.html"
+    "playUrl": "https://rubyarcadegames.onrender.com/games/static/adventurecapitalist/index.html",
+    "genres": ["#"]
   },
   {
     "name": "Bloons td",
     "imageUrl": "https://rubyarcademedia.onrender.com/btd.png",
-    "playUrl": "https://rubyarcadegames.onrender.com/games/flash/btd/btd/index.html"
+    "playUrl": "https://rubyarcadegames.onrender.com/games/flash/btd/btd/index.html",
+    "genres": ["#"]
   },
   {
     "name": "Bloons td 2",
     "imageUrl": "https://rubyarcademedia.onrender.com/btd2.png",
-    "playUrl": "https://rubyarcadegames.onrender.com/games/flash/btd/btd2/index.html"
+    "playUrl": "https://rubyarcadegames.onrender.com/games/flash/btd/btd2/index.html",
+    "genres": ["#"]
   },
   {
     "name": "Bloons td 3",
     "imageUrl": "https://rubyarcademedia.onrender.com/btd3.png",
-    "playUrl": "https://rubyarcadegames.onrender.com/games/flash/btd/btd3/index.html"
+    "playUrl": "https://rubyarcadegames.onrender.com/games/flash/btd/btd3/index.html",
+    "genres": ["#"]
   },
   {
     "name": "Bloons td 4",
     "imageUrl": "https://rubyarcademedia.onrender.com/btd4.png",
-    "playUrl": "https://rubyarcadegames.onrender.com/games/flash/btd/btd4/index.html"
+    "playUrl": "https://rubyarcadegames.onrender.com/games/flash/btd/btd4/index.html",
+    "genres": ["#"]
   },
   {
     "name": "1v1.lol",
     "imageUrl": "https://rubyarcademedia.onrender.com/1v1lol.png",
-    "playUrl": "https://rubyarcadegames.onrender.com/games/static/1v1lol/index.html"
+    "playUrl": "https://rubyarcadegames.onrender.com/games/static/1v1lol/index.html",
+    "genres": ["#"]
   },
   {
     "name": "OvO",
     "imageUrl": "https://rubyarcademedia.onrender.com/ovo.png",
-    "playUrl": "https://rubyarcadegames.onrender.com/games/static/ovo/index.html"
+    "playUrl": "https://rubyarcadegames.onrender.com/games/static/ovo/index.html",
+    "genres": ["#"]
   },
   {
     "name": "Retro Bowl",
     "imageUrl": "https://rubyarcademedia.onrender.com/retrobowl.png",
-    "playUrl": "https://rubyarcadegames.onrender.com/games/static/retrobowl/index.html"
+    "playUrl": "https://rubyarcadegames.onrender.com/games/static/retrobowl/index.html",
+    "genres": ["#"]
   },
   {
     "name": "Monkey Mart",
     "imageUrl": "https://rubyarcademedia.onrender.com/monkeymart.png",
-    "playUrl": "https://rubyarcadegames.onrender.com/games/static/monkeymart/index.html"
+    "playUrl": "https://rubyarcadegames.onrender.com/games/static/monkeymart/index.html",
+    "genres": ["#"]
   },
   {
     "name": "Drift hunters",
     "imageUrl": "https://rubyarcademedia.onrender.com/drifthunters.png",
-    "playUrl": "https://rubyarcadegames.onrender.com/games/static/drifthunters/index.html"
+    "playUrl": "https://rubyarcadegames.onrender.com/games/static/drifthunters/index.html",
+    "genres": ["#"]
   },
   {
     "name": "Duck life",
     "imageUrl": "https://rubyarcademedia.onrender.com/ducklife.png",
-    "playUrl": "https://rubyarcadegames.onrender.com/games/flash/ducklife/index.html"
+    "playUrl": "https://rubyarcadegames.onrender.com/games/flash/ducklife/index.html",
+    "genres": ["#"]
   },
   {
     "name": "Duck life 2",
     "imageUrl": "https://rubyarcademedia.onrender.com/ducklife2.png",
-    "playUrl": "https://rubyarcadegames.onrender.com/games/flash/ducklife2/index.html"
+    "playUrl": "https://rubyarcadegames.onrender.com/games/flash/ducklife2/index.html",
+    "genres": ["#"]
   },
   {
     "name": "Duck life 3",
     "imageUrl": "https://rubyarcademedia.onrender.com/ducklife3.png",
-    "playUrl": "https://rubyarcadegames.onrender.com/games/flash/ducklife3/index.html"
+    "playUrl": "https://rubyarcadegames.onrender.com/games/flash/ducklife3/index.html",
+    "genres": ["#"]
   },
   {
     "name": "Duck life 4",
     "imageUrl": "https://rubyarcademedia.onrender.com/ducklife4.png",
-    "playUrl": "https://rubyarcadegames.onrender.com/games/flash/ducklife4/index.html"
+    "playUrl": "https://rubyarcadegames.onrender.com/games/flash/ducklife4/index.html",
+    "genres": ["#"]
   },
   {
     "name": "Duck life 5",
     "imageUrl": "https://rubyarcademedia.onrender.com/ducklife5.png",
-    "playUrl": "https://rubyarcadegames.onrender.com/games/flash/ducklife5/index.html"
+    "playUrl": "https://rubyarcadegames.onrender.com/games/flash/ducklife5/index.html",
+    "genres": ["#"]
   },
   {
     "name": "Duck life 6",
     "imageUrl": "https://rubyarcademedia.onrender.com/ducklife6.png",
-    "playUrl": "https://rubyarcadegames.onrender.com/games/static/ducklife6/index.html"
+    "playUrl": "https://rubyarcadegames.onrender.com/games/static/ducklife6/index.html",
+    "genres": ["#"]
   },
   {
     "name": "Snowball.io",
     "imageUrl": "https://rubyarcademedia.onrender.com/snowballio.png",
-    "playUrl": "https://rubyarcadegames.onrender.com/games/static/snowbattleio/index.html"
+    "playUrl": "https://rubyarcadegames.onrender.com/games/static/snowbattleio/index.html",
+    "genres": ["#"]
   },
   {
     "name": "Fruit Ninja",
     "imageUrl": "https://rubyarcademedia.onrender.com/fruitninja.png",
-    "playUrl": "https://rubyarcadegames.onrender.com/games/static/fruitninja/index.html"
+    "playUrl": "https://rubyarcadegames.onrender.com/games/static/fruitninja/index.html",
+    "genres": ["#"]
   },
   {
     "name": "Escaping the prison",
     "imageUrl": "https://rubyarcademedia.onrender.com/escapingtheprison.png",
-    "playUrl": "https://rubyarcadegames.onrender.com/games/flash/escapingtheprison/index.html"
+    "playUrl": "https://rubyarcadegames.onrender.com/games/flash/escapingtheprison/index.html",
+    "genres": ["#"]
   },
   {
     "name": "Breaking the bank",
     "imageUrl": "https://rubyarcademedia.onrender.com/breakingthebank.png",
-    "playUrl": "https://rubyarcadegames.onrender.com/games/flash/breakingthebank/index.html"
+    "playUrl": "https://rubyarcadegames.onrender.com/games/flash/breakingthebank/index.html",
+    "genres": ["#"]
   },
   {
     "name": "Infiltrating the airship",
     "imageUrl": "https://rubyarcademedia.onrender.com/infiltratingtheairship.png",
-    "playUrl": "https://rubyarcadegames.onrender.com/games/flash/infiltratingtheairship/index.html"
+    "playUrl": "https://rubyarcadegames.onrender.com/games/flash/infiltratingtheairship/index.html",
+    "genres": ["#"]
   },
   {
     "name": "Stealing the diamond",
     "imageUrl": "https://rubyarcademedia.onrender.com/stealingthediamond.png",
-    "playUrl": "https://rubyarcadegames.onrender.com/games/flash/infiltratingtheairship/index.html"
+    "playUrl": "https://rubyarcadegames.onrender.com/games/flash/infiltratingtheairship/index.html",
+    "genres": ["#"]
   },
   {
     "name": "Fleeing the complex",
     "imageUrl": "https://rubyarcademedia.onrender.com/fleeingthecomplex.png",
-    "playUrl": "https://rubyarcadegames.onrender.com/games/flash/fleeingthecomplex/index.html"
+    "playUrl": "https://rubyarcadegames.onrender.com/games/flash/fleeingthecomplex/index.html",
+    "genres": ["#"]
   },
   {
     "name": "Achievement unlocked",
     "imageUrl": "https://rubyarcademedia.onrender.com/achvunlocked.png",
-    "playUrl": "https://rubyarcadegames.onrender.com/games/flash/achievementunlocked/index.html"
+    "playUrl": "https://rubyarcadegames.onrender.com/games/flash/achievementunlocked/index.html",
+    "genres": ["#"]
   },
   {
     "name": "Achievement unlocked 2",
     "imageUrl": "https://rubyarcademedia.onrender.com/achvunlocked2.png",
-    "playUrl": "https://rubyarcadegames.onrender.com/games/flash/achievementunlocked2/index.html"
+    "playUrl": "https://rubyarcadegames.onrender.com/games/flash/achievementunlocked2/index.html",
+    "genres": ["#"]
   },
   {
     "name": "Achievement unlocked 3",
     "imageUrl": "https://rubyarcademedia.onrender.com/achvunlocked3.png",
-    "playUrl": "https://rubyarcadegames.onrender.com/games/flash/achievementunlocked3/index.html"
+    "playUrl": "https://rubyarcadegames.onrender.com/games/flash/achievementunlocked3/index.html",
+    "genres": ["#"]
   },
   {
     "name": "Cluster Rush",
     "imageUrl": "https://rubyarcademedia.onrender.com/clusterrush.png",
-    "playUrl": "https://rubyarcadegames.onrender.com/games/static/clusterrush/index.html"
+    "playUrl": "https://rubyarcadegames.onrender.com/games/static/clusterrush/index.html",
+    "genres": ["#"]
   },
   {
     "name": "1 on 1 soccer",
     "imageUrl": "https://rubyarcademedia.onrender.com/1on1soccer.png",
-    "playUrl": "https://rubyarcadegames.onrender.com/games/flash/1on1soccer/index.html"
+    "playUrl": "https://rubyarcadegames.onrender.com/games/flash/1on1soccer/index.html",
+    "genres": ["#"]
   },
   {
     "name": "Vex",
     "imageUrl": "https://rubyarcademedia.onrender.com/vex.png",
-    "playUrl": "https://rubyarcadegames.onrender.com/games/flash/vex/index.html"
+    "playUrl": "https://rubyarcadegames.onrender.com/games/flash/vex/index.html",
+    "genres": ["#"]
   },
   {
     "name": "Vex 2",
     "imageUrl": "https://rubyarcademedia.onrender.com/vex2.png",
-    "playUrl": "https://rubyarcadegames.onrender.com/games/flash/vex2/index.html"
+    "playUrl": "https://rubyarcadegames.onrender.com/games/flash/vex2/index.html",
+    "genres": ["#"]
   },
   {
     "name": "Vex 3",
     "imageUrl": "https://rubyarcademedia.onrender.com/vex3.png",
-    "playUrl": "https://rubyarcadegames.onrender.com/games/static/vex3/index.html"
+    "playUrl": "https://rubyarcadegames.onrender.com/games/static/vex3/index.html",
+    "genres": ["#"]
   },
   {
     "name": "Vex 4",
     "imageUrl": "https://rubyarcademedia.onrender.com/vex4.png",
-    "playUrl": "https://rubyarcadegames.onrender.com/games/static/vex4/index.html"
+    "playUrl": "https://rubyarcadegames.onrender.com/games/static/vex4/index.html",
+    "genres": ["#"]
   },
   {
     "name": "Vex 5",
     "imageUrl": "https://rubyarcademedia.onrender.com/vex5.png",
-    "playUrl": "https://rubyarcadegames.onrender.com/games/static/vex5/index.html"
+    "playUrl": "https://rubyarcadegames.onrender.com/games/static/vex5/index.html",
+    "genres": ["#"]
   },
   {
     "name": "Vex 6",
     "imageUrl": "https://rubyarcademedia.onrender.com/vex6.png",
-    "playUrl": "https://rubyarcadegames.onrender.com/games/static/vex6/index.html"
+    "playUrl": "https://rubyarcadegames.onrender.com/games/static/vex6/index.html",
+    "genres": ["#"]
   },
   {
     "name": "Vex 7",
     "imageUrl": "https://rubyarcademedia.onrender.com/vex7.png",
-    "playUrl": "https://rubyarcadegames.onrender.com/games/static/vex7/index.html"
+    "playUrl": "https://rubyarcadegames.onrender.com/games/static/vex7/index.html",
+    "genres": ["#"]
   },
   {
     "name": "osu! mania",
     "imageUrl": "https://rubyarcademedia.onrender.com/mania.jpg",
-    "playUrl": "https://rubyarcadegames.onrender.com/games/static/osumania/index.html"
+    "playUrl": "https://rubyarcadegames.onrender.com/games/static/osumania/index.html",
+    "genres": ["#"]
   },
   {
     "name": "Slope 2",
     "imageUrl": "https://rubyarcademedia.onrender.com/slope2.png",
-    "playUrl": "https://rubyarcadegames.onrender.com/games/static/osumania/index.html"
+    "playUrl": "https://rubyarcadegames.onrender.com/games/static/osumania/index.html",
+    "genres": ["#"]
   },
   {
     "name": "Slope 2",
     "imageUrl": "https://rubyarcademedia.onrender.com/tetris.png",
-    "playUrl": "https://rubyarcadegames.onrender.com/games/static/tetris/index.html"
+    "playUrl": "https://rubyarcadegames.onrender.com/games/static/tetris/index.html",
+    "genres": ["#"]
   },
   {
     "name": "Ball dodge",
     "imageUrl": "https://rubyarcademedia.onrender.com/balldodge.png",
-    "playUrl": "https://rubyarcadegames.onrender.com/games/static/balldodge/index.html"
+    "playUrl": "https://rubyarcadegames.onrender.com/games/static/balldodge/index.html",
+    "genres": ["#"]
   },
   {
     "name": "Minecraft Javascript edition",
     "imageUrl": "https://rubyarcademedia.onrender.com/mcjs.png",
-    "playUrl": "https://rubyarcadegames.onrender.com/games/static/balldodge/index.html"
+    "playUrl": "https://rubyarcadegames.onrender.com/games/static/balldodge/index.html",
+    "genres": ["#"]
   },
   {
     "name": "Friday Night Funkin' Mid fight masses",
     "imageUrl": "https://rubyarcademedia.onrender.com/fnfmidfight.png",
-    "playUrl": "https://rubyarcadegames.onrender.com/games/static/fnfmidfight/index.html"
+    "playUrl": "https://rubyarcadegames.onrender.com/games/static/fnfmidfight/index.html",
+    "genres": ["#"]
   }
-]
+  ]

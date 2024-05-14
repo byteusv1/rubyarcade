@@ -1,242 +1,214 @@
 <!DOCTYPE html>
-  
 <html lang="en">
-
 <head>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-TG3F4YGJW1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TG3F4YGJW1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
 
-  gtag('config', 'G-TG3F4YGJW1');
-</script>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Apps</title>
-  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
-  <link rel="icon" type="image/x-icon" href="/media/icons/favicon.ico">
-  
-<link rel="stylesheet" href="css/index.css">
-<link rel="stylesheet" href="css/navbar.css">
-<link rel="stylesheet" href="css/loader.css">
+        gtag("config", "G-TG3F4YGJW1");
+    </script>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="Ruby Arcade" />
+    <meta property="og:description" content="Ruby arcade is a game network that features a wide variety of engaging and immersive games suitable for all ages." />
+    <meta property="og:image" content="https://rubyarcade.lol/media/icons/metapicture.png" />
+    
+    <title>Apps</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet"/>
+    <link rel="icon" type="image/x-icon" href="/media/icons/favicon.ico" />
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2XEFG8CYTH"></script>
+
+
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/loader.css">
+
+
 </head>
 
 <body>
-  <div class="navbar">
-    <span class="logo-span">
-        <button class="logo" onclick="window.location.href='index.html'">
-            <img
-                src="/media/icons/rubyarcade.png"
-                alt="Ruby Games Logo"
-                class="logo"
-                width="125vh"
-                height="27vh"
-            />
-        </button>
-    </span>
+    <div class="navbar">
+        <span class="logo-span">
+            <button class="logo" onclick="window.location.href='index.html'">
+                <img
+                    src="media/icons/rubyarcade.png"
+                    alt="Ruby Arcade Logo"
+                    class="logo"
+                    width="125vh"
+                    height="27vh"
+                />
+            </button>
+        </span>
+        
+        <div class="navbar-right">
+            <button class="nav-button" onclick="window.location.href='index.html'">
+                <span>Home</span>
+            </button>
+            <button class="nav-button" onclick="window.location.href='games.html'">
+                <span>Games</span>
+            </button>
+            <button class="nav-button" onclick="window.location.href='apps.html'">
+                <span>Apps</span>
+            </button>
+            <button class="nav-button" onclick="window.location.href='utilities.html'">
+                <span>Utilities</span>
+            </button>
+            <button style="margin-right: 20vh;"" class="nav-button" onclick="window.location.href='search.html'">
+                <span">Search</span>
+            </button>
+        </div>
+    </div>
     
-    <div class="navbar-right">
-        <button class="nav-button" onclick="window.location.href='index.html'">
-            <span>Home</span>
-        </button>
-        <button class="nav-button" onclick="window.location.href='games.html'">
-            <span>Games</span>
-        </button>
-        <button class="nav-button" onclick="window.location.href='apps.html'">
-            <span>Apps</span>
-        </button>
-        <button class="nav-button" onclick="window.location.href='utilities.html'">
-            <span>Utilities</span>
-        </button>
-        <button style="margin-right: 20vh;"" class="nav-button" onclick="window.location.href='search.html'">
-            <span">Search</span>
-        </button>
-    </div>
-</div>
-  
 
-  <center>
-    <h1>Apps</h1>
-  </center>
+ 
+        <header>Apps</header>
 
-  <div id="gamesList" style=" display: flex; flex-wrap: wrap; justify-content: center; align-items: center;">
-   <div class="btn" onclick="loadGame('/apps/discord/index.html')">
-      <img src="/media/apps/discord.png">
-      <span>Discord</span> 
-    </div>
-  
-   <div class="btn" onclick="loadGame('/apps/github/index.html')">
-      <img src="/media/apps/github.png">
-      <span>Github</span> 
-    </div>
-    <div class="btn" onclick="loadGame('/apps/youtube/index.html')">
-      <img src="/media/apps/youtube.png">
-      <span>Youtube</span> 
-    </div>
-    <div class="btn" onclick="loadGame('/apps/geforcenow/index.html')">
-      <img src="/media/apps/geforcenow.png">
-      <span>Geforce NOW</span> 
-    </div>
-    <div class="btn" onclick="loadGame('/apps/google/index.html')">
-      <img src="/media/apps/google.png">
-      <span>Google</span> 
-    </div>
-    <div class="btn" onclick="loadGame('/apps/tiktok/index.html')">
-      <img src="/media/apps/tiktok.png">
-      <span>TikTok</span> 
-    </div>
-    <div class="btn" onclick="loadGame('/apps/spotify/index.html')">
-      <img src="/media/apps/spotify.png">
-      <span>Spotify</span> 
-    </div>
-    <div class="btn" onclick="loadGame('/apps/copilot/index.html')">
-      <img src="/media/apps/copilot.png">
-      <span>Copilot</span> 
-    </div>
-    <div class="btn" onclick="loadGame('/apps/mathway/index.html')">
-      <img src="/media/apps/mathway.png">
-      <span>Mathway</span> 
-    </div>
-    <div class="btn" onclick="loadGame('/apps/snapchat/index.html')">
-      <img src="/media/apps/snapchat.png">
-      <span>Snapchat</span> 
-    </div>
-    <div class="btn" onclick="loadGame('/apps/soundboard/index.html')">
-      <img src="/media/apps/soundboard.png">
-      <span>Soundboard</span> 
-    </div>
-    <div class="btn" onclick="loadGame('/apps/vscode/index.html')">
-      <img src="/media/apps/vscode.png">
-      <span>VS Code</span> 
-    </div>
+        <div class="input-container">
+            <img src="media/icons/search.png" alt="Image" class="input-image">
+            <input class="text" id="searchInput" onkeyup="searchGames()" placeholder="Search 340+ Games"/>
+          </div>
+        </div>
 
-
+ 
     
-    </div>
 
+
+
+    <div id="gamesList" style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center;">
+        
+        
   </div>
 
-
-
-  <section id="gameLoaderSection" style="display: none;">
-    <div id="gameLoaderContainer">
-      <iframe id="gameFrame" src="" frameborder="0"></iframe>
     </div>
-    <div class="gameBar">
-      <div class="gameBarButton" onclick="removeGameLoader()">
-        <img src="/media/icons/remove.png" width="20px" alt="Remove Game Loader">
-      </div>
-      <img src="/media/icons/ruby.png" width="20px">
-      <div class="button-group">
-        <div class="gameBarButton" onclick="refreshGame()">
-          <img src="/media/icons/refresh.png" width="20px" alt="Refresh">
+
+    <!-- Game loader section -->
+    <section id="gameLoaderSection" style="display: none;">
+        <div id="gameLoaderContainer">
+            
+            <iframe id="gameFrame" src="media/icons/loading.gif" frameborder="0">
+                
+            </iframe>
+            
         </div>
-        <div class="gameBarButton" onclick="toggleFullscreen()">
-          <img src="/media/icons/fullscreen.png" width="20px" alt="Fullscreen">
+        <div class="gameBar">
+            <div class="gameBarButton" onclick="removeGameLoader()">
+                <img src="/media/icons/remove.png" width="20px" alt="Remove Game Loader" />
+            </div>
+            <img src="/media/icons/ruby.png" width="20px" />
+            <div class="button-group">
+                <div class="gameBarButton" onclick="refreshGame()">
+                    <img src="/media/icons/refresh.png" width="20px" alt="Refresh" />
+                </div>
+                <div class="gameBarButton" onclick="toggleFullscreen()">
+                    <img src="/media/icons/fullscreen.png" width="20px" alt="Fullscreen" />
+                </div>
+            </div>
         </div>
+    </section>
 
+    <center>
+        <h6>Games on this site are for entertainment purposes only. All rights belong to their respective owners.</h6>
+    </center>
 
-      </div>
-    </div>
-  </section>
+    <script src="/js/loader.js"></script>
+    <script src="/js/button.js"></script>
+    <script src="/js/search.js"></script>
+    <script src="assets/apps.js"></script>
 
-  <script>
-    function searchGames() {
-      var input, filter, ul, li, a, i, txtValue;
-      input = document.getElementById('searchInput');
-      filter = input.value.toUpperCase();
-      ul = document.getElementById("gamesList");
-      li = ul.getElementsByTagName('div');
-      for (i = 0; i < li.length; i++) {
-        a = li[i];
-        txtValue = a.textContent || a.innerText;
-        if (txtValue.toUpperCase().indexOf(filter) > -1) {
-          li[i].style.display = "";
-        } else {
-          li[i].style.display = "none";
+    <script>
+
+        // hover
+        function applyHoverEffect(button) {
+            button.addEventListener('mousemove', e => {
+                const rect = button.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                const centerX = rect.width / 2;
+                const centerY = rect.height / 2;
+                const deltaX = (x - centerX) / centerX;
+                const deltaY = (y - centerY) / centerY;
+                const offsetX = deltaX * 10; 
+                const offsetY = deltaY * 10; 
+                const scale = 1.2;
+                const img = button.querySelector('img');
+                img.style.transform = `translate(${offsetX}px, ${offsetY}px) scale(${scale})`;
+                button.style.backgroundImage = `radial-gradient(circle at ${x}px ${y}px, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.8) 100%)`;
+            });
+        
+            button.addEventListener('mouseleave', () => {
+                const img = button.querySelector('img');
+                img.style.transform = 'translate(0, 0) scale(1)';
+                button.style.backgroundImage = '';
+            });
         }
-      }
-    }
+        
+        // insert games
+        function insertGamesIntoPage(games) {
+            // Sort games alphabetically by name
+            games.sort((a, b) => a.name.localeCompare(b.name));
+            
+            var gamesContainer = document.getElementById("gamesList");
+            if (gamesContainer) {
+                gamesContainer.innerHTML = ""; // Clear the container first
+                
+                // google form
+                var googleFormHTML = `
+                
+                <div id="btn" class="btn" onmouseover="applyHoverEffect(this)" onclick="window.open('https://forms.gle/nwikE72j2wJbAfRn8', '_blank')" style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center;">
+    <img src="/media/icons/googleforms.png">
+    <span>Request Apps</span> 
+</div>
 
-    // Function to load game page in the iframe
-    function loadGame(url) {
-      var gameFrame = document.getElementById('gameFrame');
-      gameFrame.src = url;
+             
 
-      // Show the game loader section
-      var gameLoaderSection = document.getElementById('gameLoaderSection');
-      gameLoaderSection.style.display = 'flex';
-
-      // Scroll to game loader section
-      gameLoaderSection.scrollIntoView({behavior: 'smooth'});
-    }
-
-    // Function to toggle fullscreen mode
-    function toggleFullscreen() {
-      var gameFrame = document.getElementById('gameFrame');
-      if (!document.fullscreenElement) {
-        gameFrame.requestFullscreen();
-      } else {
-        if (document.exitFullscreen) {
-          document.exitFullscreen();
+                `;
+                gamesContainer.innerHTML += googleFormHTML;
+        
+              
+                games.forEach(function(game) {
+                    var gameHTML = generateGameHTML(game);
+                    gamesContainer.innerHTML += gameHTML;
+                });
+        
+              
+                const buttons = document.querySelectorAll('.btn-hover');
+                buttons.forEach(button => {
+                    applyHoverEffect(button);
+                });
+            }
         }
-      }
-    }
-    function removeGameLoader() {
-      var gameLoaderSection = document.getElementById('gameLoaderSection');
-      gameLoaderSection.style.display = 'none';
-    }
-
-    function refreshGame() {
-    var gameFrame = document.getElementById("gameFrame");
-    var currentSrc = gameFrame.src;
-    gameFrame.src = "";
-    setTimeout(function() {
-        gameFrame.src = currentSrc;
-    }, 100); 
-}
-
-
-
-const buttons = document.querySelectorAll(".btn");
-
-buttons.forEach((button) => {
-  button.addEventListener("mousemove", (e) => {
-    const rect = button.getBoundingClientRect();
-    const x = e.clientX - rect.left;
-    const y = e.clientY - rect.top;
-    const centerX = rect.width / 2;
-    const centerY = rect.height / 2;
-    const deltaX = (x - centerX) / centerX;
-    const deltaY = (y - centerY) / centerY;
-    const offsetX = deltaX * 10; // Adjust the scale factor as needed
-    const offsetY = deltaY * 10; // Adjust the scale factor as needed
-    const scale = 1.2;
-    const img = button.querySelector("img");
-    img.style.transform = `translate(${offsetX}px, ${offsetY}px) scale(${scale})`;
-  });
-
-  button.addEventListener("mouseleave", () => {
-    const img = button.querySelector("img");
-    img.style.transform = "translate(0, 0) scale(1)";
-  });
-});
-
-const btn = document.querySelector(".btn");
-
-btn.addEventListener("mousemove", (e) => {
-  const rect = btn.getBoundingClientRect();
-  const x = e.clientX - rect.left;
-  const y = e.clientY - rect.top;
-  btn.style.backgroundImage = `radial-gradient(circle at ${x}px ${y}px, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.8) 100%)`;
-});
-
-btn.addEventListener("mouseleave", () => {
-  btn.style.backgroundImage = "";
-});
-  </script>
-
+        
+        
+        function generateGameHTML(game) {
+            return `
+                <div class="btn btn-hover" onclick="loadGame('${game.playUrl}')" onmouseover="applyHoverEffect(this)" onmouseout="removeHoverEffect(this)">
+                    <img src="${game.imageUrl}" />
+                    <span>${game.name}</span>
+                </div>
+            `;
+        }
+        
+        // Load games from JSON file
+        fetch('assets/data/apps.json')
+            .then(response => response.json())
+            .then(data => {
+                // Insert games into the page
+                insertGamesIntoPage(data);
+            })
+            .catch(error => {
+                console.error('Error loading the JSON file:', error);
+            });
+        </script>
+        
 </body>
-
 </html>
