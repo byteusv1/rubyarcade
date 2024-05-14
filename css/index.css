@@ -346,7 +346,7 @@ ul li a:hover {
 .input-container {
   position: relative;
   align-self: flex-start;
-  width: 75%;
+  width: 70%;
   margin-left: 8vh;
 }
 
@@ -354,9 +354,19 @@ ul li a:hover {
   position: relative;
   align-self: flex-start;
   height: 40px;
-  width: 15%;
-  margin-right: 8vh;
   margin-left: 8vh;
+  width: 20%;
+  margin-bottom: 2vh;
+  margin-right: 2vh;
+  
+}
+
+.suggest-container {
+  position: relative;
+  align-self: flex-start;
+  height: 40px;
+  width: 10%;
+
 }
 
 #searchInput {
@@ -370,6 +380,23 @@ ul li a:hover {
   border-radius: 8px;
   outline: none;
   height: 30px;
+  padding-left: 50px;
+
+}
+
+
+  .suggest {
+  background-color: #252525;
+  font-family: "Inter";
+  padding: 10px;
+  font-size: 16px;
+  color: #fff;
+  width: 2vh;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  cursor: pointer;
+  height: 50px;
   padding-left: 50px;
 
 }
@@ -400,6 +427,16 @@ ul li a:hover {
   width: 1.7vh;
 }
 
+.suggest-image {
+  position: absolute;
+  top: 50%;
+  left: 17%;
+  pointer-events: none;
+  transform: translateY(-20%);
+  width: 1.7vh;
+}
+
+
 .input-image {
   transform: translateY(-50%);
 }
@@ -427,6 +464,18 @@ ul li a:hover {
 
 }
 
+.suggest-container {
+  position: relative;
+  align-self: flex-start;
+  height: 40px;
+  margin-left: 8vh;
+  width: 20%;
+  margin-bottom: 2vh;
+  margin-right: 2vh;
+  margin-left: 8vh;
+  
+}
+
 .input-container {
   position: relative;
   margin-right: 10px;
@@ -450,6 +499,7 @@ ul li a:hover {
 .dropdown-container {
  display: block;
  margin-right: auto;
+ margin-left: 8vh;
   height: 40px;
 }
 }

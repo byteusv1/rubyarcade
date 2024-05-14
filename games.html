@@ -93,10 +93,39 @@
           <select class="dropdown">
             <option value="all">Filter - All</option>
             <option value="Horror">Horror</option>
-            <option value="option3">Idle</option>
-
+            <option value="Idle">Idle</option>
+            <option value="Point and Click">Point and click</option>
+            <option value="Sandbox">Sandbox</option>
+            <option value="Adventure">Adventure</option>
+            <option value="Social">Social</option>
+            <option value="Sports">Sports</option>
+            <option value="Racing">Racing</option>
+            <option value="Battle Royale">Battle Royale</option>
+            <option value="Shooter">Shooter</option>
+            <option value="Platformer">Platformer</option>
+            <option value="Rhythm">Rhythm</option>
+            <option value="Puzzle">Puzzle</option>
+            <option value="Arcade">Arcade</option>
+            <option value="Multiplayer">Multiplayer</option>
+            <option value="Simulation">Simulation</option>
+            <option value="Driving">Driving</option>
+            <option value="Endless Runner">Endless Runner</option>
+            <option value="Action">Action</option>
+            <option value="Casual">Casual</option>
+            <option value="Educational">Educational</option>
+            <option value="Role-Playing">Role-Playing</option>
+            <option value="Management">Management</option>
+            <option value="Tower Defense">Tower Defense</option>            
           </select>
+          
         </div>
+        <div class="suggest-container">
+            <img class="suggest-image" src="media/icons/chat.png" alt="Dropdown Icon">
+            
+            <a href="https://forms.gle/nwikE72j2wJbAfRn8" target="_blank"><button class="suggest"></button></a>
+
+        </div>
+        
       </div>
 
 
@@ -191,16 +220,6 @@
     if (gamesContainer) {
         gamesContainer.innerHTML = ""; // Clear the container first
         
-        // google form
-        var googleFormHTML = `
-        
-        <div id="btn" class="btn" onmouseover="applyHoverEffect(this)" onclick="window.open('https://forms.gle/nwikE72j2wJbAfRn8', '_blank')" style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center;">
-            <img src="/media/icons/googleforms.png">
-            <span>Request Games</span> 
-        </div>
-        
-        `;
-        gamesContainer.innerHTML += googleFormHTML;
     
         games.forEach(function(game) {
             var gameHTML = generateGameHTML(game);
