@@ -600,12 +600,6 @@
     "genres": ["Horror", "Adventure", "Endless Runner", "Action"]
   },
   {
-    "name": "Adventure time",
-    "imageUrl": "https://rubyarcademedia.onrender.com/burgerandfrights.png",
-    "playUrl": "https://rubyarcadegames.onrender.com/games/static/burgerandfrights/index.html",
-    "genres": ["Horror", "Adventure", "Endless Runner", "Action"]
-  },
-  {
     "name": "Among Us",
     "imageUrl": "https://rubyarcademedia.onrender.com/amongus.png",
     "playUrl": "https://rubyarcadegames.onrender.com/games/static/amongus/index.html",
