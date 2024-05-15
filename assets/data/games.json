@@ -44,11 +44,11 @@
   {
     "name": "Eaglercraft",
     "imageUrl": "https://rubyarcademedia.onrender.com/eaglercraft.png",
-    "playUrl": "https://rubyarcadegames.onrender.com/games/static/eaglercraft/index.html",
+    "playUrl": "https://rubyarcadegames.onrender.com/games/static/mc/index.html",
     "genres": ["Sandbox", "Adventure"]
   },
   {
-    "name": "Rocket league",
+    "name": "Rocket Soccer",
     "imageUrl": "https://rubyarcademedia.onrender.com/rocketsoccer.png",
     "playUrl": "https://rubyarcadegames.onrender.com/games/static/rocketsoccer/index.html",
     "genres": ["Sports", "Racing"]
@@ -122,44 +122,44 @@
   {
     "name": "Riddle school",
     "imageUrl": "https://rubyarcademedia.onrender.com/riddleschool.png",
-    "playUrl": "https://rubyarcadegames.onrender.com/games/flash/riddleschool/index.html",
-    "genres": ["Point and Click", "Adventure"]
+    "playUrl": "https://rubyarcadegames.onrender.com/games/flash/riddleschool/riddleschool1/index.html",
+    "genres": ["Point and Click", "Adventure", "Puzzle"]
   },
   {
     "name": "Riddle school 2",
     "imageUrl": "https://rubyarcademedia.onrender.com/riddleschool2.png",
     "playUrl": "https://rubyarcadegames.onrender.com/games/flash/riddleschool/riddleschool2/index.html",
-    "genres": ["Point and Click", "Adventure"]
+    "genres": ["Point and Click", "Adventure", "Puzzle"]
   },
   {
     "name": "Riddle school 3",
     "imageUrl": "https://rubyarcademedia.onrender.com/riddleschool3.png",
     "playUrl": "https://rubyarcadegames.onrender.com/games/flash/riddleschool/riddleschool3/index.html",
-    "genres": ["Point and Click", "Adventure"]
+    "genres": ["Point and Click", "Adventure", "Puzzle"]
   },
   {
     "name": "Riddle school 4",
     "imageUrl": "https://rubyarcademedia.onrender.com/riddleschool4.png",
     "playUrl": "https://rubyarcadegames.onrender.com/games/flash/riddleschool/riddleschool4/index.html",
-    "genres": ["Point and Click", "Adventure"]
+    "genres": ["Point and Click", "Adventure", "Puzzle"]
   },
   {
     "name": "Riddle school 5",
     "imageUrl": "https://rubyarcademedia.onrender.com/riddleschool5.png",
     "playUrl": "https://rubyarcadegames.onrender.com/games/flash/riddleschool/riddleschool5/index.html",
-    "genres": ["Point and Click", "Adventure"]
+    "genres": ["Point and Click", "Adventure", "Puzzle"]
   },
   {
     "name": "Riddle transfer",
     "imageUrl": "https://rubyarcademedia.onrender.com/riddleschooltransfer.png",
     "playUrl": "https://rubyarcadegames.onrender.com/games/flash/riddleschool/riddletransfer/index.html",
-    "genres": ["Point and Click", "Adventure"]
+    "genres": ["Point and Click", "Adventure", "Puzzle"]
   },
   {
     "name": "Riddle transfer 2",
     "imageUrl": "https://rubyarcademedia.onrender.com/riddleschooltransfer2.png",
     "playUrl": "https://rubyarcadegames.onrender.com/games/flash/riddleschool/riddletransfer/index.html",
-    "genres": ["Point and Click", "Adventure"]
+    "genres": ["Point and Click", "Adventure", "Puzzle"]
   },
   {
     "name": "Run",
@@ -194,7 +194,7 @@
   {
     "name": "Backrooms",
     "imageUrl": "https://rubyarcademedia.onrender.com/backrooms.png",
-    "playUrl": "https://rubyarcadegames.onrender.com/games/static/backrooms/index.html",
+    "playUrl": "https://rubyarcadegames.onrender.com/games/static/Backrooms/index.html",
     "genres": ["Horror", "Adventure"]
   },
   {
@@ -320,7 +320,7 @@
   {
     "name": "Snowball.io",
     "imageUrl": "https://rubyarcademedia.onrender.com/snowballio.png",
-    "playUrl": "https://rubyarcadegames.onrender.com/games/static/snowballio/index.html",
+    "playUrl": "https://rubyarcadegames.onrender.com/games/static/snowbattleio/index.html",
     "genres": ["Arcade", "Action"]
   },
   {
@@ -447,7 +447,7 @@
     "name": "Ball dodge",
     "imageUrl": "https://rubyarcademedia.onrender.com/balldodge.png",
     "playUrl": "https://rubyarcadegames.onrender.com/games/static/balldodge/index.html",
-    "genres": ["#"]
+    "genres": ["Arcade", "Action"]
   },
   {
     "name": "Tetris",
@@ -459,12 +459,128 @@
     "name": "Minecraft Javascript edition",
     "imageUrl": "https://rubyarcademedia.onrender.com/mcjs.png",
     "playUrl": "https://rubyarcadegames.onrender.com/games/static/balldodge/index.html",
-    "genres": ["#"]
+    "genres": ["Sandbox", "Adventure"]
   },
   {
     "name": "Friday Night Funkin' Mid fight masses",
     "imageUrl": "https://rubyarcademedia.onrender.com/fnfmidfight.png",
     "playUrl": "https://rubyarcadegames.onrender.com/games/static/fnfmidfight/index.html",
-    "genres": ["#"]
+    "genres": ["Rhythm"]
+  },
+  {
+    "name": "Super Mario 64",
+    "imageUrl": "https://rubyarcademedia.onrender.com/supermario64.png",
+    "playUrl": "https://rubyarcadegames.onrender.com/games/emulated/supermario64/index.html",
+    "genres": ["Platformer", "Action"]
+  },
+  {
+    "name": "2048",
+    "imageUrl": "https://rubyarcademedia.onrender.com/2048.png",
+    "playUrl": "https://rubyarcadegames.onrender.com/games/static/2048/index.html",
+    "genres": ["Puzzle"]
+  },
+  {
+    "name": "2048 hacked",
+    "imageUrl": "https://rubyarcademedia.onrender.com/2048hacked.png",
+    "playUrl": "https://rubyarcadegames.onrender.com/games/static/2048/index.html",
+    "genres": ["Puzzle"]
+  },
+  {
+    "name": "Shell shockers",
+    "imageUrl": "https://rubyarcademedia.onrender.com/shellshocker.png",
+    "playUrl": "https://rubyarcadegames.onrender.com/games/static/shellshockers/index.html",
+    "genres": ["Shooter"]
+  },
+  {
+    "name": "Minecraft Classic",
+    "imageUrl": "https://rubyarcademedia.onrender.com/mcclassic.png",
+    "playUrl": "https://rubyarcadegames.onrender.com/games/static/mcclassic/index.html",
+    "genres": ["Sandbox", "Adventure"]
+  },
+  {
+    "name": "Fireboy & Watergirl",
+    "imageUrl": "https://rubyarcademedia.onrender.com/fbandwg.png",
+    "playUrl": "https://rubyarcadegames.onrender.com/games/static/shellshockers/index.html",
+    "genres": ["2 Player", "Puzzle", "Adventure"]
+  },
+  {
+    "name": "Flappy Bird",
+    "imageUrl": "https://rubyarcademedia.onrender.com/flappy.png",
+    "playUrl": "https://rubyarcadegames.onrender.com/games/static/flappy/index.html",
+    "genres": ["Arcade", "Action", "Endless Runner"]
+  },
+  {
+    "name": "World's hardest game 2",
+    "imageUrl": "https://rubyarcademedia.onrender.com/worldshardestgame2.png",
+    "playUrl": "https://rubyarcadegames.onrender.com/games/flash/worldshardestgame2/index.html",
+    "genres": ["Arcade", "Action", "Endless Runner"]
+  },
+  {
+    "name": "Plants Vs Zombies",
+    "imageUrl": "https://rubyarcademedia.onrender.com/pvz.png",
+    "playUrl": "https://rubyarcadegames.onrender.com/games/static/pvz/index.html",
+    "genres": ["Tower Defense", "Casual"]
+  },
+  {
+    "name": "Infinite Craft",
+    "imageUrl": "https://rubyarcademedia.onrender.com/infinitecraft.png",
+    "playUrl": "https://rubyarcadegames.onrender.com/games/static/infinitecraft/index.html",
+    "genres": ["Sandbox", "Simulation", "Adventure"]
+  },
+  {
+    "name": "Dadish",
+    "imageUrl": "https://rubyarcademedia.onrender.com/dadish.png",
+    "playUrl": "https://rubyarcadegames.onrender.com/games/static/dadish/index.html",
+    "genres": ["Platformer", "Adventure", "Action", "Puzzle"]
+  },
+  {
+    "name": "Dadish 2",
+    "imageUrl": "https://rubyarcademedia.onrender.com/dadish2.png",
+    "playUrl": "https://rubyarcadegames.onrender.com/games/static/dadish2/index.html",
+    "genres": ["Platformer", "Adventure", "Action", "Puzzle"]
+  },
+  {
+    "name": "Dadish 3",
+    "imageUrl": "https://rubyarcademedia.onrender.com/dadish3.png",
+    "playUrl": "https://rubyarcadegames.onrender.com/games/static/dadish3/index.html",
+    "genres": ["Platformer", "Adventure", "Action", "Puzzle"]
+  },
+  {
+    "name": "Ngon",
+    "imageUrl": "https://rubyarcademedia.onrender.com/ngon.png",
+    "playUrl": "https://rubyarcadegames.onrender.com/games/static/dadish2/index.html",
+    "genres": ["Arcade", "Action", "Rhythm"]
+  },
+  {
+    "name": "10 minutes til dawn",
+    "imageUrl": "https://rubyarcademedia.onrender.com/10minutes.png",
+    "playUrl": "https://rubyarcadegames.onrender.com/games/static/10minutestilldawn/index.html",
+    "genres": ["Action", "Survival"]
+  },
+  {
+    "name": "Ace attorney",
+    "imageUrl": "https://rubyarcademedia.onrender.com/aceattorney.png",
+    "playUrl": "https://rubyarcadegames.onrender.com/games/emulated/aceattorney/index.html",
+    "genres": ["Adventure", "Puzzle"]
+  },
+  {
+    "name": "A dance of fire and ice",
+    "imageUrl": "https://rubyarcademedia.onrender.com/adofai.png",
+    "playUrl": "https://rubyarcadegames.onrender.com/games/static/adofai/index.html",
+    "genres": ["Adventure", "Puzzle"]
+  },
+  {
+    "name": "Suika (watermelon game)",
+    "imageUrl": "https://lh3.googleusercontent.com/JAQNZSxvpZp4WSd0Aad31JFMh9MGnAqXuGL3fb_Nzz4vOe7_zIDPbTMfLFWiAv1JWf7y--wxvlz_tFwsh4NAzkg=w1280",
+    "playUrl": "https://scratch.mit.edu/projects/911281961/embed",
+    "genres": ["Puzzle", "Puzzle", "Arcade"]
+  },
+
+  
+  {
+    "name": "Super mario world",
+    "imageUrl": "https://rubyarcademedia.onrender.com/supermarioworld.png",
+    "playUrl": "https://rubyarcadegames.onrender.com/games/emulated/supermarioworld/index.html",
+    "genres": ["Platformer"]
   }
   ]

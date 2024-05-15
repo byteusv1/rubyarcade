@@ -60,9 +60,6 @@
             <button class="nav-button" onclick="window.location.href='apps.html'">
                 <span>Apps</span>
             </button>
-            <button class="nav-button" onclick="window.location.href='utilities.html'">
-                <span>Utilities</span>
-            </button>
             <button style="margin-right: 20vh;"" class="nav-button" onclick="window.location.href='search.html'">
                 <span">Search</span>
             </button>
@@ -71,18 +68,36 @@
     
 
  
-        <header>Apps</header>
 
-        <div class="input-container">
-            <img src="media/icons/search.png" alt="Image" class="input-image">
-            <input class="text" id="searchInput" onkeyup="searchGames()" placeholder="Search 340+ Games"/>
+
+        <div class="container">
+
+            <div class="input-container">
+                <img class="input-image" src="media/icons/search.png" alt="Search Icon">
+                <input class="text" id="searchInput" onkeyup="searchGames()" placeholder="Search 9 Apps"/>
+            </div>
+    
+            <div class="dropdown-container">
+              <img class="dropdown-image" src="media/icons/filter.png" alt="Dropdown Icon">
+              <select class="dropdown">
+                <option value="all">Filter - All</option>
+                <option value="none">No filters at the moment</option>
+          
+              </select>
+            </div>
+    
+            <div class="suggest-container">
+                <img class="suggest-image" src="media/icons/chat.png">
+                <a href="https://forms.gle/nwikE72j2wJbAfRn8" target="_blank">
+                    <button class="suggest" title="Suggest"></button></a>
+            </div>
           </div>
-        </div>
 
  
     
 
-
+          <div id="favoriteGames" style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center; margin-bottom: 50px;">
+</div>
 
     <div id="gamesList" style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center;">
         
@@ -121,94 +136,44 @@
     </center>
 
     <script src="/js/loader.js"></script>
-    <script src="/js/button.js"></script>
+    <script src="/js/apps.js"></script>
     <script src="/js/search.js"></script>
     <script src="assets/apps.js"></script>
 
-    <script>
 
-        // hover
-        function applyHoverEffect(button) {
-            button.addEventListener('mousemove', e => {
-                const rect = button.getBoundingClientRect();
-                const x = e.clientX - rect.left;
-                const y = e.clientY - rect.top;
-                const centerX = rect.width / 2;
-                const centerY = rect.height / 2;
-                const deltaX = (x - centerX) / centerX;
-                const deltaY = (y - centerY) / centerY;
-                const offsetX = deltaX * 10; 
-                const offsetY = deltaY * 10; 
-                const scale = 1.2;
-                const img = button.querySelector('img');
-                img.style.transform = `translate(${offsetX}px, ${offsetY}px) scale(${scale})`;
-                button.style.backgroundImage = `radial-gradient(circle at ${x}px ${y}px, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.8) 100%)`;
-            });
-        
-            button.addEventListener('mouseleave', () => {
-                const img = button.querySelector('img');
-                img.style.transform = 'translate(0, 0) scale(1)';
-                button.style.backgroundImage = '';
-            });
-        }
-        
-        // insert games
-        function insertGamesIntoPage(games) {
-            // Sort games alphabetically by name
-            games.sort((a, b) => a.name.localeCompare(b.name));
+    <footer class="footer">
+        <div class="footer-content">
+
+          <div class="ruby">
+            <img src="/media/icons/rubyarcade.png" alt="Logo" width="100%" height="100%" style="-webkit-user-drag: none;" />
+          </div>
+            <div class="smallerlogo">
             
-            var gamesContainer = document.getElementById("gamesList");
-            if (gamesContainer) {
-                gamesContainer.innerHTML = ""; // Clear the container first
-                
-                // google form
-                var googleFormHTML = `
-                
-                <div id="btn" class="btn" onmouseover="applyHoverEffect(this)" onclick="window.open('https://forms.gle/nwikE72j2wJbAfRn8', '_blank')" style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center;">
-    <img src="/media/icons/googleforms.png">
-    <span>Request Apps</span> 
-</div>
+              <img src="/media/icons/ruby.png" alt="Logo" style="-webkit-user-drag: none;" />
+            </div>
+            
+          
+          
+            <div class="pages">
+            
+              <ul>
+                <li><a href="/credits.html">Home</a></li>
+                <li><a href="/games.html">Games</a></li>
+                <li><a href="/apps.html">Apps</a></li>
+                <li><a href="/search.html">Search</a></li>
+              </ul>
+  
+            </div>
+          <div class="resources">
+            
+            <ul>
+              <li><a href="/credits.html">Credits</a></li>
+              <li><a href="/partners.html">Partners</a></li>
+              <li><a href="/policy.html">Privacy Policy</a></li>
+              <li><a href="/terms.html">Terms of condition</a></li>
+            </ul>
 
-             
-
-                `;
-                gamesContainer.innerHTML += googleFormHTML;
-        
-              
-                games.forEach(function(game) {
-                    var gameHTML = generateGameHTML(game);
-                    gamesContainer.innerHTML += gameHTML;
-                });
-        
-              
-                const buttons = document.querySelectorAll('.btn-hover');
-                buttons.forEach(button => {
-                    applyHoverEffect(button);
-                });
-            }
-        }
-        
-        
-        function generateGameHTML(game) {
-            return `
-                <div class="btn btn-hover" onclick="loadGame('${game.playUrl}')" onmouseover="applyHoverEffect(this)" onmouseout="removeHoverEffect(this)">
-                    <img src="${game.imageUrl}" />
-                    <span>${game.name}</span>
-                </div>
-            `;
-        }
-        
-        // Load games from JSON file
-        fetch('assets/data/apps.json')
-            .then(response => response.json())
-            .then(data => {
-                // Insert games into the page
-                insertGamesIntoPage(data);
-            })
-            .catch(error => {
-                console.error('Error loading the JSON file:', error);
-            });
-        </script>
-        
+          </div>
+      </footer>
 </body>
 </html>

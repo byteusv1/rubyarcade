@@ -39,6 +39,7 @@
         margin-left: 10vh;
         font-weight: 400;
     }
+
 </style>
 
 
@@ -68,9 +69,6 @@
             <button class="nav-button" onclick="window.location.href='apps.html'">
                 <span>Apps</span>
             </button>
-            <button class="nav-button" onclick="window.location.href='utilities.html'">
-                <span>Utilities</span>
-            </button>
             <button style="margin-right: 20vh;"" class="nav-button" onclick="window.location.href='search.html'">
                 <span">Search</span>
             </button>
@@ -79,16 +77,16 @@
     
 
 
-    <header>Games</header>
-    <h3>click <a href=https://rubyarcadegames.onrender.com/>here</a> for all the games</h3>
+
+   
     <div class="container">
 
         <div class="input-container">
+            <img class="input-image" src="media/icons/search.png" alt="Search Icon">
             <input class="text" id="searchInput" onkeyup="searchGames()" placeholder="Search 340+ Games"/>
         </div>
 
         <div class="dropdown-container">
-
           <img class="dropdown-image" src="media/icons/filter.png" alt="Dropdown Icon">
           <select class="dropdown">
             <option value="all">Filter - All</option>
@@ -105,6 +103,7 @@
             <option value="Platformer">Platformer</option>
             <option value="Rhythm">Rhythm</option>
             <option value="Puzzle">Puzzle</option>
+            <option value="Survival">Survival</option>  
             <option value="Arcade">Arcade</option>
             <option value="Multiplayer">Multiplayer</option>
             <option value="Simulation">Simulation</option>
@@ -115,18 +114,16 @@
             <option value="Educational">Educational</option>
             <option value="Role-Playing">Role-Playing</option>
             <option value="Management">Management</option>
+            <option value="2 Player">2 Player</option>  
             <option value="Tower Defense">Tower Defense</option>            
           </select>
-          
         </div>
+
         <div class="suggest-container">
             <img class="suggest-image" src="media/icons/chat.png">
-            
             <a href="https://forms.gle/nwikE72j2wJbAfRn8" target="_blank">
-                <button class="suggest" title="Suggest"></button>
-            </a>
+                <button class="suggest" title="Suggest"></button></a>
         </div>
-        
       </div>
 
 
@@ -177,181 +174,44 @@
     </center>
 
     <script src="/js/loader.js"></script>
-    <script src="/js/button.js"></script>
+    <script src="/js/games.js"></script>
     <script src="/js/search.js"></script>
     <script src="assets/games.js"></script>
 
-    <script>
 
-        // hover
-        function applyHoverEffect(button) {
-            button.addEventListener('mousemove', e => {
-                const rect = button.getBoundingClientRect();
-                const x = e.clientX - rect.left;
-                const y = e.clientY - rect.top;
-                const centerX = rect.width / 2;
-                const centerY = rect.height / 2;
-                const deltaX = (x - centerX) / centerX;
-                const deltaY = (y - centerY) / centerY;
-                const offsetX = deltaX * 10; 
-                const offsetY = deltaY * 10; 
-                const scale = 1.2;
-                const img = button.querySelector('img');
-                img.style.transform = `translate(${offsetX}px, ${offsetY}px) scale(${scale})`;
-                button.style.backgroundImage = `radial-gradient(circle at ${x}px ${y}px, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.8) 100%)`;
-            });
-        
-            button.addEventListener('mouseleave', () => {
-                const img = button.querySelector('img');
-                img.style.transform = 'translate(0, 0) scale(1)';
-                button.style.backgroundImage = '';
-            });
-        }
-        
-        function insertGamesIntoPage(games) {
-    // Sort games alphabetically by name
-    games.sort((a, b) => a.name.localeCompare(b.name));
-    
-    // Move favorited games to the beginning of the list
-    const favoritedGames = games.filter(game => game.favorited); // Assuming you have a 'favorited' property in your game objects
-    const nonFavoritedGames = games.filter(game => !game.favorited);
-    games = [...favoritedGames, ...nonFavoritedGames];
-    
-    var gamesContainer = document.getElementById("gamesList");
-    if (gamesContainer) {
-        gamesContainer.innerHTML = ""; // Clear the container first
-        
-    
-        games.forEach(function(game) {
-            var gameHTML = generateGameHTML(game);
-            gamesContainer.innerHTML += gameHTML;
-        });
-    
-        const buttons = document.querySelectorAll('.btn-hover');
-        buttons.forEach(button => {
-            applyHoverEffect(button);
-        });
-    }
-}
-        
-        
-        function generateGameHTML(game) {
-    return `
-        <div class="btn btn-hover" onclick="loadGame('${game.playUrl}')" onmouseover="applyHoverEffect(this)" ">
-            <button class="btn-favorite" onclick="favoriteGame(event)">&#9733;</button>
-            <img src="${game.imageUrl}" />
-            <span>${game.name}</span>
-        </div>
-        
-    `;
-}
+    <footer class="footer">
+        <div class="footer-content">
 
+          <div class="ruby">
+            <img src="/media/icons/rubyarcade.png" alt="Logo" width="100%" height="100%" style="-webkit-user-drag: none;" />
+          </div>
+            <div class="smallerlogo">
+            
+              <img src="/media/icons/ruby.png" alt="Logo" style="-webkit-user-drag: none;" />
+            </div>
+            
+          
+          
+            <div class="pages">
+            
+              <ul>
+                <li><a href="/credits.html">Home</a></li>
+                <li><a href="/games.html">Games</a></li>
+                <li><a href="/apps.html">Apps</a></li>
+                <li><a href="/search.html">Search</a></li>
+              </ul>
+  
+            </div>
+          <div class="resources">
+            
+            <ul>
+              <li><a href="/credits.html">Credits</a></li>
+              <li><a href="/partners.html">Partners</a></li>
+              <li><a href="/policy.html">Privacy Policy</a></li>
+              <li><a href="/terms.html">Terms of condition</a></li>
+            </ul>
 
-function updateLocalStorage() {
-    // Get all favorited game buttons
-    const favoritedButtons = document.querySelectorAll('.btn-favorite.favorited');
-
-    // Extract the HTML of each favorited game button
-    const favoritedGamesHTML = new Set(); // Using a Set to ensure uniqueness
-    favoritedButtons.forEach(button => {
-        const gameHTML = button.parentElement.outerHTML;
-        favoritedGamesHTML.add(gameHTML);
-    });
-
-    // Save the list of favorited game HTML in localStorage
-    localStorage.setItem('favoriteGamesHTML', JSON.stringify(Array.from(favoritedGamesHTML)));
-}
-
-document.addEventListener('DOMContentLoaded', function() {
-    // Retrieve favorited games HTML from localStorage
-    const favoritedGamesHTML = JSON.parse(localStorage.getItem('favoriteGamesHTML'));
-
-    // Get the favorite games container
-    const favoriteGamesContainer = document.getElementById('favoriteGames');
-
-    // If there are favorited games stored in localStorage, display them
-    if (favoritedGamesHTML) {
-        favoritedGamesHTML.forEach(gameHTML => {
-            const gameElement = document.createElement('div');
-            gameElement.innerHTML = gameHTML;
-            favoriteGamesContainer.appendChild(gameElement.firstChild);
-        });
-    }
-});
-
-function favoriteGame(event) {
-    // Prevent the default behavior of the button (e.g., submitting a form)
-    event.preventDefault();
-    event.stopPropagation();
-
-    // Toggle a class on the button to visually indicate it's been favorited
-    event.target.classList.toggle('favorited');
-
-    // Find the parent game element
-    const gameElement = event.target.closest('.btn');
-
-    // Get the favorite games container
-    const favoriteGamesContainer = document.getElementById('favoriteGames');
-
-    if (gameElement.parentElement === favoriteGamesContainer) {
-        // If the game element is already in the favorite games container, remove it
-        favoriteGamesContainer.removeChild(gameElement);
-    } else {
-        // Clone the game element
-        const clonedGameElement = gameElement.cloneNode(true);
-        // Remove the 'favorited' class from the cloned element to avoid duplication
-        clonedGameElement.classList.remove('favorited');
-        
-        // Remove the favorite button from the cloned game element
-        const favoriteButton = clonedGameElement.querySelector('.btn-favorite');
-        if (favoriteButton) {
-            favoriteButton.remove();
-        }
-
-        // Insert the cloned game element at the top of the favorite games container
-        favoriteGamesContainer.prepend(clonedGameElement);
-    }
-
-    // Update localStorage
-    updateLocalStorage();
-}
-
-
-
-        
-
-        fetch('assets/data/games.json')
-    .then(response => response.json())
-    .then(data => {
-        // Store the loaded games data in the gamesData variable
-        gamesData = data;
-        
-        // Insert all games into the page initially
-        insertGamesIntoPage(gamesData);
-    })
-    .catch(error => {
-        console.error('Error loading the JSON file:', error);
-    });
-
-            const dropdown = document.querySelector('.dropdown');
-
-            function filterGamesByGenre(genre) {
-    // If genre is 'all', display all games
-    if (genre === 'all') {
-        insertGamesIntoPage(gamesData);
-    } else {
-        // Filter games based on genre
-        const filteredGames = gamesData.filter(game => game.genres.includes(genre));
-        insertGamesIntoPage(filteredGames);
-    }
-}
-
-// Event listener to trigger filtering when dropdown value changes
-dropdown.addEventListener('change', function() {
-    const selectedGenre = this.value;
-    filterGamesByGenre(selectedGenre);
-});
-        </script>
-        
+          </div>
+      </footer>
 </body>
 </html>

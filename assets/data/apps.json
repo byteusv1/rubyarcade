@@ -2,47 +2,56 @@
   {
     "name": "Google",
     "imageUrl": "https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-09-512.png",
-    "playUrl": "https://usequanta.vercel.app/load.html?app=google"
+    "playUrl": "https://usequanta.vercel.app/load.html?app=google",
+    "genres": ["#"]
   },
   {
     "name": "Github",
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/GitHub_Invertocat_Logo.svg/1200px-GitHub_Invertocat_Logo.svg.png",
-    "playUrl": "https://rubyarcadegames.onrender.com/games/nowgg/roblox/index.html"
+    "playUrl": "https://rubyarcadegames.onrender.com/games/nowgg/roblox/index.html",
+    "genres": ["#"]
   },
   {
     "name": "Youtube",
     "imageUrl": "https://yt3.googleusercontent.com/584JjRp5QMuKbyduM_2k5RlXFqHJtQ0qLIPZpwbUjMJmgzZngHcam5JMuZQxyzGMV5ljwJRl0Q=s900-c-k-c0x00ffffff-no-rj",
-    "playUrl": "https://usequanta.vercel.app/load.html?app=youtube"
+    "playUrl": "https://usequanta.vercel.app/load.html?app=youtube",
+    "genres": ["#"]
   },
   {
     "name": "GeForce NOW",
     "imageUrl": "https://play-lh.googleusercontent.com/vobh63LuLl3B59tlHTCrSdpWzH0b_IfOsOtpVFaLK-hNQnJiWntiUgQpnhlKeIeYXBM",
-    "playUrl": "https://usequanta.vercel.app/load.html?app=geforce"
+    "playUrl": "https://usequanta.vercel.app/load.html?app=geforce",
+    "genres": ["#"]
   },
   {
     "name": "TikTok",
     "imageUrl": "https://thumbs.dreamstime.com/b/tiktok-social-media-app-icon-tiktok-social-media-app-icon-square-shape-vector-illustration-269930887.jpg",
-    "playUrl": "https://usequanta.vercel.app/load.html?app=tiktok"
+    "playUrl": "https://usequanta.vercel.app/load.html?app=tiktok",
+    "genres": ["#"]
   },
   {
     "name": "Spotify",
     "imageUrl": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/198142ac-f410-423a-bf0b-34c9cb5d9609/ddltt3t-0158e526-c1ca-4cb3-b506-57a65e9a94a7.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzE5ODE0MmFjLWY0MTAtNDIzYS1iZjBiLTM0YzljYjVkOTYwOVwvZGRsdHQzdC0wMTU4ZTUyNi1jMWNhLTRjYjMtYjUwNi01N2E2NWU5YTk0YTcucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.ohyxktlcUNvCHGjZoBHaI31fpkpsd3B_Zx4vHBSlg5Q",
-    "playUrl": "https://usequanta.vercel.app/load.html?app=spotify"
+    "playUrl": "https://usequanta.vercel.app/load.html?app=spotify",
+    "genres": ["#"]
   },
   {
     "name": "Copilot",
     "imageUrl": "https://www.klarinetsolutions.com/wp-content/uploads/2024/02/Klarinet-Microsoft-Copilot-Readiness-Assessment.png",
-    "playUrl": "https://usequanta.vercel.app/load.html?app=copilot"
+    "playUrl": "https://usequanta.vercel.app/load.html?app=copilot",
+    "genres": ["#"]
   },
   {
     "name": "Mathway",
-    "imageUrl": "https://www.klarinetsolutions.com/wp-content/uploads/2024/02/Klarinet-Microsoft-Copilot-Readiness-Assessment.png",
-    "playUrl": "https://usequanta.vercel.app/load.html?app=copilot"
+    "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6KtVABreRiJEwEVE-g6h_6Bl3rDeqeXFmIlbGXLOIfA&s",
+    "playUrl": "https://usequanta.vercel.app/load.html?app=mathway",
+    "genres": ["#"]
   },
   {
     "name": "Discord",
     "imageUrl": "https://gdm-catalog-fmapi-prod.imgix.net/ProductLogo/a85b36ef-ff72-49be-8c06-c385860eecd0.jpeg",
-    "playUrl": "https://usequanta.vercel.app/load.html?app=discord"
+    "playUrl": "https://usequanta.vercel.app/load.html?app=discord",
+    "genres": ["#"]
   }
 
 ]
