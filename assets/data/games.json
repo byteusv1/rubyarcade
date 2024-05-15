@@ -470,7 +470,7 @@
   {
     "name": "Super Mario 64",
     "imageUrl": "https://rubyarcademedia.onrender.com/supermario64.png",
-    "playUrl": "https://rubyarcadegames.onrender.com/games/emulated/supermario64/index.html",
+    "playUrl": "https://rubyarcadegames.onrender.com/games/emulated/sm64/index.html",
     "genres": ["Platformer", "Action"]
   },
   {
@@ -573,10 +573,74 @@
     "name": "Suika (watermelon game)",
     "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTaeNYHexPuvcqFcYF7xi5zq38inEq-zHyJHrTrWMblSBE9iGx",
     "playUrl": "https://scratch.mit.edu/projects/911281961/embed",
-    "genres": ["Puzzle", "Puzzle", "Arcade"]
+    "genres": ["Strategy", "Puzzle", "Arcade"]
   },
-
-  
+  {
+    "name": "Advance Wars",
+    "imageUrl": "https://rubyarcademedia.onrender.com/advancewars.png",
+    "playUrl": "https://rubyarcadegames.onrender.com/games/emulated/advancewars/index.html",
+    "genres": ["RPG", "Strategy"]
+  },
+  {
+    "name": "Advance Wars 2",
+    "imageUrl": "https://rubyarcademedia.onrender.com/advancewars2.png",
+    "playUrl": "https://rubyarcadegames.onrender.com/games/emulated/advancewars2/index.html",
+    "genres": ["RPG", "Strategy"]
+  },
+  {
+    "name": "Adventure time",
+    "imageUrl": "https://rubyarcademedia.onrender.com/adventuretime.png",
+    "playUrl": "https://rubyarcadegames.onrender.com/games/emulated/adventuretime/index.html",
+    "genres": ["Action", "Adventure", "Platformer", "Puzzle"]
+  },
+  {
+    "name": "Burger and frights",
+    "imageUrl": "https://rubyarcademedia.onrender.com/burgerandfrights.png",
+    "playUrl": "https://rubyarcadegames.onrender.com/games/static/burgerandfrights/index.html",
+    "genres": ["Horror", "Adventure", "Endless Runner", "Action"]
+  },
+  {
+    "name": "Adventure time",
+    "imageUrl": "https://rubyarcademedia.onrender.com/burgerandfrights.png",
+    "playUrl": "https://rubyarcadegames.onrender.com/games/static/burgerandfrights/index.html",
+    "genres": ["Horror", "Adventure", "Endless Runner", "Action"]
+  },
+  {
+    "name": "Among Us",
+    "imageUrl": "https://rubyarcademedia.onrender.com/amongus.png",
+    "playUrl": "https://rubyarcadegames.onrender.com/games/static/amongus/index.html",
+    "genres": ["Multiplayer", "Casual"]
+  },
+  {
+    "name": "Animal Crossing",
+    "imageUrl": "https://rubyarcademedia.onrender.com/animalcrossing.png",
+    "playUrl": "https://rubyarcadegames.onrender.com/games/emulated/animalcrossingwildworld/index.html",
+    "genres": ["Multiplayer", "Casual"]
+  },
+  {
+    "name": "Yohoho.io",
+    "imageUrl": "https://rubyarcademedia.onrender.com/yohoho.png",
+    "playUrl": "https://rubyarcadegames.onrender.com/games/static/yohoho/index.html",
+    "genres": ["Multiplayer", "Casual"]
+  },
+  {
+    "name": "Portal",
+    "imageUrl": "https://rubyarcademedia.onrender.com/portal.png",
+    "playUrl": "https://rubyarcadegames.onrender.com/games/flash/portal/index.html",
+    "genres": ["Puzzle", "Platformer"]
+  },
+  {
+    "name": "Portal 2",
+    "imageUrl": "https://rubyarcademedia.onrender.com/portal2.png",
+    "playUrl": "https://rubyarcadegames.onrender.com/games/flash/portal2/index.html",
+    "genres": ["Puzzle", "Platformer"]
+  },
+{
+  "name": "Moto X3M",
+  "imageUrl": "https://rubyarcademedia.onrender.com/motox3m.png",
+  "playUrl": "https://rubyarcadegames.onrender.com/games/static/motox3m/index.html",
+  "genres": ["Racing", "Platformer", "Action", "Sports"]
+},
   {
     "name": "Super mario world",
     "imageUrl": "https://rubyarcademedia.onrender.com/supermarioworld.png",
