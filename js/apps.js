@@ -28,8 +28,8 @@ buttons.forEach(button => {
 
 function generateGameHTML(game) {
 return `
-<div class="btn btn-hover" onclick="loadGame('${game.playUrl}')" onmouseover="applyHoverEffect(this)" ">
-    <button class="btn-favorite" onclick="favoriteGame(event)">&#9733;</button>
+<div class="btn btn-hover" onclick="loadGame('${game.playUrl}')">
+    <button class="btn-favorite" onclick="favoriteGame(event)">&#10084;</button>
     <img src="${game.imageUrl}" />
     <span>${game.name}</span>
 </div>
@@ -39,36 +39,37 @@ return `
 
 
 function updateLocalStorage() {
-// Get all favorited game buttons
-const favoritedButtons = document.querySelectorAll('.btn-favorite.favorited');
+    // Get all favorited game buttons
+    const favoritedButtons = document.querySelectorAll('.btn-favorite.favorited');
 
-// Extract the HTML of each favorited game button
-const favoritedGamesHTML = new Set(); // Using a Set to ensure uniqueness
-favoritedButtons.forEach(button => {
-const gameHTML = button.parentElement.outerHTML;
-favoritedGamesHTML.add(gameHTML);
-});
+    // Extract the HTML of each favorited game button
+    const favoritedAppsHTML = new Set(); // Using a Set to ensure uniqueness
+    favoritedButtons.forEach(button => {
+        const gameHTML = button.parentElement.outerHTML;
+        favoritedAppsHTML.add(gameHTML);
+    });
 
-// Save the list of favorited game HTML in localStorage
-localStorage.setItem('favoriteGamesHTML', JSON.stringify(Array.from(favoritedGamesHTML)));
+    // Save the list of favorited game HTML in localStorage
+    localStorage.setItem('favoriteAppsHTML', JSON.stringify(Array.from(favoritedAppsHTML)));
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-// Retrieve favorited games HTML from localStorage
-const favoritedGamesHTML = JSON.parse(localStorage.getItem('favoriteGamesHTML'));
+    // Retrieve favorited games HTML from localStorage
+    const favoritedAppsHTML = JSON.parse(localStorage.getItem('favoriteAppsHTML'));
 
-// Get the favorite games container
-const favoriteGamesContainer = document.getElementById('favoriteGames');
+    // Get the favorite games container
+    const favoriteAppsContainer = document.getElementById('favoriteApps');
 
-// If there are favorited games stored in localStorage, display them
-if (favoritedGamesHTML) {
-favoritedGamesHTML.forEach(gameHTML => {
-    const gameElement = document.createElement('div');
-    gameElement.innerHTML = gameHTML;
-    favoriteGamesContainer.appendChild(gameElement.firstChild);
+    // If there are favorited games stored in localStorage, display them
+    if (favoritedAppsHTML) {
+        favoritedAppsHTML.forEach(gameHTML => {
+            const gameElement = document.createElement('div');
+            gameElement.innerHTML = gameHTML;
+            favoriteAppsContainer.appendChild(gameElement.firstChild);
+        });
+    }
 });
-}
-});
+
 
 function favoriteGame(event) {
 // Prevent the default behavior of the button (e.g., submitting a form)
@@ -82,7 +83,7 @@ event.target.classList.toggle('favorited');
 const gameElement = event.target.closest('.btn');
 
 // Get the favorite games container
-const favoriteGamesContainer = document.getElementById('favoriteGames');
+const favoriteGamesContainer = document.getElementById('favoriteApps');
 
 if (gameElement.parentElement === favoriteGamesContainer) {
 // If the game element is already in the favorite games container, remove it

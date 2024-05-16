@@ -39,17 +39,16 @@
     transition: opacity 0.3s;
     box-sizing: border-box;
 }
-
+ /*
 .featured:hover span {
     opacity: 1;
-
     }
 
-  .featured:hover { 
+   .featured:hover { /
     color: black;
     border: 2px solid #cc5850;
 
-  }
+  } */ 
 
 
 
