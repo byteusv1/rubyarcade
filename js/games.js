@@ -29,7 +29,7 @@ buttons.forEach(button => {
 function generateGameHTML(game) {
 return `
 <div class="btn btn-hover" onclick="loadGame('${game.playUrl}')" onmouseover="applyHoverEffect(this)" ">
-    <button class="btn-favorite" onclick="favoriteGame(event)">&#10084;</button>
+    <button class="btn-favorite" onclick="favoriteGame(event)">&#x2764;</button>
     <img src="${game.imageUrl}" />
     <span>${game.name}</span>
 </div>

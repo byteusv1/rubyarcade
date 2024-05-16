@@ -123,43 +123,43 @@
     "name": "Riddle school",
     "imageUrl": "https://rubyarcademedia.onrender.com/riddleschool.png",
     "playUrl": "https://rubyarcadegames.onrender.com/games/flash/riddleschool/riddleschool1/index.html",
-    "genres": [ "Adventure", "Puzzle"]
+    "genres": ["Adventure", "Puzzle"]
   },
   {
     "name": "Riddle school 2",
     "imageUrl": "https://rubyarcademedia.onrender.com/riddleschool2.png",
     "playUrl": "https://rubyarcadegames.onrender.com/games/flash/riddleschool/riddleschool2/index.html",
-    "genres": [ "Adventure", "Puzzle"]
+    "genres": ["Adventure", "Puzzle"]
   },
   {
     "name": "Riddle school 3",
     "imageUrl": "https://rubyarcademedia.onrender.com/riddleschool3.png",
     "playUrl": "https://rubyarcadegames.onrender.com/games/flash/riddleschool/riddleschool3/index.html",
-    "genres": [ "Adventure", "Puzzle"]
+    "genres": ["Adventure", "Puzzle"]
   },
   {
     "name": "Riddle school 4",
     "imageUrl": "https://rubyarcademedia.onrender.com/riddleschool4.png",
     "playUrl": "https://rubyarcadegames.onrender.com/games/flash/riddleschool/riddleschool4/index.html",
-    "genres": [ "Adventure", "Puzzle"]
+    "genres": ["Adventure", "Puzzle"]
   },
   {
     "name": "Riddle school 5",
     "imageUrl": "https://rubyarcademedia.onrender.com/riddleschool5.png",
     "playUrl": "https://rubyarcadegames.onrender.com/games/flash/riddleschool/riddleschool5/index.html",
-    "genres": [ "Adventure", "Puzzle"]
+    "genres": ["Adventure", "Puzzle"]
   },
   {
     "name": "Riddle transfer",
     "imageUrl": "https://rubyarcademedia.onrender.com/riddleschooltransfer.png",
     "playUrl": "https://rubyarcadegames.onrender.com/games/flash/riddleschool/riddletransfer/index.html",
-    "genres": [ "Adventure", "Puzzle"]
+    "genres": ["Adventure", "Puzzle"]
   },
   {
     "name": "Riddle transfer 2",
     "imageUrl": "https://rubyarcademedia.onrender.com/riddleschooltransfer2.png",
     "playUrl": "https://rubyarcadegames.onrender.com/games/flash/riddleschool/riddletransfer/index.html",
-    "genres": [ "Adventure", "Puzzle"]
+    "genres": ["Adventure", "Puzzle"]
   },
   {
     "name": "Run",
@@ -689,4 +689,4 @@
     "playUrl": "https://rubyarcadegames.onrender.com/games/emulated/supermarioworld/index.html",
     "genres": ["Platformer"]
   }
-  ]
+]
