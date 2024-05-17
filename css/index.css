@@ -3,7 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lexend:wght@100..900&family=Outfit:wght@100..900&family=Teachers:ital,wght@0,400..800;1,400..800&display=swap");
 
 body {
-  background-color: #161616;
+  background-color: #1C1C1C;
   color: #fff;
   font-family: "Inter", sans-serif;
   margin: 0;
@@ -40,7 +40,7 @@ h2 {
   background-color: #000000;
   color: white;
   border-radius: 10%;
-  border: 2px solid transparent;
+  border: 3px solid transparent;
   font-size: 14px;
   width: 17vh;
   background: transparent;
@@ -52,34 +52,6 @@ h2 {
   overflow: hidden;
   transition: all 350ms;
 }
-
-.btn-favorite {
-  position: relative;
-  float: right; 
-  border: none;
-  border-radius: 25%; 
-  transition: all 350ms;
-  font-size: 20px;
-  color: rgb(255, 1, 1);
-  background-color: transparent; 
-  margin: 3%;
-  display: none;
-  width: 30px; 
-  height: 30px; 
-  cursor: pointer;
-  z-index: 9;
-}
-
-.btn:hover .btn-favorite {
-  display: inline-block; 
-  cursor: pointer;
-}
-
-.btn-favorite:hover {
-  color: #760c0c;
-  border-radius: 50%;
-}
-
 
 .btn img {
   max-width: 100%;
@@ -123,11 +95,35 @@ h2 {
 
 .btn:hover {
   color: black;
-  border: 2px solid #cc5850;
+  border: 3px solid #cc5850;
 }
 
+.btn-favorite {
+  position: relative;
+  float: right; 
+  border: none;
+  border-radius: 25%; 
+  font-family: 'Arial', 'Helvetica', sans-serif; 
+  font-size: 16px;
+  transition: all 350ms;
+  color: #cc5850;
+  background-color: rgba(0, 0, 0, 0.6); 
+  margin: 3%;
+  display: none;
+  width: 30px; 
+  height: 30px; 
+  cursor: pointer;
+  z-index: 9;
+}
 
+.btn:hover .btn-favorite {
+  display: inline-block; 
+  cursor: pointer;
+}
 
+.btn-favorite:hover {
+  border-radius: 50%;
+}
 
 .btn-favorite:active {
   opacity: 0;
@@ -135,13 +131,13 @@ h2 {
 
 
 .button {
-  background-color: #cc5850;
-  border: none;
+  background-color: #a2453f;
+  border: 1px solid #cc5850;
   border-radius: 8px;
   color: #fff;
   cursor: pointer;
   margin-left: 3vh;
-  font-family: "Outfit", system-ui, Arial, sans-serif;
+  font-family: "Inter", system-ui, Arial, sans-serif;
   font-size: 16px;
   font-weight: 400;
   padding: calc(0.875rem - 1px) calc(1.5rem - 1px);
@@ -154,25 +150,21 @@ h2 {
 }
 
 .button:hover {
-  background-color: #9c413b;
-  transform: translateY(-1px);
+  background-color: #883933;
 }
 
-.button:active {
-  background-color: #9c413b;
-  transform: translateY(0);
-}
 
 p {
-  font-size: 30px;
-  color: #d8d8d8;
   width: 70%;
-  font-weight: 900;
+  font-weight: 800;
   font-size: 70px;
-  font-family: "Outfit";
+  font-family: "Inter";
   text-align: center;
   margin-top: 25vh;
   margin-bottom: 1vh;
+  color: white;
+
+
 }
 
 p1 {
@@ -200,13 +192,13 @@ p3 {
 }
 
 .second-paragraph {
-  color: #808080;
+  color: #e5e5e5;
   font-size: 1.7vh;
-  font-weight: 300;
+  font-weight: 400;
   font-family: "Inter";
   margin-top: 10px;
   margin-bottom: 2vh;
-  width: 50%;
+  width: 40%;
 }
 
 @media only screen and (max-width: 768px) {

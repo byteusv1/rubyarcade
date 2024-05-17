@@ -17,11 +17,6 @@ function insertGamesIntoPage(games) {
             var gameHTML = generateGameHTML(game);
             gamesContainer.innerHTML += gameHTML;
         });
-
-        const buttons = document.querySelectorAll('.btn-hover');
-        buttons.forEach(button => {
-            applyHoverEffect(button);
-        });
     }
 }
 
@@ -108,7 +103,7 @@ function favoriteGame(event) {
 
 
 
-fetch('assets/data/apps.json')
+fetch('/assets/data/apps.json')
     .then(response => response.json())
     .then(data => {
         // Store the loaded games data in the gamesData variable

@@ -1,14 +1,14 @@
 .featured {
-  background: transparent;
+  background: #1C1C1C;
   color: white;
   border-radius: 8px;
-  cursor: no-drop;
-  border: 2px solid transparent;
+  cursor: default;
+  border: 2px solid #383838;
   font-size: 14px;
   width: 15vw;
-  height: 15vw;
-  font-weight: bold;
-  font-family: "Lexend", sans-serif;
+  height: 17vw;
+  font-weight: 500;
+  font-family: "Inter", sans-serif;
   margin: 20px;
   backdrop-filter: blur(5px);
   position: relative;
@@ -17,9 +17,9 @@
 }
 
 .featured img {
-  max-width: 100%;
-  height: auto;
-  width: 100%;
+  max-width: 15vw;
+  height: 15vw;
+  width: 15vw;
   transition: transform 0.1s;
 }
 
@@ -28,26 +28,26 @@
   bottom: 0;
   left: 0;
   width: 100%;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0));
   padding: 10px;
   color: white;
   font-size: 14px;
   text-align: center;
   border-radius: 0 0 8px 8px;
-  opacity: 0;
+  opacity: 1;
   transition: opacity 0.3s;
   box-sizing: border-box;
 }
-/*
+
+
 .featured:hover span {
     opacity: 1;
     }
 
-   .featured:hover { /
+   .featured:hover { 
     color: black;
     border: 2px solid #cc5850;
 
-  } */
+  } 
 
 .featured:hover {
   color: black;
