@@ -23,13 +23,12 @@ function insertGamesIntoPage(games) {
 
 function generateGameHTML(game) {
     return `
-<div class="btn btn-hover" onclick="loadGame('${game.playUrl}')">
-<button class="btn-favorite" onclick="favoriteGame(event)">&#x2764;</button>
-    <img src="${game.imageUrl}" />
-    <span>${game.name}</span>
-</div>
-
-`;
+    <div class="btn btn-hover" onclick="loadGame('${game.playUrl}', '${game.name}')" ">
+        <button class="btn-favorite" onclick="favoriteGame(event)">❥</button>
+        <img src="${game.imageUrl}" />
+        <span>${game.name}</span>
+    </div>
+    `;
 }
 
 

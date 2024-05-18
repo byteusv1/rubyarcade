@@ -20,7 +20,7 @@
   {
     "name": "Geometry dash",
     "imageUrl": "https://rubyarcademedia.onrender.com/geometrydash.png",
-    "playUrl": "https://rubyarcadegames.onrender.com/games/nowgg/geometrydash/index.html",
+    "playUrl": "https://rubyarcadegames.onrender.com/games/static/nowgg/geometrydash/index.html",
     "genres": ["Platformer", "Rhythm"]
   },
   {
@@ -31,8 +31,8 @@
   },
   {
     "name": "Rise up",
-    "imageUrl": "https://rubyarcademedia.onrender.com/balldodge.png",
-    "playUrl": "https://rubyarcadegames.onrender.com/games/static/balldodge/index.html",
+    "imageUrl": "https://rubyarcademedia.onrender.com/riseup.png",
+    "playUrl": "https://rubyarcadegames.onrender.com/games/nowgg/riseup/index.html",
     "genres": ["Arcade"]
   },
   {
@@ -78,7 +78,7 @@
     "genres": ["Simulation", "Driving"]
   },
   {
-    "name": "World's hardest game",
+    "name": "Worlds hardest game",
     "imageUrl": "https://rubyarcademedia.onrender.com/worldshardestgame.png",
     "playUrl": "https://rubyarcadegames.onrender.com/games/flash/worldshardestgame/index.html",
     "genres": ["Puzzle", "Platformer"]
@@ -170,13 +170,13 @@
   {
     "name": "Run 2",
     "imageUrl": "https://rubyarcademedia.onrender.com/run2.png",
-    "playUrl": "https://rubyarcadegames.onrender.com/games/flash/run-2/index.html",
+    "playUrl": "https://rubyarcadegames.onrender.com/games/flash/run2/index.html",
     "genres": ["Platformer", "Endless Runner"]
   },
   {
     "name": "Run 3",
     "imageUrl": "https://rubyarcademedia.onrender.com/run3.png",
-    "playUrl": "https://rubyarcadegames.onrender.com/games/flash/run-3/index.html",
+    "playUrl": "https://rubyarcadegames.onrender.com/games/flash/run3/index.html",
     "genres": ["Platformer", "Endless Runner"]
   },
   {
@@ -200,23 +200,23 @@
   {
     "name": "Bitlife",
     "imageUrl": "https://rubyarcademedia.onrender.com/bitlife.jpg",
-    "playUrl": "https://rubyarcadegames.onrender.com/games/nowgg/bitlife/index.html",
+    "playUrl": "https://rubyarcadegames.onrender.com/games/static/bitlife/index.html",
     "genres": ["Simulation", "Role-Playing"]
   },
   {
-    "name": "Baldi's basics",
+    "name": "Baldis basics",
     "imageUrl": "https://rubyarcademedia.onrender.com/baldi.png",
     "playUrl": "https://rubyarcadegames.onrender.com/games/static/baldisbasics/index.html",
     "genres": ["Horror", "Educational"]
   },
   {
-    "name": "Baldi's basics field trip",
+    "name": "Baldis basics field trip",
     "imageUrl": "https://rubyarcademedia.onrender.com/baldicamping.png",
-    "playUrl": "https://rubyarcadegames.onrender.com/games/static/baldisbasicsfieldtrip/index.html",
+    "playUrl": "https://rubyarcadegames.onrender.com/games/static/baldisbasicsfieldtripcampingremake/index.html",
     "genres": ["Horror", "Educational"]
   },
   {
-    "name": "Friday night funkin'",
+    "name": "Friday night funkin",
     "imageUrl": "https://rubyarcademedia.onrender.com/fnf.png",
     "playUrl": "https://rubyarcadegames.onrender.com/games/static/fnf/index.html",
     "genres": ["Rhythm"]
@@ -228,25 +228,25 @@
     "genres": ["Simulation"]
   },
   {
-    "name": "Bloons td",
+    "name": "Bloons tower defense",
     "imageUrl": "https://rubyarcademedia.onrender.com/btd.png",
     "playUrl": "https://rubyarcadegames.onrender.com/games/flash/btd/btd/index.html",
     "genres": ["Strategy"]
   },
   {
-    "name": "Bloons td 2",
+    "name": "Bloons tower defense 2",
     "imageUrl": "https://rubyarcademedia.onrender.com/btd2.png",
     "playUrl": "https://rubyarcadegames.onrender.com/games/flash/btd/btd2/index.html",
     "genres": ["Strategy"]
   },
   {
-    "name": "Bloons td 3",
+    "name": "Bloons tower defense 3",
     "imageUrl": "https://rubyarcademedia.onrender.com/btd3.png",
     "playUrl": "https://rubyarcadegames.onrender.com/games/flash/btd/btd3/index.html",
     "genres": ["Strategy"]
   },
   {
-    "name": "Bloons td 4",
+    "name": "Bloons tower defense 4",
     "imageUrl": "https://rubyarcademedia.onrender.com/btd4.png",
     "playUrl": "https://rubyarcadegames.onrender.com/games/flash/btd/btd4/index.html",
     "genres": ["Strategy"]
@@ -254,7 +254,7 @@
   {
     "name": "1v1.lol",
     "imageUrl": "https://rubyarcademedia.onrender.com/1v1lol.png",
-    "playUrl": "https://rubyarcadegames.onrender.com/games/nowgg/1v1lol/index.html",
+    "playUrl": "https://rubyarcadegames.onrender.com/games/static/1v1lol/index.html",
     "genres": ["Shooter"]
   },
   {
@@ -284,7 +284,7 @@
   {
     "name": "Duck life",
     "imageUrl": "https://rubyarcademedia.onrender.com/ducklife.png",
-    "playUrl": "https://rubyarcadegames.onrender.com/games/static/ducklife/index.html",
+    "playUrl": "https://rubyarcadegames.onrender.com/games/flash/ducklife/index.html",
     "genres": ["Simulation"]
   },
   {
@@ -446,7 +446,7 @@
   {
     "name": "Ball dodge",
     "imageUrl": "https://rubyarcademedia.onrender.com/balldodge.png",
-    "playUrl": "https://rubyarcadegames.onrender.com/games/static/balldodge/index.html",
+    "playUrl": "https://rubyarcadegames.onrender.com/games/static/ball-dodge/index.html",
     "genres": ["Arcade", "Action"]
   },
   {
@@ -458,11 +458,11 @@
   {
     "name": "Minecraft Javascript edition",
     "imageUrl": "https://rubyarcademedia.onrender.com/mcjs.png",
-    "playUrl": "https://rubyarcadegames.onrender.com/games/static/balldodge/index.html",
+    "playUrl": "https://rubyarcadegames.onrender.com/games/static/mcjs/index.html",
     "genres": ["Sandbox", "Adventure"]
   },
   {
-    "name": "Friday Night Funkin' Mid fight masses",
+    "name": "Friday Night Funkin Mid fight masses",
     "imageUrl": "https://rubyarcademedia.onrender.com/fnfmidfight.png",
     "playUrl": "https://rubyarcadegames.onrender.com/games/static/fnfmidfight/index.html",
     "genres": ["Rhythm"]
@@ -486,12 +486,6 @@
     "genres": ["Puzzle"]
   },
   {
-    "name": "Shell shockers",
-    "imageUrl": "https://rubyarcademedia.onrender.com/shellshocker.png",
-    "playUrl": "https://rubyarcadegames.onrender.com/games/static/shellshockers/index.html",
-    "genres": ["Shooter"]
-  },
-  {
     "name": "Minecraft Classic",
     "imageUrl": "https://rubyarcademedia.onrender.com/mcclassic.png",
     "playUrl": "https://rubyarcadegames.onrender.com/games/static/mcclassic/index.html",
@@ -500,7 +494,7 @@
   {
     "name": "Fireboy & Watergirl",
     "imageUrl": "https://rubyarcademedia.onrender.com/fbandwg.png",
-    "playUrl": "https://rubyarcadegames.onrender.com/games/static/shellshockers/index.html",
+    "playUrl": "https://rubyarcadegames.onrender.com/games/static/fireboywatergirl/index.html",
     "genres": ["2 Player", "Puzzle", "Adventure"]
   },
   {
@@ -510,7 +504,7 @@
     "genres": ["Arcade", "Action", "Endless Runner"]
   },
   {
-    "name": "World's hardest game 2",
+    "name": "Worlds hardest game 2",
     "imageUrl": "https://rubyarcademedia.onrender.com/worldshardestgame2.png",
     "playUrl": "https://rubyarcadegames.onrender.com/games/flash/worldshardestgame2/index.html",
     "genres": ["Arcade", "Action", "Endless Runner"]
@@ -548,11 +542,11 @@
   {
     "name": "Ngon",
     "imageUrl": "https://rubyarcademedia.onrender.com/ngon.png",
-    "playUrl": "https://rubyarcadegames.onrender.com/games/static/dadish2/index.html",
+    "playUrl": "https://rubyarcadegames.onrender.com/games/static/ngon/index.html",
     "genres": ["Arcade", "Action", "Rhythm"]
   },
   {
-    "name": "10 minutes til dawn",
+    "name": "10 minutes till dawn",
     "imageUrl": "https://rubyarcademedia.onrender.com/10minutes.png",
     "playUrl": "https://rubyarcadegames.onrender.com/games/static/10minutestilldawn/index.html",
     "genres": ["Action"]

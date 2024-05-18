@@ -23,13 +23,46 @@
 
 
 .nav-logo {
+background-color: transparent !important;
+margin-left: 11vh;
+margin-top: 0.6vh;
+width: auto; 
+height: auto; 
+max-width: 20vh; 
+max-height: 5vh;
+border: none;
+flex-shrink: 0;
+cursor: pointer;
+user-select: none;
+transition: all .3s;
+}
+
+.nav-logo:hover {
+transform: scale(1.05);
+}
+
+
+
+
+.nav-img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.nav-logo-small {
     background-color: transparent !important;
-    margin-left: 11vh;
-    margin-top: 1.5vh;
-    margin-right: 2rem;
+    width: 0px; 
+    opacity: none;
+    height: 0vh;
     border: none;
     cursor: pointer;
     user-select: none;
+}
+
+.nav-img-small {
+    width: 0%;
+    height: 0%;
 }
 
 .nav-button {
@@ -51,6 +84,26 @@
     
 }
 
+.nav-button-last {
+    color: #fff;
+    font-family: "Inter";
+    background-color: transparent;
+    border: none;
+    font-weight: 600;
+    font-size: 15px;
+    margin-right: 11vh;
+    transition: all 250ms;
+    margin-top: 2vh;
+}
+
+.nav-button-last:hover {
+    color: #cc5850;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    
+}
+
 
 
 
@@ -60,8 +113,7 @@
         margin-left: 0;
         margin-right: 0;
         white-space: nowrap;
-        display: flex; 
-        align-items: center;
+        display: flex;
     }
 
     .nav-button {
@@ -69,16 +121,62 @@
     }
 
     .nav-logo {
-        margin-left: 1vh;
         margin-right: 10px;
     }
 }
 
 
-@media only screen and (max-width: 485px) {
+@media only screen and (max-width: 525px) {
 
     .navbar {
     overflow-x: auto;
 }
 
+.nav-button {
+    margin-right: 1px;
+    margin-left: 1px;
+}
+
+.nav-button-last {
+    margin-right: 1px;
+    margin-left: 1px;
+}
+
+.nav-logo {
+    display: none;
+}
+
+
+.nav-logo-small {
+    background-color: transparent !important;
+    width: auto;
+    height: auto;
+    max-width: 6vh;
+    opacity: 1;
+    max-height: 5vh;
+    margin-top: 0.7vh;
+    flex-shrink: none;
+    margin-left: 11vh;
+    display: inline-block;
+    user-select: none;
+}
+
+.nav-img-small {
+    width: 100%;
+    height: 100%;
+}
+}
+
+
+
+
+@media only screen and (max-width: 403px) {
+
+.navbar {
+overflow-x: auto;
+}
+
+.nav-logo-small {
+    margin-left: 0vh;
+}
 }

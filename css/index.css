@@ -37,35 +37,32 @@ h2 {
 }
 
 .btn {
-  background-color: #000000;
+  background: transparent;
+  border: 2px solid transparent;
   color: white;
   border-radius: 10%;
-  border: 3px solid transparent;
   font-size: 14px;
   width: 17vh;
-  background: transparent;
   height: 17vh;
   margin: 20px;
-  box-shadow: 2px 2px 4px rgba(255, 255, 255, 0.);
   cursor: pointer;
   position: relative;
   overflow: hidden;
-  transition: all 350ms;
+  transition: all 450ms;
 }
 
 .btn img {
   max-width: 100%;
-  height: 100%;
-  user-select: none;
   max-height: 100%;
+  width: auto;
+  height: auto;
+  user-select: none;
   object-fit: cover;
-  width: 100%;
   position: absolute; 
   top: 0; 
   left: 0;
   display: block;
   background-color: white;
-  transition: transform 0.1s;
 }
 
 .btn span {
@@ -95,7 +92,7 @@ h2 {
 
 .btn:hover {
   color: black;
-  border: 3px solid #cc5850;
+  border: 2px solid #EA4747;
 }
 
 .btn-favorite {
@@ -103,15 +100,17 @@ h2 {
   float: right; 
   border: none;
   border-radius: 25%; 
-  font-family: 'Arial', 'Helvetica', sans-serif; 
-  font-size: 16px;
+  font-family: 'Helvetica', sans-serif; 
+  font-size: 20px;
+  font-weight: 900;
   transition: all 350ms;
-  color: #cc5850;
+  color: #EA4747;
   background-color: rgba(0, 0, 0, 0.6); 
-  margin: 3%;
   display: none;
-  width: 30px; 
-  height: 30px; 
+  transform: rotate(90deg);
+  width: 30px;
+  height: 30px;
+  margin: 3%;
   cursor: pointer;
   z-index: 9;
 }
@@ -131,26 +130,23 @@ h2 {
 
 
 .button {
-  background-color: #a2453f;
-  border: 1px solid #cc5850;
+  background-color: #ff4639;
+  border: 1px solid #ff7a7a;
   border-radius: 8px;
   color: #fff;
   cursor: pointer;
-  margin-left: 3vh;
   font-family: "Inter", system-ui, Arial, sans-serif;
   font-size: 16px;
   font-weight: 400;
   padding: calc(0.875rem - 1px) calc(1.5rem - 1px);
   position: relative;
   text-decoration: none;
-  transition: all 250ms;
+  transition: all 200ms;
   margin-bottom: 30vh;
-  bottom: 0;
-  right: 0;
 }
 
 .button:hover {
-  background-color: #883933;
+  background-color: #8f2720;
 }
 
 
@@ -158,7 +154,7 @@ p {
   width: 70%;
   font-weight: 800;
   font-size: 70px;
-  font-family: "Inter";
+  font-family: "Outfit";
   text-align: center;
   margin-top: 25vh;
   margin-bottom: 1vh;
@@ -168,24 +164,24 @@ p {
 }
 
 p1 {
-  color: #cc5850;
-  background-image: linear-gradient(to right, #cc5850, #f4bebe);
+  color: #EA4747;
+  background-image: linear-gradient(to bottom, #EA4747, #ffb4b4);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
 }
 
 p2 {
-  color: #cc5850;
-  background-image: linear-gradient(to left, #cc5850, #f4bebe);
+  color: #EA4747;
+  background-image: linear-gradient(to top, #EA4747, #ffb4b4);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
 }
 
 p3 {
-  color: #cc5850;
-  background-image: linear-gradient(to right, #eda1a1, #ffffff);
+  color: #EA4747;
+  background-image: linear-gradient(to top, #EA4747, #ffb4b4);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -206,16 +202,12 @@ p3 {
     font-size: 6vh;
   }
 
-  .button-5 {
-    margin-left: 5vh;
-  }
 
   .ruby-image {
     display: none;
   }
 
   p {
-    margin-left: 5vw;
     font-weight: 800;
     font-size: 40px;
     width: 70%;
@@ -223,7 +215,6 @@ p3 {
 
   .second-paragraph {
     width: 90%;
-    margin-left: 5vw;
   }
 
   .game img {
@@ -235,11 +226,10 @@ p3 {
 
 .footer {
   background-color: #222222 ;
-  color: #cc5850;
+  color: #EA4747;
   text-decoration: none;
   padding: 40px;
   font-size: 14px;
-
 }
 
 .footer-content {
@@ -271,6 +261,7 @@ p3 {
 
 .resources li {
   margin-bottom: 10px;
+  text-align: left;
 }
 
 .pages {
@@ -332,18 +323,18 @@ ul li a {
 }
 
 ul li a:hover {
-  color: #cc5850;
+  color: #EA4747;
 }
 
 ::-webkit-scrollbar {
   width: 6px;
   height: 6px;
   border-radius: 5px;
-  background-color: transparent;
+  background-color: #1C1C1C;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #cc5850;
+  background: #EA4747;
   border-radius: 5px;
 }
 
@@ -480,7 +471,6 @@ ul li a:hover {
   position: absolute;
   pointer-events: none;
   left: 1%;
-  transform: translateY(-50%);
   width: 1.7vh;
 }
 
@@ -550,5 +540,5 @@ a {
 }
 
 a:hover {
-  color: #cc5850;
+  color: #EA4747;
 }

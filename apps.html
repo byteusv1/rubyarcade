@@ -38,33 +38,30 @@
 
 <body>
     <div class="navbar">
-        <span class="logo-span">
-            <button class="nav-logo" onclick="window.location.href='index.html'">
-                <img
-                    src="/media/icons/rubyarcade.png"
-                    alt="Ruby Games Logo"
-                    class="logo"
-                    width="125vh"
-                    height="27vh"
-                />
-            </button>
-        </span>
+
+        <button class="nav-logo" onclick="window.location.href='index.html'">
+          <img src="/media/icons/rubyarcade.png" alt="Ruby Arcade" class="nav-img"/>
+        </button>
         
-        <div class="navbar-right">
-            <button class="nav-button" onclick="window.location.href='index.html'">
-                <span>Home</span>
-            </button>
-            <button class="nav-button" onclick="window.location.href='games.html'">
-                <span>Games</span>
-            </button>
-            <button class="nav-button" onclick="window.location.href='apps.html'">
-                <span>Apps</span>
-            </button>
-            <button style="margin-right: 20vh;"" class="nav-button" onclick="window.location.href='search.html'">
-                <span">Search</span>
-            </button>
-        </div>
-    </div>
+        <button class="nav-logo-small" onclick="window.location.href='index.html'">
+          <img src="/media/icons/ruby.png" alt="Ruby Arcade" class="nav-img-small"/>
+        </button>
+      
+          <div class="nav-items">
+              <button class="nav-button" onclick="window.location.href='index.html'">
+                  <span>Home</span>
+              </button>
+              <button class="nav-button" onclick="window.location.href='games.html'">
+                  <span>Games</span>
+              </button>
+              <button class="nav-button" onclick="window.location.href='apps.html'">
+                  <span>Apps</span>
+              </button>
+              <button class="nav-button-last" onclick="window.location.href='search.html'">
+                  <span">Search</span>
+              </button>
+          </div>
+      </div>
     
 
  
@@ -87,7 +84,7 @@
             </div>
     
             <div class="suggest-container">
-                <img class="suggest-image" src="media/icons/chat.png">
+                <img class="suggest-image" src="media/icons/add.png">
                 <a href="https://forms.gle/nwikE72j2wJbAfRn8" target="_blank">
                     <button class="suggest" title="Suggest"></button></a>
             </div>
@@ -106,30 +103,39 @@
 
     </div>
 
-    <!-- Game loader section -->
     <section id="gameLoaderSection" style="display: none;">
-        <div id="gameLoaderContainer">
-            
-            <iframe id="gameFrame" src="media/icons/loading.gif" frameborder="0">
-                
-            </iframe>
-            
-        </div>
-        <div class="gameBar">
-            <div class="gameBarButton" onclick="removeGameLoader()">
-                <img src="/media/icons/remove.png" width="20px" alt="Remove Game Loader" />
-            </div>
-            <img src="/media/icons/ruby.png" width="20px" />
-            <div class="button-group">
-                <div class="gameBarButton" onclick="refreshGame()">
-                    <img src="/media/icons/refresh.png" width="20px" alt="Refresh" />
-                </div>
-                <div class="gameBarButton" onclick="toggleFullscreen()">
-                    <img src="/media/icons/fullscreen.png" width="20px" alt="Fullscreen" />
-                </div>
-            </div>
-        </div>
-    </section>
+      <div id="gameLoaderContainer">
+          <iframe id="gameFrame" src="media/icons/loading.gif" frameborder="0"></iframe>
+      </div>
+  
+      <div class="gameBar" id="gameBar">
+          <div class="gameBarButton" onclick="removeGameLoader()">
+              <img src="/media/icons/remove.png" width="20px" alt="Remove Game Loader" />
+          </div>
+  
+          <span id="gameNamePlaceholder"></span> 
+  
+          <div class="button-group">
+  
+              <div class="gameBarButton" onclick="refreshGame()">
+                  <img src="/media/icons/refresh.png" width="20px" alt="Refresh" />
+              </div>
+              <div class="gameBarButton" onclick="expandPage()">
+                  <img src="/media/icons/expand.png" width="20px" alt="Expand Page" />
+              </div>
+              <div class="gameBarButton" onclick="toggleFullscreen()">
+                  <img src="/media/icons/fullscreen.png" width="20px" alt="Fullscreen" />
+              </div>
+  
+  
+  
+  
+          </div>
+      </div>
+  </section>
+  <div class="undoExpandBtn" id="undoExpandBtn" style="display: none;" onclick="undoExpand()">
+      <img src="/media/icons/undoexpand.png" width="20px" alt="Undo Expand" />
+  </div>
 
     <center>
         <h6>Games on this site are for entertainment purposes only. All rights belong to their respective owners.</h6>
@@ -168,8 +174,8 @@
             <ul>
               <li><a href="/credits.html">Credits</a></li>
               <li><a href="/partners.html">Partners</a></li>
-              <li><a href="/policy.html">Privacy Policy</a></li>
-              <li><a href="/terms.html">Terms of condition</a></li>
+              <li><a href="/legal/policy.html">Privacy Policy</a></li>
+              <li><a href="/legal/terms.html">Terms</a></li>
             </ul>
 
           </div>

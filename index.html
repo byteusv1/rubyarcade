@@ -47,20 +47,17 @@
 
   <body>
     
-    <div class="navbar">
-      <span class="logo-span">
-          <button class="nav-logo" onclick="window.location.href='index.html'">
-              <img
-                  src="/media/icons/rubyarcade.png"
-                  alt="Ruby Games Logo"
-                  class="logo"
-                  width="125vh"
-                  height="27vh"
-              />
-          </button>
-      </span>
-      
-      <div class="navbar-right">
+  <div class="navbar">
+
+    <button class="nav-logo" onclick="window.location.href='index.html'">
+      <img src="/media/icons/rubyarcade.png" alt="Ruby Arcade" class="nav-img"/>
+    </button>
+
+    <button class="nav-logo-small" onclick="window.location.href='index.html'">
+      <img src="/media/icons/ruby.png" alt="Ruby Arcade" class="nav-img-small"/>
+    </button>
+  
+      <div class="nav-items">
           <button class="nav-button" onclick="window.location.href='index.html'">
               <span>Home</span>
           </button>
@@ -70,12 +67,9 @@
           <button class="nav-button" onclick="window.location.href='apps.html'">
               <span>Apps</span>
           </button>
-          <button style="margin-right: 20vh;" class="nav-button" onclick="window.location.href='search.html'">
-              <span>Search</span>
+          <button class="nav-button-last" onclick="window.location.href='search.html'">
+              <span">Search</span>
           </button>
-
-      </div>
-
       </div>
   </div>
     
@@ -198,18 +192,20 @@
             <ul>
               <li><a href="/credits.html">Credits</a></li>
               <li><a href="/partners.html">Partners</a></li>
-              <li><a href="/policy.html">Privacy Policy</a></li>
-              <li><a href="/terms.html">Terms OS</a></li>
+              <li><a href="/legal/policy.html">Privacy Policy</a></li>
+              <li><a href="/legal/terms.html">Terms</a></li>
             </ul>
 
           </div>
       </footer>
       
-      
+
 
 
   <script src="js/button.js"></script>
   <script src="js/loader.js"></script>
+
+
 
 
   </body>
