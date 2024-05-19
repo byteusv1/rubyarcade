@@ -1,17 +1,29 @@
-#  <img src="/media/icons/ruby.png" alt="Ruby Arcade Logo" width="50"> Ruby Arcade
+#  <img src="media/icons/rubyarcade.png" alt="Ruby Arcade Logo">
 
 Ruby arcade is a game network that features a wide variety of engaging and immersive games suitable for all ages.
 
-## Start playing
-The official link for Ruby Arcade is https://rubyarcade.lol
+## Offical Links
+https://rubyarcade.lol
+https://rubyarcade.vercel.app
+https://rubyarcade.pages.dev
+
 
 ## Self Hosting
-1. Fork this repository.
-2. Go to a hosting website like Netlify, GitHub Pages, Vercel, Render, etc.
-3. Deploy the website.
-4. Your done!
+
+[![Remix on Glitch](https://binbashbanana.github.io/deploy-buttons/buttons/remade/glitch.svg)](https://glitch.com/edit/#!/import/github/TwoMuchRed/Ruby-arcade)
+
+[![Deploy to Vercel](https://binbashbanana.github.io/deploy-buttons/buttons/remade/vercel.svg)](https://github.com/TwoMuchRed/Ruby-arcade)
+
+[![Deploy to Netlify](https://binbashbanana.github.io/deploy-buttons/buttons/remade/netlify.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/TwoMuchRed/Ruby-arcade)
+
+[![Deploy to Render](https://binbashbanana.github.io/deploy-buttons/buttons/remade/render.svg)](https://render.com/deploy?repo=https://github.com/TwoMuchRed/Ruby-arcade)
 
 
 
 ## Made by TwoMuchRed
+
+
+
+
+
 
