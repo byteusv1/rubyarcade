@@ -678,6 +678,18 @@
     "genres": ["Arcade", "Action"]
   },
   {
+    "name": "Raft Wars",
+    "imageUrl": "https://rubyarcademedia.onrender.com/raftwars.png",
+    "playUrl": "https://rubyarcadegames.onrender.com/games/flash/raftwars/index.html",
+    "genres": ["Shooter", "Strategy"]
+  },
+  {
+    "name": "Raft Wars 2",
+    "imageUrl": "https://rubyarcademedia.onrender.com/raftwars2.png",
+    "playUrl": "https://rubyarcadegames.onrender.com/games/flash/raftwars2/index.html",
+    "genres": ["Shooter", "Strategy"]
+  },
+  {
     "name": "Super mario world",
     "imageUrl": "https://rubyarcademedia.onrender.com/supermarioworld.png",
     "playUrl": "https://rubyarcadegames.onrender.com/games/emulated/supermarioworld/index.html",
