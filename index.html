@@ -38,6 +38,7 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/btn.css">
+    <link rel="stylesheet" href="css/loader.css">
 
 
   </head>
@@ -90,72 +91,76 @@
     </button>
   </center>
 
-  <h2>Join The New  <a href="https://discord.gg/EW6CHp8yJ5">Discord Server</a></h2>
-    
-        <h3>Featured Games:</h3>
+  
 
-      <div id="gamesList" style=" display: flex; flex-wrap: wrap; justify-content: center; align-items: center;">
-        
-        <div class="featured" onclicka="window.location.href = 'https://ruby-arcade-games.onrender.com/games/nowgg/roblox/index.html'"">
-          <img src="https://rubyarcademedia.onrender.com/roblox.png" />
-          <span>Roblox</span>
-      </div>
-        <div class="featured" onclicka="window.location.href = '/games/flash/run3/index.html'">
-        <img src="https://rubyarcademedia.onrender.com/run3.png" />
-        <span>Run 3</span>
-      </div>
 
-    <div class="featured" onclicka="window.location.href = '/games/static/slowroads/index.html'">
-      <img src="https://rubyarcademedia.onrender.com/slowroads.jpg" />
-      <span>Slowroads</span>
-      </div>
-  <div class="featured" onclicka="window.location.href = '/games/static/mc/index.html'">
-    <img src="https://rubyarcademedia.onrender.com/minecraft.png" />
-    <span>Eaglercraft</span>
-      </div>
-<div class="featured" onclicka="window.location.href = '/games/static/retrobowl/index.html'">
-  <img src="https://rubyarcademedia.onrender.com/retrobowl.png" />
-  <span>Retro bowl</span>
-      </div>
+
+  <h2 style="font-size: 32px;">Top Picks</h2>
+
+  <div id="toppicks" style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center;">
+    <div class="fav" onclick="loadGame('https://usequanta.vercel.app/load.html?game=roblox')" ">
+      <img src="https://rubyarcademedia.onrender.com/roblox.png" />
+      <span>Roblox</span>
+    </div>
+    <div class="fav" onclick="loadGame('https://rubyarcadegames.onrender.com/games/static/ovo/index.html')" ">
+  <img src="https://rubyarcademedia.onrender.com/ovo.png" />
+  <span>OvO</span>
+</div>
+<div class="fav" onclick="loadGame('https://rubyarcadegames.onrender.com/games/static/snowballio/index.html')" ">
+  <img src="https://rubyarcademedia.onrender.com/snowballio.png" />
+  <span>Snowball.io</span>
+</div>
+<div class="fav" onclick="loadGame('https://rubyarcadegames.onrender.com/games/static/baldisbasics/index.html')" ">
+  <img src="https://rubyarcademedia.onrender.com/baldi.png" />
+  <span>Baldi's Basics</span>
+</div>
+<div class="fav" onclick="loadGame('https://rubyarcadegames.onrender.com/games/static/crossy/index.html')" ">
+  <img src="https://rubyarcademedia.onrender.com/crossy.jpg" />
+  <span>Crossy Roads</span>
+</div>
+
+
 
 </div>
 
 
 
- 
-
-<h3>Featured Apps:</h3>
-
-
-<div id="gamesList" style=" display: flex; flex-wrap: wrap; justify-content: center; align-items: center;">
-  
-  <div class="featured" onclicka="window.location.href = '/apps/discord/index.html'">
-    <img src="/media/apps/discord.png" />
-    <span>Discord</span>
+<section id="gameLoaderSection" style="display: none;">
+  <div id="gameLoaderContainer">
+      <iframe id="gameFrame" src="media/icons/loading.gif" frameborder="0"></iframe>
   </div>
 
-  <div class="featured" onclicka="window.location.href = '/apps/tiktok/index.html'">
-  <img src="/media/apps/tiktok.png" />
-  <span>Tiktok</span>
-</div>
+  <div class="gameBar" id="gameBar">
+      <div class="gameBarButton" onclick="removeGameLoader()">
+          <img src="/media/icons/remove.png" width="20px" alt="Remove Game Loader" />
+      </div>
 
-<div class="featured" onclicka="window.location.href = '/apps/soundboard/index.html'">
-<img src="/media/apps/soundboard.png" />
-<span>Soundboard</span>
-</div>
-<div class="featured" onclicka="window.location.href = '/apps/mathway/index.html'">
-<img src="/media/apps/mathway.png" />
-<span>Mathway</span>
-</div>
-<div class="featured" onclicka="window.location.href = '/apps/google/index.html'">
-<img src="/media/apps/google.png" />
-<span>Google</span>
+      <span id="gameNamePlaceholder"></span> 
 
-</div>
-</div>
+      <div class="button-group">
+
+          <div class="gameBarButton" onclick="refreshGame()">
+              <img src="/media/icons/refresh.png" width="20px" alt="Refresh" />
+          </div>
+          <div class="gameBarButton" onclick="expandPage()">
+              <img src="/media/icons/expand.png" width="20px" alt="Expand Page" />
+          </div>
+          <div class="gameBarButton" onclick="toggleFullscreen()">
+              <img src="/media/icons/fullscreen.png" width="20px" alt="Fullscreen" />
+          </div>
+
+
 
 
       </div>
+  </div>
+</section>
+<div class="undoExpandBtn" id="undoExpandBtn" style="display: none;" onclick="undoExpand()">
+  <img src="/media/icons/undoexpand.png" width="20px" alt="Undo Expand" />
+</div>
+
+
+<h2>Join The New  <a href="https://discord.gg/EW6CHp8yJ5">Discord Server</a></h2>
       <center>
       <div class="counter">
         <div id="sfcgn1jxcedgm9ways6xyjyx7syeng7zshj"></div> <script type="text/javascript" src="https://counter7.optistats.ovh/private/counter.js?c=gn1jxcedgm9ways6xyjyx7syeng7zshj&down=async" async></script> <br>
@@ -200,8 +205,9 @@
 
 
 
-  <script src="js/button.js"></script>
-  <script src="js/loader.js"></script>
+  <script src="/js/button.js"></script>
+  <script src="/js/loader.js"></script>
+  <script src="/js/games.js"></script>
 
 
 

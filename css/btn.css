@@ -1,72 +1,58 @@
-.featured {
-  background: #1c1c1c;
+.fav {
+  background: transparent;
+  border: 2px solid transparent;
   color: white;
-  border-radius: 8px;
-  cursor: default;
-  border: 2px solid #383838;
+  border-radius: 10%;
   font-size: 14px;
-  width: 15vw;
-  height: 17vw;
-  font-weight: 500;
-  font-family: "Inter", sans-serif;
+  width: 27vh;
+  height: 27vh;
   margin: 20px;
-  backdrop-filter: blur(5px);
+  cursor: pointer;
   position: relative;
   overflow: hidden;
-  transition: all 50ms;
+  transition: all 450ms;
 }
 
-.featured img {
+.fav img {
   max-width: 100%;
-  height: 80%;
-  width: 100%;
-  aspect-ratio: 1 / 1;
-  transition: transform 0.1s;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  user-select: none;
+  object-fit: cover;
+  position: absolute; 
+  top: 0; 
+  left: 0;
+  display: block;
+  background-color: white;
 }
 
-.featured span {
+.fav span {
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
+  height: 100%;
+  font-weight: 600;
+  margin-top: 50%;
+  font-family: "Inter", sans-serif;
+  background: rgba(0, 0, 0, 0.4);
   padding: 10px;
   color: white;
   font-size: 14px;
+  padding-top: 50%;
+  user-select: none;
   text-align: center;
-  opacity: 1;
+  opacity: 0;
   transition: opacity 0.3s;
   box-sizing: border-box;
 }
 
-.featured:hover span {
+.fav:hover span {
   opacity: 1;
 }
 
-.featured:hover {
+.fav:hover {
   color: black;
-  border: 2px solid #cc5850;
-}
-
-.featured:hover {
-  color: black;
-}
-
-@media screen and (max-width: 768px) {
-  .featured {
-    background: transparent;
-    color: white;
-    border-radius: 8px;
-    cursor: pointer;
-    border: 2px solid transparent;
-    font-size: 14px;
-    width: 10vh;
-    height: 10vh;
-    font-weight: bold;
-    font-family: "Lexend", sans-serif;
-    margin: 20px;
-    backdrop-filter: blur(5px);
-    position: relative;
-    overflow: hidden;
-    transition: all 50ms;
-  }
+  border: 2px solid #EA4747;
 }
