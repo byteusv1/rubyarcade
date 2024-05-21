@@ -102,7 +102,7 @@
   </div>
   <h2 style="font-size: 32px;">Top Picks</h2>
 
-  <div id="toppicks" style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center;">
+  <div id="toppicks">
    
     <div class="fav" onclick="loadGame('https://usequanta.vercel.app/load.html?game=roblox')" ">
       <img src="assets/img/thumbnails/roblox.png" />
@@ -121,8 +121,6 @@
   <span>Snowball.io</span>
   <p class="description">"Snowball.io" is a multiplayer online game where players control a character pushing a snowball to knock opponents off the platform while avoiding getting knocked off themselves.</p>
 </div>
-<br></br>
-
 <div class="fav" onclick="loadGame('https://rubyarcadegames.onrender.com/games/static/baldisbasics/index.html')" ">
   <img src="assets/img/thumbnails/baldi.png" />
   <span>Baldi's Basics</span>
@@ -146,55 +144,45 @@
 
 <h2 style="font-size: 32px; margin-top: 5vh;">Partners</h2>
 
-<div id="partners" style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center;">
+<div id="partners">
    
-  <div class="partner">
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLSe2vRBiB8dCxrAQhOtRDhWsX0vLEvc_hJQOg3wyAitpzIJcPQ/viewform?embedded=true" class="btn" target="_blank"></a>
-      <img src="assets/img/partners/request.png" />
-      <span>Request Partner</span>
-      <p class="description">Request partner here</p>
-  </a> 
+
+
+  <div class="partner" onclick="openInNewTab('https://docs.google.com/forms/d/e/1FAIpQLSe2vRBiB8dCxrAQhOtRDhWsX0vLEvc_hJQOg3wyAitpzIJcPQ/viewform')">
+    <img src="assets/img/partners/request.png" />
+
   </div>
 
 
-    <div class="partner">
-    <a href="https://szvycentral.pages.dev/" class="btn" target="_blank"></a>
-      <img src="assets/img/partners/szvy.png" />
-      <span>Szvy Central</span>
-      <p class="description">a really cool unblocked games site szvy made 👍</p>
-  </a> 
-</div>
-   
-<div class="partner">
-  <a href="https://sites.google.com/egusd.net/sp0rtz-games2play/home" class="btn" target="_blank"></a>
-    <img src="assets/img/partners/sportz.png" />
-    <span>Sp0rtz</span>
-    <p class="description">Sp0rtz is an unblocked games website that featured over 215 unique games.</p>
-</a> 
+<div class="partner" onclick="openInNewTab('https://szvycentral.pages.dev/')">
+  <img src="assets/img/partners/szvy.png" />
+  <span>Szvy Central</span>
+  <p class="description">a really cool unblocked games site szvy made 👍</p>
 </div>
 
-<div class="partner">
-  <a href="https://brunysixls.pages.dev" class="btn" target="_blank"></a>
-    <img src="assets/img/partners/brunysixl.png" />
-    <span>Brunysixl</span>
-    <p class="description">With code anything is bypassable.</p>
-</a> 
+<div class="partner" onclick="openInNewTab('https://sites.google.com/egusd.net/sp0rtz-games2play/home')">
+  <img src="assets/img/partners/sportz.png" />
+  <span>Sp0rtz</span>
+  <p class="description">Sp0rtz is an unblocked games website that featured over 215 unique games.</p>
 </div>
 
-<div class="partner">
-  <a href="https://meximath.github.io/" class="btn" target="_blank"></a>
-    <img src="assets/img/partners/mexithemath.png" />
-    <span>Meximath</span>
-    <p class="description">started as a Google site, now better than ever</p>
-</a> 
+<div class="partner" onclick="openInNewTab('https://meximath.github.io/')">
+  <img src="assets/img/partners/mexithemath.png" />
+  <span>Meximath</span>
+  <p class="description">started as a Google site, now better than ever</p>
 </div>
 
-<div class="partner">
-  <a href="https://meximath.github.io/" class="btn" target="_blank"></a>
-    <img src="assets/img/partners/frogiesarcade.png" />
-    <span>Frogie's Arcade</span>
-    <p class="description">Awesome game and proxy website with a bunch of links, a content creator program, now.gg bypass, and a bunch of links.</p>
-</a> 
+<div class="partner" onclick="openInNewTab('https://brunysixls.pages.dev')">
+  <img src="assets/img/partners/brunysixl.png" />
+  <span>Brunysixl</span>
+  <p class="description">With code anything is bypassable.</p>
+</div>
+
+
+<div class="partner" onclick="openInNewTab('https://frogiesarcade.web.app/')">
+  <img src="assets/img/partners/frogiesarcade.png" />
+  <span>Frogie's Arcade</span>
+  <p class="description">Awesome game and proxy website with a bunch of links, a content creator program, now.gg bypass, and a bunch of links.</p>
 </div>
 
 </div>
@@ -279,6 +267,7 @@
   <script src="/assets/js/button.js"></script>
   <script src="/assets/js/loader.js"></script>
   <script src="/assets/js/games.js"></script>
+  <script src="/assets/js/index.js"></script>
 
 
 
