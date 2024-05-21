@@ -40,11 +40,11 @@ h2 {
   background: transparent;
   border: 2px solid transparent;
   color: white;
-  border-radius: 10%;
+  border-radius: 16px;
   font-size: 14px;
-  width: 17vh;
-  height: 17vh;
-  margin: 20px;
+  width: 20vh;
+  height: 20vh;
+  margin: 0.8rem;
   cursor: pointer;
   position: relative;
   overflow: hidden;

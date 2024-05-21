@@ -1,19 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+
+    <!-- Gtags -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-TG3F4YGJW1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
-<!-- Gtags -->
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+      gtag('config', 'G-TG3F4YGJW1');
+    </script>
 
-  gtag('config', 'G-TG3F4YGJW1');
-</script>
 
+    <!-- Meta tags -->
     <title>Ruby Arcade</title>
-    <link rel="icon" href="assets/img/img/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="assets/img/icons/favicon.ico" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="title" content="Ruby Arcade" />
@@ -25,7 +27,7 @@
     <meta property="og:url" content="https://rubyarcade.lol/" />
     <meta property="og:title" content="Ruby Arcade" />
     <meta property="og:description" content="Ruby arcade is a game network that features a wide variety of engaging and immersive games suitable for all ages." />
-    <meta property="og:image" content="https://rubyarcade.lol/assets/img/img/metapicture.png" />
+    <meta property="og:image" content="https://rubyarcade.lol/assets/img/icons/metapicture.png" />
     
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
@@ -34,7 +36,7 @@
     <meta property="twitter:description" content="Ruby arcade is a game network that features a wide variety of engaging and immersive games suitable for all ages." />
 
 
-    <!-- Style -->
+    <!-- Styles -->
     <link rel="stylesheet" href="assets/css/index.css">
     <link rel="stylesheet" href="assets/css/navbar.css">
     <link rel="stylesheet" href="assets/css/btn.css">
@@ -187,6 +189,14 @@
 </a> 
 </div>
 
+<div class="partner">
+  <a href="https://meximath.github.io/" class="btn" target="_blank"></a>
+    <img src="assets/img/partners/frogiesarcade.png" />
+    <span>Frogie's Arcade</span>
+    <p class="description">Awesome game and proxy website with a bunch of links, a content creator program, now.gg bypass, and a bunch of links.</p>
+</a> 
+</div>
+
 </div>
 
 
@@ -197,37 +207,33 @@
 
 <section id="gameLoaderSection" style="display: none;">
   <div id="gameLoaderContainer">
-      <iframe id="gameFrame" src="assets/img/img/loading.gif" frameborder="0"></iframe>
+      <iframe id="gameFrame" src="assets/img/icons/loading.gif" frameborder="0"></iframe>
   </div>
 
   <div class="gameBar" id="gameBar">
       <div class="gameBarButton" onclick="removeGameLoader()">
-          <img src="/assets/img/img/remove.png" width="20px" alt="Remove Game Loader" />
+          <img src="assets/img/icons/remove.png" width="20px" alt="Remove Game Loader" />
       </div>
 
       <span id="gameNamePlaceholder"></span> 
-
       <div class="button-group">
 
           <div class="gameBarButton" onclick="refreshGame()">
-              <img src="/assets/img/img/refresh.png" width="20px" alt="Refresh" />
+              <img src="assets/img/icons/refresh.png" width="20px" alt="Refresh" />
           </div>
           <div class="gameBarButton" onclick="expandPage()">
-              <img src="/assets/img/img/expand.png" width="20px" alt="Expand Page" />
+              <img src="assets/img/icons/expand.png" width="20px" alt="Expand Page" />
           </div>
           <div class="gameBarButton" onclick="toggleFullscreen()">
-              <img src="/assets/img/img/fullscreen.png" width="20px" alt="Fullscreen" />
+              <img src="assets/img/icons/fullscreen.png" width="20px" alt="Fullscreen" />
           </div>
-
-
-
-
       </div>
   </div>
-</section>
-<div class="undoExpandBtn" id="undoExpandBtn" style="display: none;" onclick="undoExpand()">
-  <img src="/assets/img/img/undoexpand.png" width="20px" alt="Undo Expand" />
+
+  <div class="undoExpandBtn" id="undoExpandBtn" style="display: none;" onclick="undoExpand()">
+    <img src="assets/img/icons/undoexpand.png" width="20px" alt="Undo Expand" />
 </div>
+</section>
 
 
 <h2 style="margin-bottom: 5vh;">Join The New  <a href="https://discord.gg/EW6CHp8yJ5">Discord Server</a></h2>
