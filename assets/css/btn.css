@@ -1,0 +1,169 @@
+.fav {
+  background: transparent;
+  border: 2px solid transparent;
+  color: white;
+  border-radius: 3vh;
+  font-size: 14px;
+  width: 40.5vh;
+  height: 27vh;
+  margin: 20px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: all 450ms;
+}
+
+.fav img {
+  max-width: 100%;
+  max-height: 100%;
+  width:  100%;
+  height: 100%;
+  user-select: none;
+  object-fit: cover;
+  position: absolute; 
+  top: 0; 
+  left: 0;
+  display: block;
+  background-color: white;
+}
+
+.fav span {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  font-weight: 800;
+  font-family: "Inter", sans-serif;
+  background: linear-gradient(to top, rgba(8, 8, 8), rgba(0, 0, 0, 0));
+  padding: 10px;
+  color: white;
+  font-size: 20px;
+  user-select: none;
+  text-align: left;
+  transition: opacity 0.3s;
+  padding-top: 13%;
+  box-sizing: border-box;
+}
+
+.fav:hover span {
+  opacity: 1;
+}
+
+.fav:hover {
+  color: black;
+  border: 2px solid #EA4747;
+}
+
+
+
+.partner {
+  background: transparent;
+  border: 2px solid transparent;
+  color: white;
+  border-radius: 3vh;
+  font-size: 14px;
+  width: 40.5vh;
+  height: 27vh;
+  margin: 20px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: all 450ms;
+}
+
+.partner img {
+  max-width: 100%;
+  max-height: 100%;
+  width:  100%;
+  height: 100%;
+  user-select: none;
+  object-fit: cover;
+  position: absolute; 
+  top: 0; 
+  left: 0;
+  display: block;
+  background-color: white;
+}
+
+.partner span {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  font-weight: 800;
+  font-family: "Inter", sans-serif;
+  background: linear-gradient(to top, rgba(8, 8, 8), rgba(0, 0, 0, 0));
+  padding: 10px;
+  color: white;
+  font-size: 20px;
+  user-select: none;
+  text-align: left;
+  transition: opacity 0.3s;
+  padding-top: 13%;
+  box-sizing: border-box;
+}
+
+.description {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-weight: 600;
+  margin-top: 80%;
+  font-family: "Inter", sans-serif;
+  background: transparent;
+  padding: 10px;
+  color: rgb(221, 221, 221);
+  text-align: left;
+  font-size: 12px;
+  padding-top: 55%;
+  user-select: none;
+  transition: opacity 0.3s;
+  box-sizing: border-box;
+}
+
+.partner:hover span {
+  opacity: 1;
+}
+
+.partner:hover {
+  color: black;
+  border: 2px solid #EA4747;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+
+  .fav {
+    height: 20vh;
+    width: 30vh;
+  }
+
+  .partner {
+    height: 20vh;
+    width: 30vh;
+  }
+
+  .description {
+    font-size: 8px;
+    padding-top: 55%;
+  }
+
+  .partner span {
+    padding-top: 8%;
+  }
+
+  .fav span {
+    padding-top: 8%;
+  }
+
+}
+
+
+  #toppicks {
+    margin-bottom: 15vh;
+  }

@@ -16,7 +16,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta property="og:title" content="Ruby Arcade" />
     <meta property="og:description" content="Ruby arcade is a game network that features a wide variety of engaging and immersive games suitable for all ages." />
-    <meta property="og:image" content="https://rubyarcade.lol/media/icons/metapicture.png" />
+    <meta property="og:image" content="https://rubyarcade.lolassets/assets/img/icons/metapicture.png" />
     
     <title>Games</title>
     
@@ -24,14 +24,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet"/>
-    <link rel="icon" type="image/x-icon" href="/media/icons/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="assets/img/icons/favicon.ico" />
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-2XEFG8CYTH"></script>
 
 
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/navbar.css">
-    <link rel="stylesheet" href="css/loader.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/navbar.css">
+    <link rel="stylesheet" href="assets/css/loader.css">
 
 <style>
     h3 {
@@ -48,11 +48,11 @@
 <div class="navbar">
 
     <button class="nav-logo" onclick="window.location.href='index.html'">
-      <img src="/media/icons/rubyarcade.png" alt="Ruby Arcade" class="nav-img"/>
+      <img src="assets/img/icons/rubyarcade.png" alt="Ruby Arcade" class="nav-img"/>
     </button>
     
     <button class="nav-logo-small" onclick="window.location.href='index.html'">
-      <img src="/media/icons/ruby.png" alt="Ruby Arcade" class="nav-img-small"/>
+      <img src="assets/img/icons/logo.png" alt="Ruby Arcade" class="nav-img-small"/>
     </button>
   
       <div class="nav-items">
@@ -78,12 +78,12 @@
     <div class="container">
 
         <div class="input-container">
-            <img class="input-image" src="media/icons/search.png" alt="Search Icon">
+            <img class="input-image" src="assets/img/icons/search.png" alt="Search Icon">
             <input class="text" id="searchInput" onkeyup="searchGames()" placeholder="Search 100+ Games"/>
         </div>
 
         <div class="dropdown-container">
-          <img class="dropdown-image" src="media/icons/filter.png" alt="Dropdown Icon">
+          <img class="dropdown-image" src="assets/img/icons/filter.png" alt="Dropdown Icon">
           <select class="dropdown">
             <option value="all">Filter - All</option>
             <option value="2 Player">2 Player</option>  
@@ -108,7 +108,7 @@
         </div>
 
         <div class="suggest-container">
-            <img class="suggest-image" src="media/icons/add.png">
+            <img class="suggest-image" src="assets/img/icons/add.png">
             <a href="https://forms.gle/nwikE72j2wJbAfRn8" target="_blank">
                 <button class="suggest" title="Suggest"></button></a>
         </div>
@@ -135,12 +135,12 @@
     <!-- Game loader section -->
 <section id="gameLoaderSection" style="display: none;">
     <div id="gameLoaderContainer">
-        <iframe id="gameFrame" src="media/icons/loading.gif" frameborder="0"></iframe>
+        <iframe id="gameFrame" src="assets/img/icons/loading.gif" frameborder="0"></iframe>
     </div>
 
     <div class="gameBar" id="gameBar">
         <div class="gameBarButton" onclick="removeGameLoader()">
-            <img src="/media/icons/remove.png" width="20px" alt="Remove Game Loader" />
+            <img src="assets/img/icons/remove.png" width="20px" alt="Remove Game Loader" />
         </div>
 
         <span id="gameNamePlaceholder"></span> 
@@ -148,13 +148,13 @@
         <div class="button-group">
 
             <div class="gameBarButton" onclick="refreshGame()">
-                <img src="/media/icons/refresh.png" width="20px" alt="Refresh" />
+                <img src="assets/img/icons/refresh.png" width="20px" alt="Refresh" />
             </div>
             <div class="gameBarButton" onclick="expandPage()">
-                <img src="/media/icons/expand.png" width="20px" alt="Expand Page" />
+                <img src="assets/img/icons/expand.png" width="20px" alt="Expand Page" />
             </div>
             <div class="gameBarButton" onclick="toggleFullscreen()">
-                <img src="/media/icons/fullscreen.png" width="20px" alt="Fullscreen" />
+                <img src="assets/img/icons/fullscreen.png" width="20px" alt="Fullscreen" />
             </div>
 
 
@@ -164,7 +164,7 @@
     </div>
 </section>
 <div class="undoExpandBtn" id="undoExpandBtn" style="display: none;" onclick="undoExpand()">
-    <img src="/media/icons/undoexpand.png" width="20px" alt="Undo Expand" />
+    <img src="assets/img/icons/undoexpand.png" width="20px" alt="Undo Expand" />
 </div>
 
 
@@ -172,20 +172,20 @@
         <h6>Games on this site are for entertainment purposes only. All rights belong to their respective owners.</h6>
     </center>
 
-    <script src="/js/loader.js"></script>
-    <script src="/js/games.js"></script>
-    <script src="/js/search.js"></script>
+    <script src="/assets/js/button.js"></script>
+    <script src="/assets/js/loader.js"></script>
+    <script src="/assets/js/games.js"></script>
 
 
     <footer class="footer">
         <div class="footer-content">
 
           <div class="ruby">
-            <img src="/media/icons/rubyarcade.png" alt="Logo" width="100%" height="100%" style="-webkit-user-drag: none;" />
+            <img src="assets/img/icons/rubyarcade.png" alt="Logo" width="100%" height="100%" style="-webkit-user-drag: none;" />
           </div>
             <div class="smallerlogo">
             
-              <img src="/media/icons/ruby.png" alt="Logo" style="-webkit-user-drag: none;" />
+              <img src="assets/img/icons/logo.png" alt="Logo" style="-webkit-user-drag: none;" />
             </div>
             
           
