@@ -201,7 +201,7 @@
     "name": "Bitlife",
     "imageUrl": "https://rubyarcademedia.onrender.com/bitlife.jpg",
     "playUrl": "https://rubyarcadegames.onrender.com/games/static/bitlife/index.html",
-    "genres": ["Simulation", "Role-Playing"]
+    "genres": ["Simulation", "RPG"]
   },
   {
     "name": "Baldis basics",
@@ -688,6 +688,30 @@
     "imageUrl": "https://rubyarcademedia.onrender.com/raftwars2.png",
     "playUrl": "https://rubyarcadegames.onrender.com/games/flash/raftwars2/index.html",
     "genres": ["Shooter", "Strategy"]
+  },
+  {
+    "name": "Nintendogs",
+    "imageUrl": "https://rubyarcademedia.onrender.com/nintendogs.png",
+    "playUrl": "https://rubyarcadegames.onrender.com/games/emulated/nintendogs/index.html",
+    "genres": ["RPG", "Casual"]
+  },
+  {
+    "name": "Mario party",
+    "imageUrl": "https://rubyarcademedia.onrender.com/marioparty.png",
+    "playUrl": "https://rubyarcadegames.onrender.com/games/emulated/marioparty/index.html",
+    "genres": ["Strategy", "Casual", "Multiplayer"]
+  },
+  {
+    "name": "Mario party 2",
+    "imageUrl": "https://rubyarcademedia.onrender.com/marioparty2.png",
+    "playUrl": "https://rubyarcadegames.onrender.com/games/emulated/marioparty2/index.html",
+    "genres": ["Strategy", "Casual", "Multiplayer"]
+  },
+  {
+    "name": "Mario party 3",
+    "imageUrl": "https://rubyarcademedia.onrender.com/marioparty3.png",
+    "playUrl": "https://rubyarcadegames.onrender.com/games/emulated/marioparty3/index.html",
+    "genres": ["Strategy", "Casual", "Multiplayer"]
   },
   {
     "name": "Super mario world",
