@@ -15,7 +15,7 @@
 
     <!-- Meta tags -->
     <title>Games | Ruby Arcade</title>
-    <link rel="icon" type="image/x-icon" href="assets/img/icons/favicon.ico"/>
+    <link rel="icon" id="dynamic-favicon" href="assets/img/icons/logo.png">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="title" content="Ruby Arcade Games"/>
@@ -45,12 +45,12 @@
 
   </head>
 
-<div class="navbar">
+  <div class="navbar">
 
     <button class="nav-logo" onclick="window.location.href='index.html'">
       <img src="assets/img/icons/rubyarcade.png" alt="Ruby Arcade" class="nav-img"/>
     </button>
-    
+
     <button class="nav-logo-small" onclick="window.location.href='index.html'">
       <img src="assets/img/icons/logo.png" alt="Ruby Arcade" class="nav-img-small"/>
     </button>
@@ -65,10 +65,16 @@
           <button class="nav-button" onclick="window.location.href='apps.html'">
               <span>Apps</span>
           </button>
-          <button class="nav-button-last" onclick="window.location.href='search.html'">
+          <button class="nav-button" onclick="window.location.href='search.html'">
               <span">Search</span>
           </button>
+        </div>
+        <div class="nav-items">
+          <button class="nav-settings" onclick="window.location.href='settings.html'">
+            <img src="assets/img/icons/user.png" alt="Ruby Arcade" class="nav-settings-img"/>
+        </button>
       </div>
+     
   </div>
     
 
@@ -168,6 +174,8 @@
     <script src="/assets/js/button.js"></script>
     <script src="/assets/js/loader.js"></script>
     <script src="/assets/js/games.js"></script>
+    <script src="/assets/js/index.js"></script>
+    <script src="/assets/js/settings.js"></script>
 
 
     <footer class="footer">

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <!-- Gtags -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TG3F4YGJW1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+      gtag('config', 'G-TG3F4YGJW1');
+    </script>
+
+
+    <!-- Meta tags -->
+    <title>Ruby Arcade</title>
+    <link rel="icon" id="dynamic-favicon" href="assets/img/icons/logo.png">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="title" content="Ruby Arcade" />
+    <meta property="og:url" content="https://rubyarcade.lol/" />
+    <meta name="description" content="Ruby arcade is a game network that features a wide variety of engaging and immersive games suitable for all ages." />
+    <meta name="keywords" content="gaming, arcade, entertainment, educational games, fun, unblocked, proxy, unblocker, ruby, html, css, game, ruby arcade, rubyarcadelol, rubyarcade.lol">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://rubyarcade.lol/" />
+    <meta property="og:title" content="Ruby Arcade" />
+    <meta property="og:description" content="Ruby arcade is a game network that features a wide variety of engaging and immersive games suitable for all ages." />
+    <meta property="og:image" content="https://rubyarcade.lol/assets/img/icons/metapicture.png" />
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://rubyarcade.lol/" />
+    <meta property="twitter:title" content="Ruby Arcade" />
+    <meta property="twitter:description" content="Ruby arcade is a game network that features a wide variety of engaging and immersive games suitable for all ages." />
+
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/navbar.css">
+    <link rel="stylesheet" href="assets/css/btn.css">
+    <link rel="stylesheet" href="assets/css/loader.css">
+
+    <style>
+        body {
+            font-family: "Inter", sans-serif;
+            margin: 20px;
+        }
+
+        .settings {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        .settings label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        .settings input {
+            width: calc(100% - 120px);
+            padding: 8px;
+            margin-bottom: 10px;
+            display: inline-block;
+        }
+        .settings button {
+            padding: 10px 15px;
+            background-color: #ff5454;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-left: 10px;
+            display: inline-block;
+            vertical-align: top;
+        }
+        .preset-buttons {
+            margin: 20px 0;
+        }
+        .preset-buttons img {
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+        .panic-button {
+            padding: 10px 15px;
+            background-color: #FF6347;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        .settings {
+        display: flex;
+       
+}
+
+.section {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+    margin: 5px;
+}
+
+.section label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+
+    </style>
+
+
+  </head>
+
+
+
+
+  <body>
+    
+    <div class="navbar">
+
+        <button class="nav-logo" onclick="window.location.href='index.html'">
+          <img src="assets/img/icons/rubyarcade.png" alt="Ruby Arcade" class="nav-img"/>
+        </button>
+    
+        <button class="nav-logo-small" onclick="window.location.href='index.html'">
+          <img src="assets/img/icons/logo.png" alt="Ruby Arcade" class="nav-img-small"/>
+        </button>
+      
+          <div class="nav-items">
+              <button class="nav-button" onclick="window.location.href='index.html'">
+                  <span>Home</span>
+              </button>
+              <button class="nav-button" onclick="window.location.href='games.html'">
+                  <span>Games</span>
+              </button>
+              <button class="nav-button" onclick="window.location.href='apps.html'">
+                  <span>Apps</span>
+              </button>
+              <button class="nav-button" onclick="window.location.href='search.html'">
+                  <span">Search</span>
+              </button>
+            </div>
+            <div class="nav-items">
+              <button class="nav-settings" onclick="window.location.href='settings.html'">
+                <img src="assets/img/icons/user.png" alt="Ruby Arcade" class="nav-settings-img"/>
+            </button>
+          </div>
+         
+      </div>
+
+  <center>
+  <p>Settings</p>
+</center>
+
+<div id="xpDisplay">XP: 0</div>
+<div id="levelDisplay">Level: 1</div>
+<div id="levelUpNotification"></div>
+
+
+
+
+<center>
+
+
+    <div class="settings">
+        <div class="section preset-section">
+            <label for="title">Tab Cloak</label>
+            <div class="preset-buttons">
+                <img src="https://www.google.com/favicon.ico" alt="Google" onclick="applyPreset('google')" title="Google">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/59/Google_Classroom_Logo.png" alt="Google Classroom" onclick="applyPreset('classroom')" title="Google Classroom">
+                <img src="https://canvas.instructure.com/favicon.ico" alt="Canvas" onclick="applyPreset('canvas')" title="Canvas">
+                <img src="https://ssl.gstatic.com/docs/documents/images/kix-favicon-2023q4.ico" alt="Google Docs" onclick="applyPreset('docs')" title="Google Docs">
+            </div>
+        </div>
+    
+        <div class="section panic-section">
+            <label for="title">Panic Key</label>
+            <button class="panic-button" onclick="setPanicKey()">Set Panic Key</button>
+            <div id="current-panic-key"></div>
+        </div>
+    
+        <div class="section about-blank-section">
+            <label>About:blank Cloaking</label>
+            <button onclick="openUrlInNewTab()">Open URL in New Tab</button>
+        </div>
+
+    </div>
+
+</center>
+
+
+
+
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+
+
+     <!-- <footer class="footer">
+        <div class="footer-content">
+
+          <div class="ruby">
+            <img src="assets/img/icons/rubyarcade.png" alt="Logo" width="100%" height="100%" style="-webkit-user-drag: none;" />
+          </div>
+            <div class="smallerlogo">
+            
+              <img src="assets/img/icons/logo.png" alt="Logo" style="-webkit-user-drag: none;" />
+            </div>
+            
+          
+          
+            <div class="pages">
+            
+              <ul>
+                <li><a href="/credits.html">Home</a></li>
+                <li><a href="/games.html">Games</a></li>
+                <li><a href="/apps.html">Apps</a></li>
+                <li><a href="/search.html">Search</a></li>
+              </ul>
+  
+            </div>
+          <div class="resources">
+            
+            <ul>
+              <li><a href="/credits.html">Credits</a></li>
+              <li><a href="/partners.html">Partners</a></li>
+              <li><a href="/legal/policy.html">Privacy Policy</a></li>
+              <li><a href="/legal/terms.html">Terms</a></li>
+            </ul>
+
+          </div>
+      </footer> -->
+      
+
+
+
+  <script src="/assets/js/button.js"></script>
+  <script src="/assets/js/loader.js"></script>
+  <script src="/assets/js/index.js"></script>
+  <script src="/assets/js/settings.js"></script>
+
+
+
+
+  </body>
+</html>
