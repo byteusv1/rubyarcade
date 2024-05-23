@@ -4,7 +4,7 @@ const presets = {
         favicon: 'https://www.google.com/favicon.ico'
     },
     classroom: {
-        title: 'Google Classroom',
+        title: 'Home',
         favicon: 'https://www.gstatic.com/classroom/favicon.png'
     },
     canvas: {
