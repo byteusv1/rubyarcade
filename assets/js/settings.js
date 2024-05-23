@@ -21,6 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
     loadSettings();
     applySettings();
     displayPanicKey();
+    updateAboutBlankButton();
 });
 
 function applyPreset(preset) {
@@ -135,12 +136,15 @@ function openUrlInNewTab() {
 function toggleAboutBlankCloaking() {
     aboutBlankCloakingEnabled = !aboutBlankCloakingEnabled;
     localStorage.setItem('aboutBlankCloakingEnabled', aboutBlankCloakingEnabled);
+    updateAboutBlankButton();
+}
+
+function updateAboutBlankButton() {
     const aboutBlankButton = document.getElementById('about-blank-button');
     aboutBlankButton.innerText = aboutBlankCloakingEnabled ? 'Disable Cloaking' : 'Enable Cloaking';
 }
 
 // Restore the toggle state when the page loads
 document.addEventListener('DOMContentLoaded', function() {
-    const aboutBlankButton = document.getElementById('about-blank-button');
-    aboutBlankButton.innerText = aboutBlankCloakingEnabled ? 'Disable Cloaking' : 'Enable Cloaking';
+    updateAboutBlankButton();
 });
