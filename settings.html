@@ -50,19 +50,15 @@
         }
 
         .settings {
-            max-width: 500px;
-            margin: 0 auto;
+            width: 100%;
+            justify-content: space-evenly;
+            display: flex;
         }
         .settings label {
             display: block;
             margin: 10px 0 5px;
         }
-        .settings input {
-            width: calc(100% - 120px);
-            padding: 8px;
-            margin-bottom: 10px;
-            display: inline-block;
-        }
+
         .settings button {
             padding: 10px 15px;
             background-color: #ff5454;
@@ -73,7 +69,17 @@
             margin-left: 10px;
             display: inline-block;
             vertical-align: top;
+            transition: all 250ms;
         }
+
+        .settings button::hover {
+            transform: translateY(calc(1rem - 1.1rem));
+        }
+
+        .preset-buttons {
+            margin: 20px 0;
+        }
+
         .preset-buttons {
             margin: 20px 0;
         }
@@ -82,7 +88,13 @@
             height: 40px;
             cursor: pointer;
             margin-right: 10px;
+            transition: all 250ms;
         }
+
+        .preset-buttons img:hover {
+            transform: translateY(calc(1rem - 1.1rem));
+        }
+
         .panic-button {
             padding: 10px 15px;
             background-color: #FF6347;
@@ -92,16 +104,18 @@
             margin-top: 20px;
         }
 
-        .settings {
-        display: flex;
-       
-}
+        .panic-button:hover {
+            transform: translateY(calc(1rem - 1.1rem));
+        }
 
 .section {
-    border: 1px solid #ccc;
+    border: transparent;
+    border-radius: 8px;
     padding: 20px;
+    background-color: rgb(34, 34, 34);
     margin-bottom: 20px;
     margin: 5px;
+    width: 50%;
 }
 
 .section label {
@@ -185,7 +199,7 @@
     
         <div class="section about-blank-section">
             <label>About:blank Cloaking</label>
-            <button onclick="openUrlInNewTab()">Open URL in New Tab</button>
+            <button class="panic-button" onclick="openUrlInNewTab()">Open URL in New Tab</button>
         </div>
 
     </div>
