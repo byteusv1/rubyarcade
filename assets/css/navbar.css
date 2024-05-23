@@ -16,8 +16,8 @@
     border-bottom: 1px solid #252525;
     background: rgba(34, 34, 34, 0.2);
     backdrop-filter: blur(5px);
-    justify-content: space-evenly;
     user-select: none;
+    justify-content: space-between;
 }
 
 
@@ -47,6 +47,7 @@ transform: scale(1.05);
     width: 100%;
     height: 100%;
 }
+
 
 
 .nav-logo-small {
@@ -105,8 +106,8 @@ transform: scale(1.05);
 
 
 .nav-items {
-    float: left;
-
+    float: right;
+    right: 0;
 }
 
 
