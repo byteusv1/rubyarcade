@@ -40,6 +40,7 @@
     <link rel="stylesheet" href="assets/css/index.css">
     <link rel="stylesheet" href="assets/css/navbar.css">
     <link rel="stylesheet" href="assets/css/btn.css">
+    <link rel="stylesheet" href="assets/css/loader.css">
     <link rel="stylesheet" href="assets/css/themes.css">
 
 
@@ -144,34 +145,35 @@
  
 
     <!-- Game loader section -->
-<section id="gameLoaderSection" style="display: none;">
-    <div id="gameLoaderContainer"> <iframe id="gameFrame" src="assets/img/icons/loading.gif" frameborder="0"></iframe></div>
-    
-    
-    <div id="levelUpNotification" style="position: fixed; top: 10px; right: 10px;padding: 10px; display: none; z-index: 9999;"></div>
-
-    <div class="gameBar" id="gameBar">  <div class="gameBarButton" onclick="removeGameLoader()">
-            <img src="assets/img/icons/remove.png" width="20px" alt="Remove Game Loader" />
-        </div>
-
-        <span id="gameNamePlaceholder"></span> 
-
-        <div class="button-group">
-            <div class="gameBarButton" onclick="refreshGame()">
-                <img src="assets/img/icons/refresh.png" width="20px" alt="Refresh" />
-            </div>
-            <div class="gameBarButton" onclick="expandPage()">
-                <img src="assets/img/icons/expand.png" width="20px" alt="Expand Page" />
-            </div>
-            <div class="gameBarButton" onclick="toggleFullscreen()">
-                <img src="assets/img/icons/fullscreen.png" width="20px" alt="Fullscreen" />
-            </div>
-
-        </div>
-
+    <section id="gameLoaderSection" style="display: none;">
+      <div id="levelUpNotification" style="position: fixed; top: 10px; right: 10px;padding: 10px; display: none; z-index: 9999;"></div>
+      <div id="gameLoaderContainer">
+          <iframe id="gameFrame" src="assets/img/icons/loading.gif" frameborder="0"></iframe>
+      </div>
+      <div class="gameBar" id="gameBar">
+          <div class="gameBarButton" onclick="removeGameLoader()">
+              <img src="assets/img/icons/remove.png" width="20px" alt="Remove Game Loader" />
+          </div>
+  
+          <span id="gameNamePlaceholder"></span> 
+          <div class="button-group">
+  
+              <div class="gameBarButton" onclick="refreshGame()">
+                  <img src="assets/img/icons/refresh.png" width="20px" alt="Refresh" />
+              </div>
+              <div class="gameBarButton" onclick="expandPage()">
+                  <img src="assets/img/icons/expand.png" width="20px" alt="Expand Page" />
+              </div>
+              <div class="gameBarButton" onclick="toggleFullscreen()">
+                  <img src="assets/img/icons/fullscreen.png" width="20px" alt="Fullscreen" />
+              </div>
+          </div>
+      </div>
+  
+      <div class="undoExpandBtn" id="undoExpandBtn" style="display: none;" onclick="undoExpand()">
+        <img src="assets/img/icons/undoexpand.png" width="20px" alt="Undo Expand" />
     </div>
-    <div class="undoExpandBtn" id="undoExpandBtn" style="display: none;" onclick="undoExpand()"><img src="assets/img/icons/undoexpand.png" width="20px" alt="Undo Expand" /> </div>
-</section>
+  </section>
 
 
 
@@ -182,6 +184,7 @@
     <script src="/assets/js/button.js"></script>
     <script src="/assets/js/loader.js"></script>
     <script src="/assets/js/games.js"></script>
+    <script src="/assets/js/search.js"></script>
     <script src="/assets/js/index.js"></script>
     <script src="/assets/js/settings.js"></script>
 
