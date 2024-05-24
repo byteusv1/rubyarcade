@@ -2,9 +2,36 @@ body[theme="dark"] {
     --text-color: white;
     --background: #1C1C1C;
     --accent: #EA4747;
+    --accent-dark: #aa3333;
+    --accent-light: #d87979;
 }
 body[theme="light"] {
     --text-color: #1C1C1C;
     --background: #ffffff;
     --accent: #EA4747;
+    --accent-dark: #aa3333;
+    --accent-light: #d87979;
+}
+body[theme="winter"] {
+    --text-color: #ffffff;
+    --background: rgb(155, 190, 255);
+    --accent: #3351c9;
+    --accent-dark: #24398c;
+    --accent-light: rgb(193, 233, 255);
+}
+
+body[theme="sunset"] {
+    --text-color: #ffffff;
+    --background: #f4a135;
+    --accent: #984e9e;
+    --accent-dark: #f188f9;
+    --accent-light: #fcd2ff;
+}
+
+body[theme="ruby"] {
+    --text-color: #ffffff;
+    --background: #EA4747;
+    --accent: #7b2929;
+    --accent-dark: #EA4747;
+    --accent-light: #fd8181;
 }
