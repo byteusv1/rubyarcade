@@ -14,11 +14,11 @@
 
 
     <!-- Meta tags -->
-    <title>Ruby Arcade</title>
+    <title>Settings | Ruby Arcade</title>
     <link rel="icon" id="dynamic-favicon" href="assets/img/icons/logo.png">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="title" content="Ruby Arcade" />
+    <meta name="title" content="Ruby Arcade Settings" />
     <meta property="og:url" content="https://rubyarcade.lol/" />
     <meta name="description" content="Ruby arcade is a game network that features a wide variety of engaging and immersive games suitable for all ages." />
     <meta name="keywords" content="gaming, arcade, entertainment, educational games, fun, unblocked, proxy, unblocker, ruby, html, css, game, ruby arcade, rubyarcadelol, rubyarcade.lol">
@@ -42,102 +42,13 @@
     <link rel="stylesheet" href="assets/css/navbar.css">
     <link rel="stylesheet" href="assets/css/btn.css">
     <link rel="stylesheet" href="assets/css/loader.css">
+    <link rel="stylesheet" href="assets/css/themes.css">
 
     <style>
         body {
             font-family: "Inter", sans-serif;
-            margin: 20px;
         }
 
-        .settings {
-            width: 100%;
-            justify-content: space-evenly;
-            display: flex;
-        }
-        .settings label {
-            display: block;
-            margin: 10px 0 5px;
-        }
-
-        .settings button {
-            padding: 10px 15px;
-            background-color: #ff5454;
-            color: white;
-            border: none;
-            border-radius: 8px;
-            cursor: pointer;
-            margin-left: 10px;
-            display: inline-block;
-            vertical-align: top;
-            transition: all 250ms;
-        }
-
-        .settings button::hover {
-            transform: translateY(calc(1rem - 1.1rem));
-        }
-
-        .preset-buttons {
-            margin: 20px 0;
-        }
-
-        .preset-buttons {
-            margin: 20px 0;
-        }
-        .preset-buttons img {
-            width: 40px;
-            height: 40px;
-            cursor: pointer;
-            margin-right: 10px;
-            transition: all 250ms;
-        }
-
-        .preset-buttons img:hover {
-            transform: translateY(calc(1rem - 1.1rem));
-        }
-
-        .panic-button {
-            padding: 10px 15px;
-            background-color: #FF6347;
-            color: white;
-            border: none;
-            cursor: pointer;
-            margin-top: 20px;
-        }
-
-        .panic-button:hover {
-            transform: translateY(calc(1rem - 1.1rem));
-        }
-
-.section {
-    border: transparent;
-    border-radius: 8px;
-    padding: 20px;
-    background-color: rgb(34, 34, 34);
-    margin-bottom: 20px;
-    margin: 5px;
-    width: 50%;
-}
-
-.section label {
-    display: block;
-    margin-bottom: 10px;
-}
-
-        .settings input {
-            background-color: #252525;
-            border: 2px solid #383838;
-            border-radius: 8px;
-            font-family: "Inter", sans-serif;
-            font-size: 16px;
-            color: #fff;
-            width: 300px; 
-            height: 40px; 
-            padding-left: 40px;
-            margin: 5px 0; 
-            box-sizing: border-box;
-            outline: none;
-            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-        }
 
 
     </style>
@@ -199,16 +110,17 @@
   <div class="settings">
     <div class="section preset-section">
         <label for="title">Tab Cloak</label>
-        <input type="text" id="title" placeholder="Title">
-        <input type="text" id="favicon" placeholder="Favicon URL">
-       
+        <div>
+            <input type="text" id="title" placeholder="Enter title">
+            <input type="text" id="favicon" placeholder="Enter favicon URL">
+            <button onclick="saveAndApplySettings()">Save & Apply</button>
+        </div>
         <div class="preset-buttons">
             <img src="https://www.google.com/favicon.ico" alt="Google" onclick="applyPreset('google')" title="Google">
             <img src="https://www.gstatic.com/classroom/favicon.png" alt="Google Classroom" onclick="applyPreset('classroom')" title="Google Classroom">
             <img src="https://canvas.instructure.com/favicon.ico" alt="Canvas" onclick="applyPreset('canvas')" title="Canvas">
             <img src="https://ssl.gstatic.com/docs/documents/images/kix-favicon-2023q4.ico" alt="Google Docs" onclick="applyPreset('docs')" title="Google Docs">
         </div>
-        <button onclick="saveAndApplySettings()">Save & Apply</button>
     </div>
     
         <div class="section panic-section">
@@ -222,6 +134,15 @@
             <button class="panic-button" onclick="openUrlInNewTab()">Open URL in New Tab</button>
         </div>
 
+        <div class="section">
+          <label for="theme-select">Select Theme:</label>
+          <select id="theme-select">
+            <option value="dark">Dark</option>
+              <option value="light">Light</option>
+              
+          </select>
+        </div>
+
     </div>
 
 </center>
@@ -232,12 +153,16 @@
 <br></br>
 <br></br>
 <br></br>
-<br></br>
-<br></br>
-<br></br>
 
 
-     <!-- <footer class="footer">
+
+<script src="/assets/js/button.js"></script>
+<script src="/assets/js/loader.js"></script>
+<script src="/assets/js/index.js"></script>
+<script src="assets/js/settings.js"></script>
+
+
+    <footer class="footer">
         <div class="footer-content">
 
           <div class="ruby">
@@ -270,15 +195,8 @@
             </ul>
 
           </div>
-      </footer> -->
-      
+      </footer>
 
-
-
-  <script src="/assets/js/button.js"></script>
-  <script src="/assets/js/loader.js"></script>
-  <script src="/assets/js/index.js"></script>
-  <script src="/assets/js/settings.js"></script>
 
 
 

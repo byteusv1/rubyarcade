@@ -40,10 +40,12 @@
     <link rel="stylesheet" href="assets/css/index.css">
     <link rel="stylesheet" href="assets/css/navbar.css">
     <link rel="stylesheet" href="assets/css/btn.css">
-    <link rel="stylesheet" href="assets/css/loader.css">
+    <link rel="stylesheet" href="assets/css/themes.css">
 
 
   </head>
+  
+  
 
   <div class="navbar">
 
@@ -126,7 +128,8 @@
 
 
 
-
+      <div id="xpDisplay"></div>
+      <div id="levelDisplay"></div>
 
 <div id="favoriteGames" style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center; margin-bottom: 50px;">
 
@@ -138,9 +141,14 @@
   </div>
 
 
+ 
+
     <!-- Game loader section -->
 <section id="gameLoaderSection" style="display: none;">
     <div id="gameLoaderContainer"> <iframe id="gameFrame" src="assets/img/icons/loading.gif" frameborder="0"></iframe></div>
+    
+    
+    <div id="levelUpNotification" style="position: fixed; top: 10px; right: 10px;padding: 10px; display: none; z-index: 9999;"></div>
 
     <div class="gameBar" id="gameBar">  <div class="gameBarButton" onclick="removeGameLoader()">
             <img src="assets/img/icons/remove.png" width="20px" alt="Remove Game Loader" />

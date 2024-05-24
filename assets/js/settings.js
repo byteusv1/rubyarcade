@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
     loadSettings();
     applySettings();
     displayPanicKey();
-    updateAboutBlankButton();
+    loadThemeFromLocalStorage();
 });
 
 function applyPreset(preset) {
@@ -40,7 +40,6 @@ function saveAndApplySettings() {
 
     applySettings();
 }
-
 function applySettings() {
     const title = localStorage.getItem('cloakedTitle');
     const faviconURL = localStorage.getItem('cloakedFavicon');
@@ -50,7 +49,13 @@ function applySettings() {
     }
 
     if (faviconURL) {
-        const favicon = document.getElementById('dynamic-favicon');
+        let favicon = document.getElementById('dynamic-favicon');
+        if (!favicon) {
+            favicon = document.createElement('link');
+            favicon.id = 'dynamic-favicon';
+            favicon.rel = 'icon';
+            document.head.appendChild(favicon);
+        }
         favicon.href = faviconURL;
     }
 }
@@ -60,13 +65,21 @@ function loadSettings() {
     const savedFavicon = localStorage.getItem('cloakedFavicon');
 
     if (savedTitle) {
-        document.getElementById('title').value = savedTitle;
+        document.title = savedTitle;
     }
 
     if (savedFavicon) {
-        document.getElementById('favicon').value = savedFavicon;
+        let favicon = document.getElementById('dynamic-favicon');
+        if (!favicon) {
+            favicon = document.createElement('link');
+            favicon.id = 'dynamic-favicon';
+            favicon.rel = 'icon';
+            document.head.appendChild(favicon);
+        }
+        favicon.href = savedFavicon;
     }
 }
+
 
 function setPanicKey() {
     let panicKey = localStorage.getItem('panicKey');
@@ -115,7 +128,6 @@ function openUrlInNewTab() {
     if (currentUrl === "http://yourdomain.com/") {
         window.location.href = "about:blank";
     } else if (currentUrl === "about:blank") {
-        // Do nothing
         return;
     } else {
         var win = window.open();
@@ -148,3 +160,37 @@ function updateAboutBlankButton() {
 document.addEventListener('DOMContentLoaded', function() {
     updateAboutBlankButton();
 });
+
+// Function to save the selected theme to localStorage
+function saveThemeToLocalStorage(theme) {
+    localStorage.setItem('selectedTheme', theme);
+}
+
+// Function to apply the selected theme
+function applySelectedTheme(theme) {
+    document.body.setAttribute('theme', theme);
+}
+
+// Event listener for theme selection change
+const themeSelect = document.getElementById('theme-select');
+if (themeSelect) {
+    themeSelect.addEventListener('change', function() {
+        const selectedTheme = themeSelect.value;
+        applySelectedTheme(selectedTheme); // Apply the selected theme
+        saveThemeToLocalStorage(selectedTheme); // Save the selected theme to localStorage
+    });
+}
+
+// Function to retrieve the selected theme from localStorage on page load
+function loadThemeFromLocalStorage() {
+    const selectedTheme = localStorage.getItem('selectedTheme');
+    if (selectedTheme) {
+        applySelectedTheme(selectedTheme);
+        if (themeSelect) {
+            themeSelect.value = selectedTheme; // Update the select element's value
+        }
+    }
+}
+
+// Load the selected theme from localStorage when the page loads
+document.addEventListener('DOMContentLoaded', loadThemeFromLocalStorage);

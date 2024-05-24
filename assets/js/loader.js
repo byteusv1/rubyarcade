@@ -1,5 +1,5 @@
 const XP_PER_SECOND = 2;
-const MAX_LEVEL = 99;
+const MAX_LEVEL = 100;
 
 let xpInterval;
 
@@ -53,11 +53,12 @@ function displayXPAndLevel() {
 
 function displayLevelUpNotification(level) {
   const notification = document.getElementById('levelUpNotification');
-  notification.innerText = `Congratulations! You've reached Level ${level}!`;
+  const currentXP = parseInt(localStorage.getItem('xp')) || 0;
+  notification.innerText = `Level ${level}! Current XP: ${currentXP}`;
   notification.style.display = 'block';
   setTimeout(() => {
     notification.style.display = 'none';
-  }, 3000); // Display for 3 seconds
+  }, 5000); // Display for 5 seconds
 }
 
 document.addEventListener('DOMContentLoaded', displayXPAndLevel);

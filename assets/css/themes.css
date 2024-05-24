@@ -1,0 +1,10 @@
+body[theme="dark"] {
+    --text-color: white;
+    --background: #1C1C1C;
+    --accent: #EA4747;
+}
+body[theme="light"] {
+    --text-color: #1C1C1C;
+    --background: #ffffff;
+    --accent: #EA4747;
+}

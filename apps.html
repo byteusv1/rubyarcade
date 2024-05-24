@@ -41,11 +41,14 @@
     <link rel="stylesheet" href="assets/css/navbar.css">
     <link rel="stylesheet" href="assets/css/btn.css">
     <link rel="stylesheet" href="assets/css/loader.css">
+    <link rel="stylesheet" href="assets/css/themes.css">
   
   
   </head>
 
 <body>
+
+
   <div class="navbar">
 
     <button class="nav-logo" onclick="window.location.href='index.html'">
@@ -82,8 +85,9 @@
  
 
 
-        <div class="container">
 
+        <div class="container">
+          <div id="levelUpNotification" style="position: fixed; top: 10px; right: 10px;padding: 10px; display: none; z-index: 9999;"></div>
             <div class="input-container">
                 <img class="input-image" src="assets/img/icons/search.png" alt="Search Icon">
                 <input class="text" id="searchInput" onkeyup="searchGames()" placeholder="Search 11 Apps"/>
@@ -104,7 +108,8 @@
                     <button class="suggest" title="Suggest"></button></a>
             </div>
           </div>
-
+          <div id="xpDisplay">XP: 0</div>
+          <div id="levelDisplay">Level: 1</div>
  
     
 
