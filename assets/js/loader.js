@@ -1,4 +1,4 @@
-const XP_PER_SECOND = 1000000000000000;
+const XP_PER_SECOND = 10;
 const MAX_LEVEL = 999;
 
 let xpInterval;
