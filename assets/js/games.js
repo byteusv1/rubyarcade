@@ -17,7 +17,7 @@ function generateGameHTML(game) {
     return `
         <div class="btn btn-hover" onclick="loadGame('${game.playUrl}', '${game.name}')" ">
             <button class="btn-favorite" onclick="favoriteGame(event)">❥</button>
-            <img src="${game.imageUrl}" />
+            <img src="${game.imageUrl}"/>
             <span>${game.name}</span>
         </div>
         `;

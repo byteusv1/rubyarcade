@@ -84,7 +84,7 @@ function loadSettings() {
 function setPanicKey() {
     let panicKey = localStorage.getItem('panicKey');
     if (!panicKey) {
-        panicKey = '['; // Set default panic key to '['
+        panicKey = '['; 
         localStorage.setItem('panicKey', panicKey);
     } else {
         panicKey = prompt("Enter the panic key (e.g., '['):").toLowerCase();
@@ -113,9 +113,8 @@ document.addEventListener('keydown', (event) => {
 function panic(event) {
     const panicURL = 'https://www.classroom.google.com/';
     const panicKey = localStorage.getItem('panicKey');
-    const keyPressed = event.key.toLowerCase(); // Get the pressed key and convert to lowercase
+    const keyPressed = event.key.toLowerCase(); 
 
-    // Check if the pressed key matches the panic key
     if (keyPressed === panicKey) {
         window.location.href = panicURL;
     }
@@ -123,27 +122,7 @@ function panic(event) {
 
 let aboutBlankCloakingEnabled = localStorage.getItem('aboutBlankCloakingEnabled') === 'true';
 
-function openUrlInNewTab() {
-    var currentUrl = window.location.href;
-    if (currentUrl === "http://yourdomain.com/") {
-        window.location.href = "about:blank";
-    } else if (currentUrl === "about:blank") {
-        return;
-    } else {
-        var win = window.open();
-        win.document.body.style.margin = '0';
-        win.document.body.style.height = '100vh';
-        var iframe = win.document.createElement('iframe');
-        iframe.style.border = 'none';
-        iframe.style.width = '100%';
-        iframe.style.height = '100%';
-        iframe.style.margin = '0';
-        iframe.src = currentUrl;
-        win.document.body.appendChild(iframe);
-        document.querySelector('button').style.background = 'grey';
-        document.querySelector('button').innerHTML = "Already Open";
-    }
-}
+
 
 function toggleAboutBlankCloaking() {
     aboutBlankCloakingEnabled = !aboutBlankCloakingEnabled;
@@ -156,41 +135,124 @@ function updateAboutBlankButton() {
     aboutBlankButton.innerText = aboutBlankCloakingEnabled ? 'Disable Cloaking' : 'Enable Cloaking';
 }
 
-// Restore the toggle state when the page loads
+
 document.addEventListener('DOMContentLoaded', function() {
     updateAboutBlankButton();
 });
 
-// Function to save the selected theme to localStorage
+
 function saveThemeToLocalStorage(theme) {
     localStorage.setItem('selectedTheme', theme);
 }
 
-// Function to apply the selected theme
+
 function applySelectedTheme(theme) {
     document.body.setAttribute('theme', theme);
 }
 
-// Event listener for theme selection change
+
 const themeSelect = document.getElementById('theme-select');
 if (themeSelect) {
     themeSelect.addEventListener('change', function() {
         const selectedTheme = themeSelect.value;
-        applySelectedTheme(selectedTheme); // Apply the selected theme
-        saveThemeToLocalStorage(selectedTheme); // Save the selected theme to localStorage
+        applySelectedTheme(selectedTheme);
+        saveThemeToLocalStorage(selectedTheme);
     });
 }
 
-// Function to retrieve the selected theme from localStorage on page load
 function loadThemeFromLocalStorage() {
     const selectedTheme = localStorage.getItem('selectedTheme');
     if (selectedTheme) {
         applySelectedTheme(selectedTheme);
         if (themeSelect) {
-            themeSelect.value = selectedTheme; // Update the select element's value
+            themeSelect.value = selectedTheme;
         }
     }
 }
 
-// Load the selected theme from localStorage when the page loads
+
 document.addEventListener('DOMContentLoaded', loadThemeFromLocalStorage);
+
+
+function saveChanges() {
+    var newUsername = document.getElementById("username").innerText.trim();
+    var newAvatar = document.getElementById("avatar-upload").files[0];  
+    var formData = new FormData();
+    formData.append('username', newUsername);
+    formData.append('avatar', newAvatar); 
+  
+    var xhr = new XMLHttpRequest();
+    xhr.open("POST", "save_profile.php", true);
+    xhr.onreadystatechange = function() {
+      if (xhr.readyState === 4 && xhr.status === 200) {
+        console.log("Profile saved successfully.");
+      }
+    };
+    xhr.send(formData); 
+  }
+  
+  if (localStorage.getItem("username")) {
+    document.getElementById("username").innerText = localStorage.getItem("username");
+  }
+
+  var isMaxLimitReached = false;
+
+  document.getElementById("username").addEventListener("input", function(event) {
+      var username = this.innerText.trim();
+      if (isMaxLimitReached) {
+      
+          event.preventDefault();
+          return;
+      }
+      if (username.length >= 18) {
+         
+          isMaxLimitReached = true;
+         
+          this.innerText = username.slice(0, 18);
+         
+          this.blur();
+      } else {
+          localStorage.setItem("username", username);
+      }
+  });
+  
+  document.getElementById("username").addEventListener("blur", function() {
+      isMaxLimitReached = false;
+  });
+  
+  
+  document.getElementById("avatar-upload").addEventListener("change", function() {
+    var file = this.files[0];
+    var reader = new FileReader();
+
+    reader.onload = function(event) {
+        var imgSrc = event.target.result; 
+        document.getElementById("avatar").src = imgSrc;
+        localStorage.setItem("avatar", imgSrc); 
+    };
+
+    reader.readAsDataURL(file);
+});
+
+
+function setAvatar() {
+    var avatarSrc = localStorage.getItem("avatar");
+    if (avatarSrc) {
+        document.getElementById("avatar").src = avatarSrc;
+    }
+}
+
+window.addEventListener("load", setAvatar);
+
+document.getElementById("avatar-upload").addEventListener("change", function() {
+    var file = this.files[0]; 
+    var reader = new FileReader();
+
+    reader.onload = function(event) {
+        var imgSrc = event.target.result; 
+        document.getElementById("avatar").src = imgSrc; 
+        localStorage.setItem("avatar", imgSrc);
+    };
+
+    reader.readAsDataURL(file);
+});

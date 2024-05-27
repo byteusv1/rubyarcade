@@ -82,24 +82,41 @@
                 <span>Apps</span>
             </button>
             <button class="nav-button" onclick="window.location.href='search.html'">
-                <span">Search</span>
+                <span>Search</span>
             </button>
             <button class="nav-settings" onclick="window.location.href='settings.html'">
               <img src="assets/img/icons/user.png" alt="Ruby Arcade" class="nav-settings-img"/>
           </button>
           </div>
-  
         </div>
-       
     </div>
 
+   
+    <center>
+      <p style="margin-top: 16vh;">Profile</p>
+    </center>
+
+ <!--User-->
+    <div class="user-container">
+      <center>
+        <div class="user">
+         <label class="user-label" for="avatar-upload">
+          <img id="avatar" src="assets/img/icons/user.png" class="settings-pfp"   alt="User Avatar" > <input type="file" id="avatar-upload" style="display: none;">  </label>
+          <span class="user" id="username" contenteditable="true">User</span>
+        </div>
+      </center>
+    <div class="level">
+      <div id="levelDisplay">Level: 1</div>
+      <div id="xpDisplay">XP: 0</div>
+    </div>
+  </div>
+
+  
   <center>
-  <p>Settings</p>
+  <p style="margin-top: 10vh;">Settings</p>
 </center>
 
-<div id="xpDisplay">XP: 0</div>
-<div id="levelDisplay">Level: 1</div>
-<div id="levelUpNotification"></div>
+
 
 
 
@@ -108,52 +125,79 @@
 
 
   <div class="settings">
-    <div class="section preset-section">
-        <label for="title">Tab Cloak</label>
+    
+    <div class="section tab-cloak">
+        <label>Tab Cloak</label>
         <div>
             <input type="text" id="title" placeholder="Enter title">
             <input type="text" id="favicon" placeholder="Enter favicon URL">
-            <button onclick="saveAndApplySettings()">Save & Apply</button>
         </div>
         <div class="preset-buttons">
-            <img src="https://www.google.com/favicon.ico" alt="Google" onclick="applyPreset('google')" title="Google">
-            <img src="https://www.gstatic.com/classroom/favicon.png" alt="Google Classroom" onclick="applyPreset('classroom')" title="Google Classroom">
-            <img src="https://canvas.instructure.com/favicon.ico" alt="Canvas" onclick="applyPreset('canvas')" title="Canvas">
-            <img src="https://ssl.gstatic.com/docs/documents/images/kix-favicon-2023q4.ico" alt="Google Docs" onclick="applyPreset('docs')" title="Google Docs">
-        </div>
+            <img src="https://www.google.com/favicon.ico"  onclick="applyPreset('google')" title="Google">
+            <img src="https://www.gstatic.com/classroom/favicon.png" onclick="applyPreset('classroom')" title="Google Classroom">
+            <img src="https://canvas.instructure.com/favicon.ico" onclick="applyPreset('canvas')" title="Canvas">
+            <img src="https://ssl.gstatic.com/docs/documents/images/kix-favicon-2023q4.ico"  onclick="applyPreset('docs')" title="Google Docs">
+          </div>
+          <button class="settings-button" onclick="saveAndApplySettings()">Save & Apply</button>
     </div>
     
-        <div class="section panic-section">
-            <label for="title">Panic Key</label>
-            <button class="panic-button" onclick="setPanicKey()">Set Panic Key</button>
+        <div class="section panic-key">
+          <label>Panic Key</label>
+            <button class="settings-button" onclick="setPanicKey()">Set Panic Key</button>
             <div id="current-panic-key"></div>
+            <label style="font-size: 12px;">Note: do not set the panic key to a common key. Set it to a key you dont use.</label>
         </div>
     
-        <div class="section about-blank-section">
+        <div class="section about:blank">
             <label>About:blank Cloaking</label>
-            <button class="panic-button" onclick="openUrlInNewTab()">Open URL in New Tab</button>
+            <button class="settings-button" onclick="openUrlInNewTab()">Open URL in New Tab</button>
+           
+          </div>
+
+        <div class="section themes">
+          <label>Select Theme:</label>
+
+ <select id="theme-select">
+            <option value="unlocked" disabled style="font-weight: bolder; text-align:center; color:blanchedalmond; background-color: var(background-color);">Default themes</option>
+            <option value="main">Default</option><br>
+            <option value="orange">Orange</option>
+            <option value="lemon">Lemon</option>
+            <option value="kiwi">Kiwi</option>
+            <option value="blueberry">Blueberry</option>
+            <option value="lavender">Lavender</option>
+            <option value="blossom">Blossom</option>
+            <option value="coffee">Coffee</option>
+            <option value="milk">Milk</option>
+            <option value="chia">Chia</option>
+            <option value="unlocked2" disabled style="font-weight: bolder; text-align:center; color:blanchedalmond; background-color: var(background-color);">Unlockable themes</option>
+            <option value="sunwave" >Sunwave</option>
+            <option value="ruby">Ruby</option>
+            <option value="blackberry">Blackberry</option>
+            <option value="winter">Winter</option>
+            <option value="summer">Summer</option>
+            <option value="toffee">Toffee</option>
+
+            <option value="sites" disabled style="font-weight: bolder; text-align:center; color:blanchedalmond; background-color: var(background-color);">Unblocked sites</option>
+            
+            <option value="szvy">Szvy central</option>
+            <option value="meximath">Meximath</option>
+            <option value="seraph">Seraph</option>
+ </select>          
+          </div>
+
+          <div class="section reset">
+            <label style="color: red;">Reset Data:</label>
+          <strong><label style="font-size: 12px;">WARNING: THIS WILL RESET YOUR DATA (including levels)</label></strong>
+            <button class="settings-button" id="resetCookiesBtn">Reset Data</button>
         </div>
 
-        <div class="section">
-          <label for="theme-select">Select Theme:</label>
-          <select id="theme-select">
-            <option value="dark">Dark</option>
-              <option value="light">Light</option>
-              <option value="winter">Winter</option>
-              <option value="sunset">Sunset</option>
-              <option value="ruby">Ruby</option>
-          </select>
-        </div>
 
     </div>
+
 
 </center>
 
 
-
-
-<br></br>
-<br></br>
 <br></br>
 
 

@@ -1,16 +1,59 @@
-const XP_PER_SECOND = 2;
-const MAX_LEVEL = 100;
+const XP_PER_SECOND = 1000000000000000;
+const MAX_LEVEL = 999;
 
 let xpInterval;
 
 function startGame() {
   xpInterval = setInterval(() => {
     awardXP(XP_PER_SECOND);
-  }, 1000); // Award XP every second
+  }, 5000); 
 }
 
 function stopGame() {
   clearInterval(xpInterval);
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  displayXPAndLevel();
+  checkLevelAndShowThemes();
+});
+
+function displayNotification(message) {
+  const notificationsDiv = document.getElementById('notifications');
+  const notification = document.createElement('div');
+  notification.innerText = message;
+  notificationsDiv.appendChild(notification);
+  setTimeout(() => {
+    notificationsDiv.removeChild(notification);
+  }, 10000); 
+}
+
+const themes = [
+  { name: 'unlocked', unlockLevel: 5},
+  { name: 'unlocked2', unlockLevel: 5},
+  { name: 'ruby', unlockLevel: 5, notification: 'You have unlocked the Ruby theme!' },
+  { name: 'sunwave', unlockLevel: 10, notification: 'You have unlocked the Sunwave theme!' },
+  { name: 'blackberry', unlockLevel: 15, notification: 'You have unlocked the Blackberry theme!' },
+  { name: 'winter', unlockLevel: 20, notification: 'You have unlocked the Winter theme!' },
+  { name: 'summer', unlockLevel: 25, notification: 'You have unlocked the Summer theme!' },
+  { name: 'toffee', unlockLevel: 30, notification: 'You have unlocked the Toffee theme!' },
+];
+
+function checkLevelAndShowThemes() {
+  const currentLevel = parseInt(localStorage.getItem('level')) || 1;
+
+  themes.forEach(theme => {
+    const option = document.querySelector(`option[value="${theme.name.toLowerCase()}"]`);
+    if (currentLevel >= theme.unlockLevel) {
+      option.style.display = 'block';
+      if (!localStorage.getItem(`${theme.name.toLowerCase()}Unlocked`)) {
+        localStorage.setItem(`${theme.name.toLowerCase()}Unlocked`, true);
+        displayNotification(theme.notification);
+      }
+    } else {
+      option.style.display = 'none';
+    }
+  });
 }
 
 function awardXP(xp) {
@@ -27,7 +70,7 @@ function awardXP(xp) {
   }
 
   if (currentLevel >= MAX_LEVEL) {
-    currentXP = xpForNextLevel(MAX_LEVEL); // Cap XP at max level requirement
+    currentXP = xpForNextLevel(MAX_LEVEL);
   }
 
   localStorage.setItem('xp', currentXP);
@@ -36,11 +79,12 @@ function awardXP(xp) {
 
   if (leveledUp) {
     displayLevelUpNotification(currentLevel);
+    checkLevelAndShowThemes();
   }
 }
 
 function xpForNextLevel(level) {
-  return level * 100; // Example XP required: 100 * current level
+  return level * 100;
 }
 
 function displayXPAndLevel() {
@@ -54,16 +98,15 @@ function displayXPAndLevel() {
 function displayLevelUpNotification(level) {
   const notification = document.getElementById('levelUpNotification');
   const currentXP = parseInt(localStorage.getItem('xp')) || 0;
-  notification.innerText = `Level ${level}! Current XP: ${currentXP}`;
+  notification.innerText = `Level ${level}! `;
   notification.style.display = 'block';
   setTimeout(() => {
     notification.style.display = 'none';
-  }, 5000); // Display for 5 seconds
+  }, 5000); 
 }
 
 document.addEventListener('DOMContentLoaded', displayXPAndLevel);
 
-// Functions to start and stop the game time tracking
 function loadGame(gameUrl, gameName) {
   console.log("Loading game from URL:", gameUrl);
   console.log("Game name:", gameName);
@@ -86,7 +129,7 @@ function loadGame(gameUrl, gameName) {
       console.error('Span element with ID "gameNamePlaceholder" not found.');
     }
 
-    startGame(); // Start tracking game time
+    startGame(); 
   } else {
     console.error('Invalid game URL:', gameUrl);
   }
@@ -100,7 +143,7 @@ function removeGameLoader() {
 
   document.body.classList.remove("no-scroll");
 
-  stopGame(); // Stop tracking game time
+  stopGame(); 
 }
 
 
@@ -130,6 +173,17 @@ function expandPage() {
 
   undoExpandBtn.style.display = "block";
   ExpandBtn.style.display = "none";
+}
+
+function toggleFullscreen() {
+  var gameFrame = document.getElementById("gameFrame");
+  if (!document.fullscreenElement) {
+    gameFrame.requestFullscreen();
+  } else {
+    if (document.exitFullscreen) {
+      document.exitFullscreen();
+    }
+  }
 }
 
 function undoExpand() {

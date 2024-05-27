@@ -41,11 +41,10 @@
     display: flex;
     align-items: center;
     margin-right: auto;
-    background-color: #d65555;
+    background-color: var(--accent);
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
-    
-    color: white;
+    color: var(--text-color);
   }
 
   .button-group {
@@ -97,5 +96,5 @@
 
   span {
     font-weight: 500;
-    font-family: "Inter";
+    font-family: "Inter", sans-serif;
   }

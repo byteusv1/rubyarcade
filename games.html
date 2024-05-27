@@ -69,7 +69,7 @@
               <span>Apps</span>
           </button>
           <button class="nav-button" onclick="window.location.href='search.html'">
-              <span">Search</span>
+              <span>Search</span>
           </button>
           <button class="nav-settings" onclick="window.location.href='settings.html'">
             <img src="assets/img/icons/user.png" alt="Ruby Arcade" class="nav-settings-img"/>
@@ -128,17 +128,27 @@
  
 
 
+ <!--User-->
+ <div class="user-container">
+  <center>
+    <div class="user">
+     <label class="user-label" for="avatar-upload">
+      <img id="avatar" src="assets/img/icons/user.png" class="settings-pfp"   alt="User Avatar" > <input type="file" id="avatar-upload" style="display: none;">  </label>
+      <span class="user" id="username" contenteditable="true">User</span>
 
-      <div id="xpDisplay"></div>
-      <div id="levelDisplay"></div>
+    </div>
+  </center>
+<div class="level">
+  <div id="levelDisplay">Level: 1</div>
+  <div id="xpDisplay">XP: 0</div>
+  </div>
+</div>
+      
 
 <div id="favoriteGames" style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center; margin-bottom: 50px;">
-
 </div>
 
     <div id="gamesList" style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center;">
-        
-
   </div>
 
 
@@ -147,6 +157,7 @@
     <!-- Game loader section -->
     <section id="gameLoaderSection" style="display: none;">
       <div id="levelUpNotification" style="position: fixed; top: 10px; right: 10px;padding: 10px; display: none; z-index: 9999;"></div>
+      <div id="displayNotification" style="position: fixed; top: 10px; right: 10px;padding: 10px; display: none; z-index: 9999;"></div>
       <div id="gameLoaderContainer">
           <iframe id="gameFrame" src="assets/img/icons/loading.gif" frameborder="0"></iframe>
       </div>
