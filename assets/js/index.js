@@ -21,17 +21,33 @@ const setObj = function (key, obj) {
     }
   });
 
-  function openUrlInNewTab() {
-    
+  document.addEventListener('DOMContentLoaded', function() {
+    let aboutBlankCloakingEnabled = localStorage.getItem('aboutBlankCloakingEnabled') === 'true';
+    const toggleSwitch = document.getElementById("aboutBlankToggle");
+    toggleSwitch.checked = aboutBlankCloakingEnabled;
+    toggleSwitch.addEventListener("change", function() {
+        localStorage.setItem('aboutBlankCloakingEnabled', this.checked);
+        if (this.checked) {
+            openUrlInNewTab();
+        }
+    });
+
+    // Redirect to about:blank if the user is on index.html and the cloaking is enabled
+    if (aboutBlankCloakingEnabled && window.location.pathname.endsWith("/index.html")) {
+        window.location.href = "about:blank";
+    }
+});
+
+function openUrlInNewTab() {
     var currentUrl = window.location.href;
-    if (currentUrl === "/") {
+    if (currentUrl === "/" || currentUrl.endsWith("/index.html")) {
         window.location.href = "about:blank";
     } else if (currentUrl === "about:blank") {
         return;
     } else {
         var win = window.open();
         win.document.body.style.margin = '0';
-        window.location.href='https://google.com'
+        window.location.href = 'https://google.com';
         win.document.body.style.height = '100vh';
         var iframe = win.document.createElement('iframe');
         iframe.style.border = 'none';
@@ -42,6 +58,10 @@ const setObj = function (key, obj) {
         win.document.body.appendChild(iframe);
     }
 }
+
+
+
+
 
 
 function resetAllAndSetThemeDefault() {

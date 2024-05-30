@@ -141,6 +141,8 @@
           <button class="settings-button" onclick="saveAndApplySettings()">Save & Apply</button>
     </div>
     
+
+    
         <div class="section panic-key">
           <label>Panic Key</label>
             <button class="settings-button" onclick="setPanicKey()">Set Panic Key</button>
@@ -150,8 +152,11 @@
     
         <div class="section about:blank">
             <label>About:blank Cloaking</label>
-            <button class="settings-button" onclick="openUrlInNewTab()">Open URL in New Tab</button>
-           
+
+<label class="switch">
+  <input type="checkbox" id="aboutBlankToggle">
+  <span class="slider round"></span>
+</label>
           </div>
 
         <div class="section themes">

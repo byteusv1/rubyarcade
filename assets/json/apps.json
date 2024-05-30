@@ -60,10 +60,15 @@
     "genres": ["#"]
   },
   {
+    "name": "Crazy Games",
+    "imageUrl": "  https://lh3.googleusercontent.com/OMcxmiUBSiXzy3Li7-yOlnQKuGxPJcrz083ukhS529t1KSwxuBq0WfoG22NAtunPLn-djtargJrdVX7a4v_1XLg=w1280",
+    "playUrl": "https://useamethyst.vercel.app/load.html?app=crazygames",
+    "genres": ["#"]
+  },
+  {
     "name": "Discord",
     "imageUrl": "https://gdm-catalog-fmapi-prod.imgix.net/ProductLogo/a85b36ef-ff72-49be-8c06-c385860eecd0.jpeg",
     "playUrl": "https://usequanta.vercel.app/load.html?app=discord",
     "genres": ["#"]
   }
-
 ]
