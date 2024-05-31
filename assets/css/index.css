@@ -144,7 +144,7 @@ h2 {
   border: none;
   border-radius: 25%; 
   font-family: 'Helvetica', sans-serif; 
-  font-size: 20px;
+  font-size: 35px;
   font-weight: 900;
   transition: all 350ms;
   color: var(--accent);
