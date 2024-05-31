@@ -1,13 +1,13 @@
 [
   {
     "name": "Roblox",
-    "imageUrl": "https://rubymedia.onrender.com/roblox.png",
+    "imageUrl": "/assets/img/thumbnails/roblox.png",
     "playUrl": "https://lh4.googleusercontent.com/KhQn1p1DtgFzojR6drZodtTzqNLmbcHXxXFHG9u-tGjYzSefnyWsC2kOkNG62j0dS4aX_750I4WqhEi65II8KDQ=w1280",
     "genres": ["Sandbox", "Adventure"]
   },
   {
     "name": "RL sideswipe",
-    "imageUrl": "https://rubymedia.onrender.com/sideswipe.png",
+    "imageUrl": "/assets/img/thumbnails/rocket.png",
     "playUrl": "https://lh5.googleusercontent.com/nn6dOd9NPujhM_h-UZg6_Jl1i239fJmKazvhxEkE2VfvVbaUTS3tA2GgzwEdZ_4gCFegt8oFJGtVJepwBD2MNOw=w1280",
     "genres": ["Sports"]
   },
@@ -91,7 +91,7 @@
   },
   {
     "name": "Aquapark",
-    "imageUrl": "https://lh5.googleusercontent.com/1-F7oeRPihRwCWo3h5rkOB65tgFAB6QQ889uvNgmfSldGryVi6KGXBBsjmG5ndlRtzTfMzpGofzmBiEMwB8vyy-iDUnMX6HgH5R-VyoZtSIbYkJY7EY8ZH5HulZJgmZvTA=w1280",
+    "imageUrl": "/assets/img/thumbnails/aquapark.png",
     "playUrl": "https://rubythegames.onrender.com/games/static/aquapark/index.html",
     "genres": ["Arcade"]
   },
@@ -205,7 +205,7 @@
   },
   {
     "name": "Baldis basics",
-    "imageUrl": "https://lh3.googleusercontent.com/gD5ZZhyf8xVX_QTO_urh6QzFrEAcHNsvVW_wgSljlw5EkKeF5Sv4Q_PiLL6wmuMhVh87TLtWyHdlKSzdQ0qRiqxIa5IrqXICxvCFPz4scwGaDp1HqWEcVAHFqcdvWfy3Fg=w1280",
+    "imageUrl": "/assets/img/thumbnails/baldi.png",
     "playUrl": "https://rubythegames.onrender.com/games/static/baldisbasics/index.html",
     "genres": ["Horror", "Educational"]
   },
@@ -223,7 +223,7 @@
   },
   {
     "name": "Adventure capitalist",
-    "imageUrl": "https://lh3.googleusercontent.com/WGp_v8dz3jcnR5SJrK4ny1VamKz3rlCaaNIAZ4qu4JsUHY1QUCjdYpPHSzfQ8Rs2mqPCKkf_NOXvZz0UG26KP_KaqxFZaCCHVd9TkZMmCKtq8BZKOiqDGK18H_oS0uKjAw=w1280",
+    "imageUrl": "/assets/img/thumbnails/adventure.png",
     "playUrl": "https://rubythegames.onrender.com/games/static/adventurecapitalist/index.html",
     "genres": ["Simulation"]
   },
@@ -253,7 +253,7 @@
   },
   {
     "name": "1v1.lol",
-    "imageUrl": "https://lh3.googleusercontent.com/n-mK5kCa6TjtaWSoqXSI7Z2LdREeQ5R4X-9EEfqHjoe3UwMQNFnMgXpdpYJv2zkhD_RYZUWqOYEdVUawSux4sl36Q3OnnnZNPopLUJeFS8e2Gk_iT2JvgU3ES58JyXqs9Q=w1280",
+    "imageUrl": "/assets/img/thumbnails/1v1.png",
     "playUrl": "https://rubythegames.onrender.com/games/static/1v1lol/index.html",
     "genres": ["Shooter"]
   },
@@ -361,19 +361,19 @@
   },
   {
     "name": "Achievement unlocked",
-    "imageUrl": "https://lh5.googleusercontent.com/TZd0lJvBO_yS3b9YD8DekgEdYlrseTwwUwPCtNN13EczeRAcZdDmqGllAlwLqBJ-ytfHG7nuAydnUpSPMDN1hmh6kX9Y2qKVAm9NOMzsvt3yC6i-e96e6_M62fXLIWsk_A=w1280",
+    "imageUrl": "/assets/img/thumbnails/achunlocked.png",
     "playUrl": "https://rubythegames.onrender.com/games/flash/achievementunlocked/index.html",
     "genres": ["Platformer", "Puzzle"]
   },
   {
     "name": "Achievement unlocked 2",
-    "imageUrl": "https://lh4.googleusercontent.com/nGKoLLQKgeuLEx-sSUIAMJ_zc7pbOmzMNAdWg3xd5LLSozgactKRt-o5ILNtYkgo45TJzxQqyO3mkCBO0KQz70Y_9rBNbdzbwIhPLMr6psBJ0VkCGWndaZlxQ3Dd6UGebg=w1280",
+    "imageUrl": "/assets/img/thumbnails/achunlocked2.png",
     "playUrl": "https://rubythegames.onrender.com/games/flash/achievementunlocked2/index.html",
     "genres": ["Platformer", "Puzzle"]
   },
   {
     "name": "Achievement unlocked 3",
-    "imageUrl": "https://lh6.googleusercontent.com/gLakQYJINuBFwwsXFpM8_y-Klfz7M7-ndp0-vPIYYHn31C-ayn3DspXtcU16VQse11u6KfId2IKPwqfZAiSVhVd6PtAtz2G5_0wFanIsRnI0Ukveg0XJI5WEPJwH0X206A=w1280",
+    "imageUrl": "/assets/img/thumbnails/achunlocked3.png",
     "playUrl": "https://rubythegames.onrender.com/games/flash/achievementunlocked3/index.html",
     "genres": ["Platformer", "Puzzle"]
   },
@@ -385,7 +385,7 @@
   },
   {
     "name": "1 on 1 soccer",
-    "imageUrl": "https://lh3.googleusercontent.com/4TQFgdeLU5v9IfF3V_9ssL6tTIaakwcgNWaeywLI5gbuTr-LRAg62jblv9L7yFh4BcxWEl1FdTF0aT-WsmwnOKObgiid9Kb54Y-cvlDycSta6Vw0-MjN4J33v0utn9lBsA=w1280",
+    "imageUrl": "/assets/img/thumbnails/1on1soccer.png",
     "playUrl": "https://rubythegames.onrender.com/games/flash/1on1soccer/index.html",
     "genres": ["Sports", "2 Player", "Casual"]
   },
@@ -475,7 +475,7 @@
   },
   {
     "name": "2048",
-    "imageUrl": "https://lh4.googleusercontent.com/MfRTziV4qlvz2661mGT89518fGcJUvU93MwWOKt2lTs8HzCEWPyAKehsnyEfe9XS6n4cYjzHIiZtjuCbinmO80wUc42o4_0JqxsT1pTvdbUuDIWgs4EAy2bOeZOhHRLUKQ=w1280",
+    "imageUrl": "/assets/img/thumbnails/2048.png",
     "playUrl": "https://rubythegames.onrender.com/games/static/2048/index.html",
     "genres": ["Puzzle"]
   },
@@ -541,31 +541,31 @@
   },
   {
     "name": "10 minutes till dawn",
-    "imageUrl": "https://lh4.googleusercontent.com/Djr3Z73V3vBBqpRrP773-TPmUFAvpK6WKrig-sgp3AgCWOMfAhNY_QY1fEw_8pin1V6-cuZHyJRBmudfz8o4LgoqrynO9ZhmMObOxFe_DhMa_nQgVxL-dWfkSe5eSUl5LA=w1280",
+    "imageUrl": "/assets/img/thumbnails/10minutes.png",
     "playUrl": "https://rubythegames.onrender.com/games/static/10minutestilldawn/index.html",
     "genres": ["Action"]
   },
   {
     "name": "Ace attorney",
-    "imageUrl": "https://lh4.googleusercontent.com/MvoK0PDEodQ5xr-AfR7QgAyaJzz0QSDeGcZtfdaUuAeQ3YVBbLVEeMTZ0laWBJeROkmh1A-QhJhSvnTNs7WZHubmXUbvhkE0ip3FfsXxplpivkyb4sadKfG90LAuNxZmpQ=w1280",
+    "imageUrl": "/assets/img/thumbnails/aceattorney.png",
     "playUrl": "https://rubythegames.onrender.com/games/emulated/aceattorney/index.html",
     "genres": ["Adventure", "Puzzle"]
   },
   {
     "name": "Eggy Car",
-    "imageUrl": "https://lh3.googleusercontent.com/FXYOvhzWp2BsT5G4WOxLaP6xJxsuh6xzVufC0ggLcvRh3Ey7KpdUn7kKOo54vBOXG3OjyI4dnzMOA0vGDI7r6tEGE85yEsryOClhZ80uuRHhhjH2PeK9XYR5cAx2UPosgQ=w1280",
-    "playUrl": "https://rubythegames.onrender.com/games/static/drivemad/index.html",
-    "genres": ["Strategy", "Puzzle", "Casual", "Driving"]
-  },
-  {
-    "name": "Drive Mad",
-    "imageUrl": "https://lh4.googleusercontent.com/737r1gitqj7Znc1t_DL1xYFKwgc62gpSfxQydkZbxDTuZ_tb42auIysPH0yccTKG4Nugh5qj3uMXC1RDF5YHb-1_GTJwUp1eZ3I1KJGNya2YX0yybUG7owmTn6duRm2Wpw=w1280",
+    "imageUrl": "/assets/img/thumbnails/eggy.png",
     "playUrl": "https://rubythegames.onrender.com/games/static/eggycar/index.html",
     "genres": ["Strategy", "Puzzle", "Casual", "Driving"]
   },
   {
+    "name": "Drive Mad",
+    "imageUrl": "/assets/img/thumbnails/drivemad.png",
+    "playUrl": "https://rubythegames.onrender.com/games/static/drivemad/index.html",
+    "genres": ["Strategy", "Puzzle", "Casual", "Driving"]
+  },
+  {
     "name": "A dance of fire and ice",
-    "imageUrl": "https://lh6.googleusercontent.com/4-ifOBKtXs05N5_y1fLUslIov6FdzmbOd1iH2gb_Fhr5Ed4EOhN8lpF0uQSpZ9vW_ZvTuaeI257c7RzasEEkeAlQzgMN980SGT32qZ-H_0sXlJ4VLRMfUKgs3tYp3fAwkQ=w1280",
+    "imageUrl": "/assets/img/thumbnails/adofai.png",
     "playUrl": "https://rubythegames.onrender.com/games/static/adofai/index.html",
     "genres": ["Adventure", "Puzzle"]
   },
@@ -577,19 +577,19 @@
   },
   {
     "name": "Advance Wars",
-    "imageUrl": "https://lh3.googleusercontent.com/VP-UcjxXFa5RoTAoZKJQMWMz02iUPwx7OPPyket-WoeXR4LCXJVC58hsCR1eT7dqB0dtQA7vobXPaBvug1yBVwvQHYM1MGB2mTI_d9GbgT-Obv-M5UkgT1eOd2nnWW46Bg=w1280",
+    "imageUrl": "/assets/img/thumbnails/advancewars.png",
     "playUrl": "https://rubythegames.onrender.com/games/emulated/advancewars/index.html",
     "genres": ["RPG", "Strategy"]
   },
   {
     "name": "Advance Wars 2",
-    "imageUrl": "https://lh5.googleusercontent.com/OhJ-_OZ4mnoWkk1vyRiyTy5YGiBx2DOFDum14SnNBEDL7cDOtNt0rMKZW-Wh4UjVrrX1lot6cHOI3xZ-s-wQ-SHeCcNuyrDtV0lSRoBhIaugA6xzpTshdfk-qL0G3r1C4Q=w1280",
+    "imageUrl": "/assets/img/thumbnails/advancewars2.png",
     "playUrl": "https://rubythegames.onrender.com/games/emulated/advancewars2/index.html",
     "genres": ["RPG", "Strategy"]
   },
   {
     "name": "Adventure time",
-    "imageUrl": "https://lh3.googleusercontent.com/H72mbZTgvmH_tABJBJHd_3D0jsGdkmNGas8We0r-Q29g2VT_ZhFnXhg4Mwna-Rhg3pNCOAm91xTXzoKWOwxGgrdFLT5bGZ-zTcyrzjeHB1PdwzMDmwL1JyWyVmm7YVz0=w1280",
+    "imageUrl": "/assets/img/thumbnails/adventuretime.png",
     "playUrl": "https://rubythegames.onrender.com/games/emulated/adventuretime/index.html",
     "genres": ["Action", "Adventure", "Platformer", "Puzzle"]
   },
@@ -601,7 +601,7 @@
   },
   {
     "name": "Among Us",
-    "imageUrl": "https://lh5.googleusercontent.com/DMSSgrF3TlEleOn0w62uRMugRyVJD6sone1NTeIvkeZWa4ky6htj3664MZPQpX8k0Rosg14vq7Vj6iw8NQjoACifMRDgAyJp_J02kTvz-L-sn5JFNnMVFXqwRm8U96lFKA=w1280",
+    "imageUrl": "/assets/img/thumbnails/amongus.png",
     "playUrl": "https://rubythegames.onrender.com/games/static/amongus/index.html",
     "genres": ["Multiplayer", "Casual"]
   },
