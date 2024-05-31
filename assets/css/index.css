@@ -144,7 +144,7 @@ h2 {
   border: none;
   border-radius: 25%; 
   font-family: 'Helvetica', sans-serif; 
-  font-size: 35px;
+  font-size: 20px;
   font-weight: 900;
   transition: all 350ms;
   color: var(--accent);
@@ -507,7 +507,7 @@ transform: translateY(calc(-0.1rem));
 .input-image,
 .dropdown-image {
   top: 50%;
-  width: 1.7vh;
+  width: 2vh;
   pointer-events: none;
 }
 
@@ -517,7 +517,7 @@ transform: translateY(calc(-0.1rem));
   pointer-events: none;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 1.7vh;
+  width: 2vh;
   cursor: pointer;
 }
 
@@ -529,7 +529,7 @@ transform: translateY(calc(-0.1rem));
   left: 0;
   pointer-events: none;
   margin-left: 2%;
-  width: 1.7vh;
+  width: 2vh;
 }
 
 .dropdown-image {
