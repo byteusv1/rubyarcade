@@ -14,6 +14,7 @@
 
 
 
+
 :root {
   --text-color: white;
   --background: #1C1C1C;
@@ -31,6 +32,7 @@ body {
   cursor: default;
   margin: 0;
   font-family: "Gsans", sans-serif, sans-serif;
+  user-select: none;
   margin: 0;
   padding: 0;
   height: 100%;
@@ -221,6 +223,7 @@ p {
   text-align: center;
   margin-top: 25vh;
   margin-bottom: 1vh;
+  user-select: none;
   color: var(--text-color);
 
 
@@ -503,77 +506,28 @@ transform: translateY(calc(-0.1rem));
 }
 
 
-
 .input-image,
-.dropdown-image {
+.dropdown-image,
+.suggest-image {
+  position: absolute;
   top: 50%;
-  width: 2vh;
+  transform: translateY(-50%);
+  width: 20px; 
   pointer-events: none;
 }
 
 .suggest-image {
-  position: absolute;
-  top: 50%;
-  pointer-events: none;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 2vh;
+  left: 15px; 
+  transform: translateX(-50%) translateY(-50%);
   cursor: pointer;
 }
 
-
 .input-image {
-  transform: translateY(-50%);
-  display: block;
-  position: absolute;
-  left: 0;
-  pointer-events: none;
-  margin-left: 2%;
-  width: 2vh;
+  left: 10px; 
 }
 
 .dropdown-image {
-  left: 5%;
-  position: absolute;
-  transform: translateY(-50%);
-}
-
-
-
-
-@media (max-width: 400px) {
-  .container {
-    width: 100%;
-  }
-
-  .input-container {
-    width: 50%;
-    margin: 0vh;
-    margin-right: 0px;
-    margin-left: 8vh;
-  }
-  
-  .dropdown-container {
-    width: 5%;
-    margin: 0vh;
-    margin-right: 4vh;
-   }
-
-   .suggest-container {
-    width: 2%;
-  }
-   .dropdown-image {
-    left: 58%;
-    position: absolute;
-    transform: translateY(-50%);
-  }
-
-  .suggest-image {
-    left: 50%;
-  }
-
-
-
+  left: 2vw; 
 }
 
 
@@ -662,7 +616,19 @@ a:hover {
 }
 
 
-
+#current-panic-key {
+  color: var(--text-color);
+  padding: 10px 15px;
+  background-color: transparent;
+  border: 2px solid var(--accent);
+  border-radius: 8px;
+  cursor: pointer;
+  margin-left: 10px;
+  height: 20px;
+  display: inline-block;
+  vertical-align: top;
+  transition: all 250ms;
+}
 
 
 
@@ -835,6 +801,8 @@ user-label {
 }
 
 
+
+
 .user span {
     font-weight: bold;
     cursor: pointer;
@@ -910,4 +878,13 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+#particles-js {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; 
 }

@@ -14,6 +14,10 @@ const presets = {
     docs: {
         title: 'Google Docs',
         favicon: 'https://ssl.gstatic.com/docs/documents/images/kix-favicon-2023q4.ico'
+    },
+    clever: {
+        title: 'Clever | Portal',
+        favicon: 'https://www.clever.com/wp-content/uploads/2023/06/cropped-Favicon-512px-32x32.png'
     }
 };
 
@@ -22,7 +26,68 @@ document.addEventListener('DOMContentLoaded', () => {
     applySettings();
     displayPanicKey();
     loadThemeFromLocalStorage();
+    loadBackgroundSettings();
+
+
+    document.getElementById('background-url').addEventListener('input', saveBackgroundImage);
+    document.getElementById('backgroundToggle').addEventListener('change', toggleBackgroundImage);
 });
+
+
+
+
+
+function saveBackgroundImage() {
+    const backgroundImageURL = document.getElementById('background-url').value;
+    localStorage.setItem('backgroundImageURL', backgroundImageURL); 
+    applyBackgroundImage();
+}
+
+function applyBackgroundImage() {
+    const backgroundImageURL = localStorage.getItem('backgroundImageURL');
+    const backgroundEnabled = localStorage.getItem('backgroundEnabled') === 'true';
+
+    if (backgroundImageURL) {
+        document.body.style.backgroundImage = backgroundEnabled ? `url('${backgroundImageURL}')` : '';
+        document.body.style.backgroundRepeat = backgroundEnabled ? 'repeat' : '';
+        document.body.style.backgroundSize = backgroundEnabled ? '100% 100%' : '';
+    }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    applyBackgroundImage();
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+    applyBackgroundImage();
+});
+
+function toggleBackgroundImage() {
+    const backgroundEnabled = document.getElementById('backgroundToggle').checked;
+    localStorage.setItem('backgroundEnabled', backgroundEnabled);
+    applyBackgroundImage();
+}
+
+function loadBackgroundSettings() {
+    const backgroundImageURL = localStorage.getItem('backgroundImageURL');
+    const backgroundEnabled = localStorage.getItem('backgroundEnabled') === 'true';
+
+    if (backgroundImageURL) {
+        document.getElementById('background-url').value = backgroundImageURL;
+    }
+    document.getElementById('backgroundToggle').checked = backgroundEnabled;
+    applyBackgroundImage();
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    loadBackgroundSettings();
+
+    document.getElementById('background-url').addEventListener('input', saveBackgroundImage);
+    document.getElementById('backgroundToggle').addEventListener('change', toggleBackgroundImage);
+});
+
+
+
 
 function applyPreset(preset) {
     const selectedPreset = presets[preset];
@@ -81,64 +146,58 @@ function loadSettings() {
 }
 
 
-function setPanicKey() {
-    let panicKey = localStorage.getItem('panicKey');
-    if (!panicKey) {
-        panicKey = '['; 
-        localStorage.setItem('panicKey', panicKey);
-    } else {
-        panicKey = prompt("Enter the panic key (e.g., '['):").toLowerCase();
-        if (!panicKey || panicKey.length !== 1) {
-            alert("Please enter a single character as the panic key.");
-            return;
-        }
-        localStorage.setItem('panicKey', panicKey);
-    }
+let recordingPanicKey = false;
+
+document.addEventListener('DOMContentLoaded', () => {
+    loadSettings();
+    applySettings();
     displayPanicKey();
+    loadThemeFromLocalStorage();
+    setAvatar();
+
+    document.getElementById('set-panic-key-button').addEventListener('click', setPanicKey);
+});
+
+function setPanicKey() {
+    recordingPanicKey = true;
+    const button = document.getElementById('set-panic-key-button');
+    button.innerText = 'Recording...';
 }
+
+document.addEventListener('keydown', (event) => {
+    if (recordingPanicKey) {
+        const panicKey = event.key.toLowerCase();
+        localStorage.setItem('panicKey', panicKey);
+        displayPanicKey();
+        recordingPanicKey = false;
+        const button = document.getElementById('set-panic-key-button');
+        button.innerText = 'Set Panic Key';
+    } else {
+        panic(event);
+    }
+});
 
 function displayPanicKey() {
     const panicKey = localStorage.getItem('panicKey');
     if (panicKey) {
-        document.getElementById('current-panic-key').innerText = `Current Panic Key: ${panicKey}`;
+        document.getElementById('current-panic-key').innerText = `${panicKey}`;
     } else {
         document.getElementById('current-panic-key').innerText = "No Panic Key Set";
     }
 }
 
-document.addEventListener('keydown', (event) => {
-    panic(event);
-});
-
 function panic(event) {
     const panicURL = 'https://www.classroom.google.com/';
     const panicKey = localStorage.getItem('panicKey');
-    const keyPressed = event.key.toLowerCase(); 
+    const keyPressed = event.key.toLowerCase();
 
     if (keyPressed === panicKey) {
         window.location.href = panicURL;
     }
 }
 
-let aboutBlankCloakingEnabled = localStorage.getItem('aboutBlankCloakingEnabled') === 'true';
 
 
-
-function toggleAboutBlankCloaking() {
-    aboutBlankCloakingEnabled = !aboutBlankCloakingEnabled;
-    localStorage.setItem('aboutBlankCloakingEnabled', aboutBlankCloakingEnabled);
-    updateAboutBlankButton();
-}
-
-function updateAboutBlankButton() {
-    const aboutBlankButton = document.getElementById('about-blank-button');
-    aboutBlankButton.innerText = aboutBlankCloakingEnabled ? 'Disable Cloaking' : 'Enable Cloaking';
-}
-
-
-document.addEventListener('DOMContentLoaded', function() {
-    updateAboutBlankButton();
-});
 
 
 function saveThemeToLocalStorage(theme) {

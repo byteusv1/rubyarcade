@@ -32,7 +32,6 @@ const setObj = function (key, obj) {
         }
     });
 
-    // Redirect to about:blank if the user is on index.html and the cloaking is enabled
     if (aboutBlankCloakingEnabled && window.location.pathname.endsWith("/index.html")) {
         window.location.href = "about:blank";
     }
@@ -96,15 +95,17 @@ function resetCookiesAndStylesAndXP() {
 }
 
 document.getElementById("resetCookiesBtn").addEventListener("click", function() {
-  // Display confirmation dialog
   var confirmReset = confirm("Are you sure you want to reset your data? (all your progress will be lost)");
   
-  // Check user's choice
   if (confirmReset) {
-      // If user clicks "OK" in the confirmation dialog
-      resetCookiesAndStylesAndXP(); // Call the function to reset data
+      resetCookiesAndStylesAndXP(); 
   } else {
-      // If user clicks "Cancel" in the confirmation dialog
-      console.log("Reset data canceled."); // Optionally, you can provide feedback
+      console.log("Reset data canceled."); 
   }
 });
+
+
+
+
+
+
